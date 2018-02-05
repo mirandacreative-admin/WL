@@ -361,3 +361,27 @@ function register_my_menus() {
             
 add_action('wp_enqueue_scripts', 'google_fonts');
 
+ 
+ function ordinal($num)
+  {
+    $last=substr($num,-1);
+    if( $last>3  or 
+        $last==0 or 
+        ( $num >= 11 and $num <= 19 ) )
+    {
+      $ext='th';
+    }
+    else if( $last==3 )
+    {
+      $ext='rd';
+    }
+    else if( $last==2 )
+    {
+      $ext='nd';
+    }
+    else 
+    {
+      $ext='st';
+    }
+    return $num.$ext;
+  }

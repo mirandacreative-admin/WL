@@ -279,7 +279,7 @@ p.phonenumber {
 	background-color: white;
 }
 /*nice colorful buttons in the theme options panel*/
-#genesis-sidebar-primary .wgdebtn {
+body .wgdebtn {
 	color: white;
 	padding: 7px;
 	width: 100%;

@@ -15,7 +15,10 @@ if (have_rows('main')):
             get_template_part('parts/flexible/color-buttons');     
             
         elseif (get_row_layout() == 'event_blocks'):
-            get_template_part('parts/flexible/event-blocks');                     
+            get_template_part('parts/flexible/event-blocks');      
+
+        elseif (get_row_layout() == 'accordions'):
+            get_template_part('parts/flexible/accordions'); 
 
         endif;
 
