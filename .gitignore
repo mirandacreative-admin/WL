@@ -2,6 +2,7 @@
 # Wordpress #
 *.log
 .htaccess
+movefile.yml
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
