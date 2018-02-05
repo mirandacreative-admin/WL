@@ -12,7 +12,10 @@ if (have_rows('main')):
             get_template_part('parts/flexible/card-grid');
 
         elseif (get_row_layout() == 'color_buttons'):
-            get_template_part('parts/flexible/color-buttons');            
+            get_template_part('parts/flexible/color-buttons');     
+            
+        elseif (get_row_layout() == 'event_blocks'):
+            get_template_part('parts/flexible/event-blocks');                     
 
         endif;
 
