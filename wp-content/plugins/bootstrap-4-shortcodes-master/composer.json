@@ -1,0 +1,36 @@
+{
+  "name": "ciromattia/bootstrap-4-shortcodes",
+  "description": "WordPress shortcodes for easier use of Bootstrap elements in your content.",
+  "keywords": [
+    "bootstrap",
+    "shortcodes",
+    "wordpress",
+    "plugin"
+  ],
+  "homepage": "https://github.com/ciromattia/bootstrap-4-shortcodes",
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "Filip Stefansson",
+      "email": "filip.stefansson@gmail.com",
+      "homepage": "http://filipstefansson.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Simon Yeldon"
+    },
+    {
+      "name": "Michael W. Delaney"
+    },
+    {
+      "name": "Ciro Mattia Gonano",
+      "email": "ciromattia@gmail.com",
+      "role": "Developer"
+    }
+   ],  
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.3.2",
+    "composer/installers": "~1.0"
+  }
+}
