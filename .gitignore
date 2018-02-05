@@ -6,7 +6,6 @@ movefile.yml
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
-wp-config-sample.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
