@@ -12,9 +12,11 @@ if (have_rows('main')):
             get_template_part('parts/flexible/card-grid');
 
         elseif (get_row_layout() == 'color_buttons'):
-            get_template_part('parts/flexible/color-buttons');             
+            get_template_part('parts/flexible/color-buttons'); 
+
         elseif (get_row_layout() == 'event_blocks'):
-            get_template_part('parts/flexible/event-blocks');      
+            get_template_part('parts/flexible/event-blocks');  
+
         elseif (get_row_layout() == 'accordions'):
             get_template_part('parts/flexible/accordions'); 
 
@@ -34,7 +36,10 @@ if (have_rows('main')):
             get_template_part('parts/flexible/three-col-list');
 
         elseif (get_row_layout() == 'people_cards'):
-            get_template_part('parts/flexible/people-cards');            
+            get_template_part('parts/flexible/people-cards');      
+
+        elseif (get_row_layout() == 'gallery'):
+            get_template_part('parts/flexible/gallery');                     
 
         endif;
 

@@ -160,6 +160,7 @@ a.regbtn  {
 	text-align: center;	
 }
 /*childrens program end*/
+
 /*people card*/
 .peoplecard span {
 	display:block;
@@ -167,7 +168,17 @@ a.regbtn  {
 .threelist .col {
 	padding: 12px 0px;
 }
-/*people card*/
+/*people card end*/
+/*image gallery*/
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 2;
+  }
+}
+/*image gallery end*/
 /*main menu*/
 #menu-test {
 	border: 1px solid #88afc1;
