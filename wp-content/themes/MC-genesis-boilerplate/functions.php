@@ -218,17 +218,7 @@ function before_left_sidebar_menu(){
 
 add_action('genesis_entry_header','flexing');
 function flexing(){
-  if ( is_front_page() ) {
-    // This is the blog posts index
-   get_template_part('template-parts/carousel');
-   get_template_part('template-parts/searchbars');
-   get_template_part('template-parts/card-grid');   
-  }
-  if ( !is_front_page() ) {
-    // This is the blog posts index
   get_template_part('parts/flex');  
-  }  
-
 };
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 remove_action( 'genesis_footer', 'genesis_do_footer' );

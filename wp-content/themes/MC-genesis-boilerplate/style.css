@@ -108,6 +108,66 @@ body .container {
 #genesis-content .col {
 	cursor: pointer;
 }
+.eventblock .date {
+	background: #eee;
+	padding: 15px;
+	text-align: center;
+	margin: 12px 0px;
+	
+}
+.blurbrow a {
+	color: white;
+    padding: 7px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+	background-color: #2b2767;
+}
+/*childrens programs*/
+.dates span {
+	    display: inline-block;
+    padding: 7px 22px 12px 0px;
+}
+.time span {
+	    display: inline-block;
+    padding: 7px 22px 12px 0px;
+}
+.rel {
+	position: relative;
+}
+.agerange {
+	position: absolute;
+	top:0px;
+	right :0px;
+}
+.wd {
+	text-align: center;
+	padding: 44px 15px;
+	background-color: #eee;
+}
+.regbtn {
+	text-transform: uppercase;
+	background: #88afc1;
+}
+a.regbtn  {
+	color: white;
+	padding: 5px 32px;
+	font-family: NotoSans;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-align: center;	
+}
+/*childrens program end*/
+/*people card*/
+.peoplecard span {
+	display:block;
+}
+.threelist .col {
+	padding: 12px 0px;
+}
+/*people card*/
 /*main menu*/
 #menu-test {
 	border: 1px solid #88afc1;
