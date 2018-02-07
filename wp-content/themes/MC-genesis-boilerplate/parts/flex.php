@@ -1,3 +1,4 @@
+<h1>hello flex</h1>
 <?php
 // check if the flexible content field has rows of data
 if (have_rows('main')):
@@ -39,7 +40,10 @@ if (have_rows('main')):
             get_template_part('parts/flexible/people-cards');      
 
         elseif (get_row_layout() == 'gallery'):
-            get_template_part('parts/flexible/gallery');                     
+            get_template_part('parts/flexible/gallery');   
+
+        elseif (get_row_layout() == 'resource'):
+            get_template_part('parts/flexible/resource');                                 
 
         endif;
 

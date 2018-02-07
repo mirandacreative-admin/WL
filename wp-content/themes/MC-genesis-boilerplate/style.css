@@ -136,6 +136,9 @@ body .container {
 .rel {
 	position: relative;
 }
+.abs {
+	position: absolute;
+}
 .agerange {
 	position: absolute;
 	top:0px;
@@ -160,7 +163,27 @@ a.regbtn  {
 	text-align: center;	
 }
 /*childrens program end*/
+/*childrens page styles*/
+#genesis-content > h1 {
+display: none;
+}
+.grnups {
+	top: 44%;
+	left: 28%;
+	color: white;
+	font-size: 26px;
+}
+img.margblock {
+	margin: 0 auto; 
+	display: block;
+}
+.prgms {
+	top: 20%;
+	left: 28%;
+	font-size: 26px;	
+}
 
+/*childrens page styles*/
 /*people card*/
 .peoplecard span {
 	display:block;
@@ -323,7 +346,6 @@ p.phonenumber {
 }
 /*Content grid*/
 .squaregrid .col {
-	min-height: 300px;
 	padding: 28px;
 	border: solid 1px #dddddd;
 	margin: 2px;
