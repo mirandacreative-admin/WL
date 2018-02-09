@@ -78,7 +78,7 @@
     clear: both;
     padding-top: 3px;
     word-wrap: break-word;
-}
+} 
 .logo {
 	display: block;
 	margin: 0 auto;
@@ -89,7 +89,6 @@ body .container {
     max-width: 1440px;!important
     max-width: 100%;
     width: 100%;
-    padding-top:26px;
 }
  #left-sticky h2 {
     color: #2b2767;
@@ -98,15 +97,23 @@ body .container {
     font-size: 22px;
     font-weight: 100;
 }
+.wsoffcanvasopener .wsmenu {
+    z-index: 999999;
+ }
+
+#wsnavtoggle {
+	
+    z-index: 9999999;
+    background: black;
+}
 #left-sticky {
 	overflow: hidden;
-
+}
+#genesis-sidebar-secondary > section { 
+	display: none;
 }
 #genesis-content .row {
 	margin: 0px;
-}
-#genesis-content .col {
-	cursor: pointer;
 }
 .eventblock .date {
 	background: #eee;
