@@ -182,6 +182,73 @@ img.margblock {
 	left: 28%;
 	font-size: 26px;	
 }
+.rug {
+	    margin-top: 44%;
+}
+.tabletgirl {
+	top:22%;
+	left:22%;
+	width:40%;
+}
+.tabletboy {
+	top: 25%;
+	left: 55%;
+	width: 25%;
+}
+.girlone {
+	top:46%;
+	left:2%;
+	width:25%;
+}
+.kidstablet {
+	top: 45%;
+	left: 38%;
+	width:22%;
+	z-index: 999;
+	transform: rotate(-11deg);
+}
+.games {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 11px 0px;
+}
+.thoubooks {
+	padding: 11px 0px;	
+	max-width: 80%;
+	margin: 0 auto;
+}
+.teddyshelf  {
+		padding: 11px 0px;
+	max-width: 88%;
+	margin: 0 auto;
+}
+.greatread  {
+		padding: 11px 0px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.toys  {
+		padding: 22px 0px;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 12px;
+}
+.teddy {
+	max-width:26%;
+	top: 0;
+	right:12%;
+}
+.todaymsg {
+	top:30%;
+	left:11%;
+	max-width:85%;
+}
+.easle {
+	max-width: 76%;
+    margin: 0 auto;
+    display: block;
+}
+
 
 /*childrens page styles*/
 /*people card*/
