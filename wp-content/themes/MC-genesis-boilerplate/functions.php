@@ -170,7 +170,7 @@ function maybe_site_description() {
 function mc_enqueue_mccode() {
     // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts 
     wp_enqueue_script( 'mccoder-js', get_stylesheet_directory_uri() . '/assets/js/mccoder.js'); // all the bootstrap javascript goodness
-   wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');
+    wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');
     wp_enqueue_script( 'webslide-js', get_stylesheet_directory_uri() . '/assets/js/webslidemenu.js');         
 }
 add_action('wp_enqueue_scripts', 'mc_enqueue_mccode');
@@ -190,6 +190,7 @@ function mc_enqueue_my_styles() {
     wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/font-awesome.min.css' );   
       
     wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri() . '/assets/css/webslidemenu.css' );    
+    wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/custom.css' );      
      
 }
 // webslide menu code
