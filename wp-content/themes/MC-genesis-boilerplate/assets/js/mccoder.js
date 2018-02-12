@@ -18,8 +18,9 @@ jQuery(document).ready(function( $ ) {
 	  $( ".alert" ).hide();
 	});
 
-	$("#stickem").stick_in_parent({offset_top: 32});
-	$("#genesis-sidebar-secondary, #genesis-sidebar-primary").stick_in_parent({offset_top: 250});
+
+
+	$("#genesis-sidebar-secondary, #genesis-sidebar-primary").stick_in_parent({offset_top: 176});
 		$('.squaregrid .col').hover(
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }
