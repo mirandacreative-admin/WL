@@ -2,7 +2,7 @@
 # Wordpress #
 *.log
 .htaccess
-movefile.yml
+
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
@@ -21,6 +21,8 @@ wp-content/*.sql
 wp-content/*.sql.gz
 wp-content/*.sql.bz2
 wp-content/backup*
+wp-content/plugins/
+
 
 /readme.html
 /license.txt
@@ -33,8 +35,21 @@ node_modules/
 
 #  Sublime  #
 sftp-config.json
+.sublime-workspace
 
 #  Wordmove #
 Movefile
+Movefile.yml
+movefile.yml
+
 #  Jetbrains #
+.idea/
 .idea
+
+#Shell scripts Etc. #
+.sh
+.backup
+.sql
+.gz
+.zip
+.7z
