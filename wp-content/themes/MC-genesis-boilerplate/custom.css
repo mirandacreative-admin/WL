@@ -246,9 +246,9 @@ border-left: 1px solid #88afc1;
 }
 #stickem {
     background: white;
-    z-index: 99999999;
+    z-index: 99;
     position: fixed;
-    width: 89%;
+    width: 100%;
 }
 /*carousel*/
 #carouselHome h3 {
