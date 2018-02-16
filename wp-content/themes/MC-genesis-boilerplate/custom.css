@@ -28,9 +28,23 @@ body .container {
 .wsoffcanvasopener .wsmenu {
     z-index: 999999;
  }
+ /*sidebars */
 #left-sticky {
 	overflow: hidden;
+	max-width: 200px;
+	    float: right;
 }
+#genesis-content .sidebar-primary {
+	max-width: 308px;
+}
+#genesis-content .content {
+    width: 801px;
+    padding: 12px;
+}
+#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
+ max-width: 1139px;
+}
+
 #genesis-sidebar-secondary > section { 
 	display: none;
 }
@@ -214,6 +228,8 @@ display: inline-block;
     
     margin: 0px 0px;
     border-right: 1px solid #88afc1;
+    border-top: 1px solid #88afc1;
+    border-bottom: 1px solid #88afc1;
     font-family: 'Noto Sans', sans-serif;
     min-width: 16%;
     text-align: center;
@@ -222,6 +238,9 @@ display: inline-block;
 .main-menu li:last-child {
 	border-right: 1px solid #88afc1;
 }
+.main-menu li:first-child {
+border-left: 1px solid #88afc1;
+}
 .main-menu a {
 	font-size: 15px;
 }
@@ -229,7 +248,7 @@ display: inline-block;
     background: white;
     z-index: 99999999;
     position: fixed;
-    width: 100%;
+    width: 89%;
 }
 /*carousel*/
 #carouselHome h3 {
@@ -413,7 +432,28 @@ span.subtag {
 .mediumlogo {
 	display: none;
 }
+#wsnavtoggle {
+    display: none;
+}
+
+@media (max-width: 1453px) {
+#stickem {
+    background: white;
+    z-index: 99999999;
+    position: fixed;
+    width: 100%;
+    margin-left: -1%;
+}
+}
 @media (max-width: 1320px) {
+	.logogroup {
+    display: block;
+    margin: 0 auto;
+    width: 623px;
+	}
+	#stickem {
+	    margin-left: -10%;
+	}	
 	.logo {
 		display: none;
 	}
@@ -432,23 +472,45 @@ span.subtag {
 		display: inline-block;
 	}	
 }
-@media (max-width: 1090px) { 
+@media (max-width: 1200px) { 
 	.main-menu {
-    display: none;
+		display: none;
 	}
+	#wsnavtoggle {
+	    display: block
+	}
+}
+
+
+@media (max-width: 1090px) { 
+
 		
 	#genesis-content {
 	    padding-top: 68px;
 	}	
 }
+
 @media (max-width: 860px) { 
 .logogroup {
-	    padding-left: 51px;
+    padding-left: 16%;
 }
 .mediumlogo {
     max-width: 81px;
     padding-right: 12px;
 }
+}
+@media (max-width: 844px) {
+	.mediumlogo {
+	    padding: 0px;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.tk-museo {
+	    font-family: "museo",serif;
+
+	    font-size: 36px;
+	    display: block;
+	}
 }
 @media (max-width: 633px) { 
 	#genesis-content {
