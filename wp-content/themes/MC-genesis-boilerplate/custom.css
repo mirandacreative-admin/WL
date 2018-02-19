@@ -1,0 +1,520 @@
+*/
+/*dev helpers delete before launch*/
+
+/*header*/
+.site-inner {
+    clear: both;
+    padding-top: 3px;
+    word-wrap: break-word;
+} 
+.logo {
+	display: block;
+	margin: 0 auto;
+	padding-left: 41px;
+    padding-top: 12px;
+}
+body .container {
+    max-width: 1440px;!important
+    max-width: 100%;
+    width: 100%;
+}
+ #left-sticky h2 {
+    color: #2b2767;
+    text-align: left;
+    padding-left: 16px;
+    font-size: 22px;
+    font-weight: 100;
+}
+.wsoffcanvasopener .wsmenu {
+    z-index: 999999;
+ }
+ /*sidebars */
+#left-sticky {
+	overflow: hidden;
+	max-width: 200px;
+	    float: right;
+}
+#genesis-content .sidebar-primary {
+	max-width: 308px;
+}
+#genesis-content .content {
+    width: 801px;
+    padding: 12px;
+}
+#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
+ max-width: 1139px;
+}
+
+#genesis-sidebar-secondary > section { 
+	display: none;
+}
+#genesis-content .row {
+	margin: 0px;
+}
+.eventblock .date {
+	background: #eee;
+	padding: 15px;
+	text-align: center;
+	margin: 12px 0px;
+	
+}
+.blurbrow a {
+	color: white;
+    padding: 7px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+	background-color: #2b2767;
+}
+/*childrens programs*/
+.dates span {
+	    display: inline-block;
+    padding: 7px 22px 12px 0px;
+}
+.time span {
+	    display: inline-block;
+    padding: 7px 22px 12px 0px;
+}
+.rel {
+	position: relative;
+}
+.abs {
+	position: absolute;
+}
+.agerange {
+	position: absolute;
+	top:0px;
+	right :0px;
+}
+.wd {
+	text-align: center;
+	padding: 44px 15px;
+	background-color: #eee;
+}
+.regbtn {
+	text-transform: uppercase;
+	background: #88afc1;
+}
+a.regbtn  {
+	color: white;
+	padding: 5px 32px;
+	font-family: NotoSans;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	text-align: center;	
+}
+/*childrens program end*/
+/*childrens page styles*/
+#genesis-content > h1 {
+display: none;
+}
+.grnups {
+	top: 44%;
+	left: 28%;
+	color: white;
+	font-size: 26px;
+}
+img.margblock {
+	margin: 0 auto; 
+	display: block;
+}
+.prgms {
+	top: 20%;
+	left: 28%;
+	font-size: 26px;	
+}
+.rug {
+	    margin-top: 44%;
+}
+.tabletgirl {
+	top:22%;
+	left:22%;
+	width:40%;
+}
+.tabletboy {
+	top: 25%;
+	left: 55%;
+	width: 25%;
+}
+.girlone {
+	top:46%;
+	left:2%;
+	width:25%;
+}
+.kidstablet {
+	top: 45%;
+	left: 38%;
+	width:22%;
+	z-index: 999;
+	transform: rotate(-11deg);
+}
+.games {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 11px 0px;
+}
+.thoubooks {
+	padding: 11px 0px;	
+	max-width: 80%;
+	margin: 0 auto;
+}
+.teddyshelf  {
+		padding: 11px 0px;
+	max-width: 88%;
+	margin: 0 auto;
+}
+.greatread  {
+		padding: 11px 0px;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.toys  {
+		padding: 22px 0px;
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 12px;
+}
+.teddy {
+	max-width:26%;
+	top: 0;
+	right:12%;
+}
+.todaymsg {
+	top:30%;
+	left:11%;
+	max-width:85%;
+}
+.easle {
+	max-width: 76%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*childrens page styles*/
+/*people card*/
+.peoplecard span {
+	display:block;
+}
+.threelist .col {
+	padding: 12px 0px;
+}
+/*people card end*/
+/*image gallery*/
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 2;
+  }
+}
+/*image gallery end*/
+/*main menu*/
+#menu-test {
+	border: 1px solid #88afc1;
+}
+.main-menu {
+    display: block;
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 26px;
+}
+.main-menu li {
+display: inline-block;
+    padding: 16px 6px;
+    
+    margin: 0px 0px;
+    border-right: 1px solid #88afc1;
+    border-top: 1px solid #88afc1;
+    border-bottom: 1px solid #88afc1;
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 16%;
+    text-align: center;
+    margin-left: -4px;
+}
+.main-menu li:last-child {
+	border-right: 1px solid #88afc1;
+}
+.main-menu li:first-child {
+border-left: 1px solid #88afc1;
+}
+.main-menu a {
+	font-size: 15px;
+}
+#stickem {
+    background: white;
+    z-index: 99999999;
+    position: fixed;
+    width: 89%;
+}
+/*carousel*/
+#carouselHome h3 {
+	text-align: left;
+	font-size: 33px;
+}
+#carouselHome p {
+	text-align: left;
+	display: block;
+	width: 100%;
+	background:;
+}
+#carouselHome .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 53px;
+    left: 3%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+#carouselHome .alert {
+	position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    background: #ff000080;
+    color: white;
+    left: 0px;
+    right: 0pc;
+}
+
+/* MCcoder */
+
+/*makes the carousel responsive*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
+
+/*hours and quicklinks*/
+.hourblock {
+	background-color: rgba(136, 175, 193, 0.1);
+}
+.hours {
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+ul.quicklinks  {
+	text-align: left;
+	padding-left: 22px;
+	list-style: none;
+}
+ul.quicklinks a {
+	color:#2b2767;
+}
+ul.quicklinks a:hover {
+	color: #66619c;
+}
+.quicklinks li {
+	padding-left: 35px;
+}
+.fol {
+	background: url('images/ic-people-black-24-px.png') no-repeat center left;
+}
+.contactus {
+	background: url('images/ic-email-copy.png') no-repeat center left;
+}
+.enews {
+	background: url('images/ic-view-list-copy.png') no-repeat center left;
+}
+.directions {
+	background: url('images/ic-place-copy.png') no-repeat center left;
+}
+.fb {
+	background: url('images/fa-facebook-copy.png') no-repeat center left;
+}
+.tw {
+	background: url('images/fa-twitter-copy.png') no-repeat center left;	
+}
+.librarysupportbox {
+    background: #2b2767;
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+    text-align: center;
+    color: white;
+    max-width: 212px;
+    margin: 0 auto;
+}
+p.address {
+	max-width: 212px;
+	margin: 0 auto;
+	text-align: left;
+    color: #2b2767;	
+	margin-top: 12px;    
+}
+p.phonenumber {
+	max-width: 212px;
+	margin: 0 auto;
+	text-align: left;
+    color: #2b2767;	
+	margin-top: 12px;    
+}
+
+.wcag {
+    top: 44px;
+    position: fixed;
+    right: 15px;
+    z-index: 99999999;
+}
+/*Content grid*/
+.squaregrid .col {
+	padding: 28px;
+	border: solid 1px #dddddd;
+	margin: 2px;
+}
+.squaregrid a {
+	font-size: 31px;
+    color: #2b2767;
+    font-family: 'museo', sans-serif;
+    font-weight: 600;
+}
+.squaregrid a:hover {
+	color: white;
+	text-decoration: none;
+}
+.squaregrid .col:hover {
+	color: white;
+	background: #88afc1;
+}
+.hover a {
+	color: white;
+
+}
+.content {
+	background-color: white;
+}
+/*nice colorful buttons in the theme options panel*/
+body .wgdebtn {
+	color: white;
+	padding: 7px;
+	width: 100%;
+	display:block;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+#overlapblackbg {
+    left: 0;
+    z-index: 999999999;
+}
+.wsoffcanvasopener .wsmenu {
+    z-index: 999999999;
+}
+#wsnavtoggle {
+    z-index: 9999999999;
+    position: fixed;
+    background: white;
+}
+.sublogo {
+	display:block; 
+	margin: 0 auto;
+	padding-top:63px;
+}
+span.subtag {
+	font-size:22px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	color: #2b2767;
+	font-weight: 700;
+	padding-bottom: 22px;
+	padding-top: 12px;
+
+}
+#genesis-content {
+    padding-top: 142px;
+}
+.mediumlogo {
+	display: none;
+}
+#wsnavtoggle {
+    display: none;
+}
+
+@media (max-width: 1453px) {
+#stickem {
+    background: white;
+    z-index: 99999999;
+    position: fixed;
+    width: 100%;
+    margin-left: -1%;
+}
+}
+@media (max-width: 1320px) {
+	.logogroup {
+    display: block;
+    margin: 0 auto;
+    width: 623px;
+	}
+	#stickem {
+	    margin-left: -10%;
+	}	
+	.logo {
+		display: none;
+	}
+	.tk-museo {
+	font-size: 3.8rem;
+    font-weight: 700;
+    padding-left: 0px;
+    color: #2b2767;
+    text-align: center;
+    padding: 22px 0px;
+	}
+	.mediumlogo {
+		display: inline-block;
+	}
+	.tk-museo {
+		display: inline-block;
+	}	
+}
+@media (max-width: 1200px) { 
+	.main-menu {
+		display: none;
+	}
+	#wsnavtoggle {
+	    display: block
+	}
+}
+
+
+@media (max-width: 1090px) { 
+
+		
+	#genesis-content {
+	    padding-top: 68px;
+	}	
+}
+
+@media (max-width: 860px) { 
+.logogroup {
+    padding-left: 16%;
+}
+.mediumlogo {
+    max-width: 81px;
+    padding-right: 12px;
+}
+}
+@media (max-width: 844px) {
+	.mediumlogo {
+	    padding: 0px;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.tk-museo {
+	    font-family: "museo",serif;
+
+	    font-size: 36px;
+	    display: block;
+	}
+}
+@media (max-width: 633px) { 
+	#genesis-content {
+	    padding-top: 176px;
+	}	
+}
