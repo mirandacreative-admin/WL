@@ -20,7 +20,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-	$("#genesis-sidebar-secondary, #genesis-sidebar-primary").stick_in_parent({offset_top: 244});
+	$("#genesis-sidebar-secondary, #genesis-sidebar-primary").stick_in_parent({offset_top: 174});
 		$('.squaregrid .col').hover(
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }

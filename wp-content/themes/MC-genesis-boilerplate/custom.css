@@ -3,8 +3,6 @@
 
 /* Body */
 
-
-
 /* Header */
 h1.tk-museo{
 	font-family: "museo",serif;
@@ -16,9 +14,9 @@ h1.tk-museo{
 
 /* Menu */
 .main-menu ul{
-	border-top: 0.5px solid #88afc1;
-	border-bottom: 0.5px solid #88afc1;
-	border-left: 0.5px solid #88afc1;
+	border-top: 0.5px solid rgba(136, 175, 193, 0.8);
+	border-bottom: 0.5px solid rgba(136, 175, 193, 0.8);
+	border-left: 0.5px solid rgba(136, 175, 193, 0.8);
 	font-family: 'Noto Sans', sans-serif;
 }
 .main-menu li{
@@ -28,14 +26,14 @@ h1.tk-museo{
 .main-menu li a{
 	display: block;
 	padding: 19px 19px;
-	border-right: 0.5px solid #88afc1;
+	border-right: 0.5px solid rgba(136, 175, 193, 0.8);
 	color:#2b2767;
 	font-size: 0.7em;
 	text-align: center;
 }
 
 .main-menu li a:hover{
-	background-color: rgba(136, 175,193, 0.2);
+	background-color: rgba(136, 175,193, 0.8);
 	text-decoration: none;
 }
 #stickem { /* Navigation Sticky */ 
@@ -45,6 +43,41 @@ h1.tk-museo{
     width: 100%;
     top:0;
 }
+
+/* Left Sidebar */
+#left-sticky{
+	float: right;
+	overflow: hidden;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+.logo {
+	display: block;
+	margin: 0 auto;
+	padding: 5% 5%;
+}
+ #left-sticky h2 {
+	padding: 8%;
+	border-top: 0.5px solid rgba(136, 175, 193, 0.8);
+	margin:0;
+    color: #2b2767;
+    font-family: "museo",serif;
+    font-size: 22px;
+    font-weight: 100;
+    text-align: left;
+}
+.hour-inner{
+	padding: 0 15%;
+	color: #2b2767;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 0.8em;
+}
+.hour-inner li{
+	margin-bottom: 16px;
+}
+.dow, .hours{
+	padding:0;
+}
+
 
 
 /***************/
@@ -60,34 +93,19 @@ h1.tk-museo{
     padding-top: 3px;
     word-wrap: break-word;
 } 
-.logo {
-	display: block;
-	margin: 0 auto;
-	padding-left: 41px;
-    padding-top: 12px;
-}
+
 body .container {
     max-width: 1440px;!important
     max-width: 100%;
     width: 100%;
 }
- #left-sticky h2 {d
-    color: #2b2767;
-    text-align: left;
-    padding-left: 16px;
-    font-size: 22px;
-    font-weight: 100;
-}
+
 .wsoffcanvasopener .wsmenu {
     z-index: 999999;
  }
 
 /* Sidebar */
-#left-sticky {
-	overflow: hidden;
-	max-width: 200px;
-	    float: right;
-}
+
 #genesis-content .sidebar-primary {
 	max-width: 308px;
 }
