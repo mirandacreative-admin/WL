@@ -1,7 +1,60 @@
-*/
+
 /*dev helpers delete before launch*/
 
-/*header*/
+/* Body */
+
+
+
+/* Header */
+h1.tk-museo{
+	font-family: "museo",serif;
+	font-size: 6.5rem;
+	color: #2b2767;
+	font-weight: 700;
+	padding: 0.3em 0;
+}
+
+/* Menu */
+.main-menu ul{
+	border-top: 0.5px solid #88afc1;
+	border-bottom: 0.5px solid #88afc1;
+	border-left: 0.5px solid #88afc1;
+	font-family: 'Noto Sans', sans-serif;
+}
+.main-menu li{
+	min-width: 16%;
+}
+
+.main-menu li a{
+	display: block;
+	padding: 19px 19px;
+	border-right: 0.5px solid #88afc1;
+	color:#2b2767;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+.main-menu li a:hover{
+	background-color: rgba(136, 175,193, 0.2);
+	text-decoration: none;
+}
+#stickem { /* Navigation Sticky */ 
+    background: white;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+
+/***************/
+/* Content CSS */
+/***************/
+
+.content-sidebar-wrap{
+	padding-top: 125px;
+}
+
 .site-inner {
     clear: both;
     padding-top: 3px;
@@ -28,7 +81,8 @@ body .container {
 .wsoffcanvasopener .wsmenu {
     z-index: 999999;
  }
- /*sidebars */
+
+/* Sidebar */
 #left-sticky {
 	overflow: hidden;
 	max-width: 200px;
@@ -67,7 +121,8 @@ body .container {
     text-transform: uppercase;
 	background-color: #2b2767;
 }
-/*childrens programs*/
+
+/* Childrens Programs */
 .dates span {
 	    display: inline-block;
     padding: 7px 22px 12px 0px;
@@ -212,44 +267,7 @@ img.margblock {
   }
 }
 /*image gallery end*/
-/*main menu*/
-#menu-test {
-	border: 1px solid #88afc1;
-}
-.main-menu {
-    display: block;
-    width: 100%;
-    padding-left: 24px;
-    padding-top: 26px;
-}
-.main-menu li {
-display: inline-block;
-    padding: 16px 6px;
-    
-    margin: 0px 0px;
-    border-right: 1px solid #88afc1;
-    border-top: 1px solid #88afc1;
-    border-bottom: 1px solid #88afc1;
-    font-family: 'Noto Sans', sans-serif;
-    min-width: 16%;
-    text-align: center;
-    margin-left: -4px;
-}
-.main-menu li:last-child {
-	border-right: 1px solid #88afc1;
-}
-.main-menu li:first-child {
-border-left: 1px solid #88afc1;
-}
-.main-menu a {
-	font-size: 15px;
-}
-#stickem {
-    background: white;
-    z-index: 99;
-    position: fixed;
-    width: 100%;
-}
+
 /*carousel*/
 #carouselHome h3 {
 	text-align: left;
@@ -426,9 +444,7 @@ span.subtag {
 	padding-top: 12px;
 
 }
-#genesis-content {
-    padding-top: 142px;
-}
+
 .mediumlogo {
 	display: none;
 }
