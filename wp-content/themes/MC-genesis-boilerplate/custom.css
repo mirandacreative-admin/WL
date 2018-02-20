@@ -9,23 +9,21 @@ a:hover{
 	color: #88afc1; 
 	text-decoration: none;
 }
-
 .button {
-    display: block;
-    min-width: 200px;
-    padding: 8px 0px;
-    margin: 0 auto;
-    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.22);
-    background: #2b2767;
-    color: white;
-  	font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-	text-decoration: uppercase;
-	border-radius: none; 
-
+  display: block;
+  min-width: 200px;
+  padding: 8px 0px;
+  margin: 16px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.22);
+  background: #2b2767;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 .button:hover{
-	background: rgba(136, 175, 193, 1);
+	background: rgba(136, 175, 193, 0);
+  opacity: 0.9;
 }
 /* these are not in use yet */
 .btn.btn-primary{
@@ -40,8 +38,6 @@ a:hover{
 .btn-dark-slate-blue{
 	background-color: rgb(43, 39, 103);
 }
-
-
 
 /********************/
 /* Main Navigation */
@@ -68,7 +64,7 @@ h1.tk-museo{
 }
 .main-menu li a{
 	display: block;
-	padding: 19px 19px;
+	padding: 15px 15px;
 	border-right: 0.5px solid rgba(136, 175, 193, 0.8);
 	color:#2b2767;
 	font-size: 0.7em;
@@ -175,6 +171,8 @@ address {
 	margin-bottom: 10px;
 }
 
+
+/* This is where Mika Ended */
 
 
 /***************/

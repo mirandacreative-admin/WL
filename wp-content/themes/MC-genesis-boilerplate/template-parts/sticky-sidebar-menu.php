@@ -1,3 +1,9 @@
+<?php
+/**
+ * Left Sidebar
+ */
+?>
+
 <div id="left-sticky">
 	<img class="logo" src="<?php the_field('logo', 'option'); ?>">
 	<a href="#"><h2>About Library</h2></a>
