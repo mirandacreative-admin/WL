@@ -1,7 +1,51 @@
 
-/*dev helpers delete before launch*/
+/**********/
+/* Global */
+/**********/
+a{
+	color: #2b2767; 
+}
+a:hover{
+	color: #88afc1; 
+	text-decoration: none;
+}
 
-/* Body */
+.button {
+    display: block;
+    min-width: 200px;
+    padding: 8px 0px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.22);
+    background: #2b2767;
+    color: white;
+  	font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+	text-decoration: uppercase;
+	border-radius: none; 
+
+}
+.button:hover{
+	background: rgba(136, 175, 193, 1);
+}
+/* these are not in use yet */
+.btn.btn-primary{
+	border-radius: none;
+}
+.btn-greyblue{
+	background-color: rgb(136, 175, 193);
+}
+.btn-warm-purple{
+	background-color: rgb(169, 46, 137);
+}
+.btn-dark-slate-blue{
+	background-color: rgb(43, 39, 103);
+}
+
+
+
+/********************/
+/* Main Navigation */
+/*******************/
 
 /* Header */
 h1.tk-museo{
@@ -22,7 +66,6 @@ h1.tk-museo{
 .main-menu li{
 	min-width: 16%;
 }
-
 .main-menu li a{
 	display: block;
 	padding: 19px 19px;
@@ -31,7 +74,6 @@ h1.tk-museo{
 	font-size: 0.7em;
 	text-align: center;
 }
-
 .main-menu li a:hover{
 	background-color: rgba(136, 175,193, 0.8);
 	text-decoration: none;
@@ -48,6 +90,7 @@ h1.tk-museo{
 #left-sticky{
 	float: right;
 	overflow: hidden;
+	height: 100%;
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
 }
 .logo {
@@ -65,6 +108,11 @@ h1.tk-museo{
     font-weight: 100;
     text-align: left;
 }
+
+/* Hours */
+.hourblock {
+    background-color: rgba(136, 175, 193, 0.1);
+}
 .hour-inner{
 	padding: 0 15%;
 	color: #2b2767;
@@ -76,6 +124,55 @@ h1.tk-museo{
 }
 .dow, .hours{
 	padding:0;
+}
+
+/* Quick Links */
+.quicklinks  {
+    text-align: left;
+    padding-left: 22px;
+    list-style: none;
+    font-size: 0.8em;
+}
+.quicklinks a {
+    color:#2b2767;
+}
+.quicklinks a:hover {
+    color: #66619c;
+    text-decoration: none;
+}
+.quicklinks li {
+    padding: 4px 0px 8px 35px;
+}
+/* icons */
+.friends {
+	background: url('images/ic-people-black-24-px.png') no-repeat center left;
+}
+.contact {
+	background: url('images/ic-email-copy.png') no-repeat center left;
+}
+.enews {
+	background: url('images/ic-view-list-copy.png') no-repeat center left;
+}
+.directions {
+	background: url('images/ic-place-copy.png') no-repeat center left;
+}
+.facebook {
+	background: url('images/fa-facebook-copy.png') no-repeat center left;
+}
+.twitter {
+	background: url('images/fa-twitter-copy.png') no-repeat center left;	
+}
+address {
+	max-width: 212px;
+	padding: 8px 16px;
+	margin: 12px 0 30px;
+    color: #2b2767;	
+	font-size: 0.8em;
+	text-align: left;
+}
+.address{
+	display:block;
+	margin-bottom: 10px;
 }
 
 
@@ -326,70 +423,10 @@ img.margblock {
   height:100%;
 }
 
-/*hours and quicklinks*/
-.hourblock {
-	background-color: rgba(136, 175, 193, 0.1);
-}
-.hours {
-	text-align: left;
-    list-style: none;
-}
-ul.quicklinks  {
-	text-align: left;
-	padding-left: 22px;
-	list-style: none;
-}
-ul.quicklinks a {
-	color:#2b2767;
-}
-ul.quicklinks a:hover {
-	color: #66619c;
-}
-.quicklinks li {
-	padding-left: 35px;
-}
-.fol {
-	background: url('images/ic-people-black-24-px.png') no-repeat center left;
-}
-.contactus {
-	background: url('images/ic-email-copy.png') no-repeat center left;
-}
-.enews {
-	background: url('images/ic-view-list-copy.png') no-repeat center left;
-}
-.directions {
-	background: url('images/ic-place-copy.png') no-repeat center left;
-}
-.fb {
-	background: url('images/fa-facebook-copy.png') no-repeat center left;
-}
-.tw {
-	background: url('images/fa-twitter-copy.png') no-repeat center left;	
-}
-.librarysupportbox {
-    background: #2b2767;
-    display: block;
-    width: 100%;
-    padding: 8px 0px;
-    text-align: center;
-    color: white;
-    max-width: 212px;
-    margin: 0 auto;
-}
-p.address {
-	max-width: 212px;
-	margin: 0 auto;
-	text-align: left;
-    color: #2b2767;	
-	margin-top: 12px;    
-}
-p.phonenumber {
-	max-width: 212px;
-	margin: 0 auto;
-	text-align: left;
-    color: #2b2767;	
-	margin-top: 12px;    
-}
+
+
+
+
 
 .wcag {
     top: 44px;
