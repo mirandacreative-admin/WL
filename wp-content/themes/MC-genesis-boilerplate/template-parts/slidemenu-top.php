@@ -21,4 +21,4 @@
   
   <!--Menu HTML Code-->
 </div>
-<div class="wrapper"> <br>
+<div class="wrapper">
