@@ -307,12 +307,12 @@ img.margblock {
 	font-size: 26px;	
 }
 .rug {
-	    margin-top: 44%;
+	margin-top: 44%;
 }
-.tabletgirl {
+.twokids {
 	top:22%;
 	left:22%;
-	width:40%;
+	width:58%;
 }
 .tabletboy {
 	top: 25%;
@@ -332,30 +332,30 @@ img.margblock {
 	transform: rotate(-11deg);
 }
 .games {
-	max-width: 80%;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 11px 0px;
 }
 .thoubooks {
 	padding: 11px 0px;	
-	max-width: 80%;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .teddyshelf  {
-		padding: 11px 0px;
-	max-width: 88%;
+	padding: 11px 0px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .greatread  {
-		padding: 11px 0px;
-	max-width: 80%;
+	padding: 11px 0px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .toys  {
-		padding: 22px 0px;
-	max-width: 80%;
+	padding: 5px 0px;
+	max-width: 65%;
 	margin: 0 auto;
-	margin-top: 12px;
+	margin-top: 3px;
 }
 .teddy {
 	max-width:26%;
@@ -368,7 +368,7 @@ img.margblock {
 	max-width:85%;
 }
 .easle {
-	max-width: 76%;
+	max-width: 100%;
     margin: 0 auto;
     display: block;
 }
