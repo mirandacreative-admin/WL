@@ -36,6 +36,7 @@ node_modules/
 #  Sublime  #
 sftp-config.json
 .sublime-workspace
+*.sublime-workspace
 
 #  Wordmove #
 Movefile

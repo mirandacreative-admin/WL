@@ -369,7 +369,7 @@ function register_my_menus() {
 
  function google_fonts() {
   $query_args = array(
-    'family' => 'family=Noto+Sans:400,700',
+    'family' => 'family=Noto+Sans:400,400i,700,700i',
     'subset' => 'latin,latin-ext'
   );
   wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
