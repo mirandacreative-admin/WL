@@ -51,6 +51,16 @@ h1.tk-museo{
 	font-weight: 700;
 	padding: 0.3em 0;
 }
+.navpanel .wrapper {
+	background: white;
+}
+.navpanel {
+	background: none;
+	padding-left: 15px;
+}
+.logogroup {
+	margin-left: 15px;
+}
 
 /* Menu */
 .main-menu ul{
@@ -75,8 +85,8 @@ h1.tk-museo{
 	text-decoration: none;
 }
 #stickem { /* Navigation Sticky */ 
-    background: white;
-    z-index: 99;
+    background: none;
+    z-index: 1;
     position: fixed;
     width: 100%;
     top:0;
@@ -93,6 +103,7 @@ h1.tk-museo{
 	display: block;
 	margin: 0 auto;
 	padding: 5% 5%;
+	margin-bottom: 33px;	
 }
  #left-sticky h2 {
 	padding: 8%;
@@ -104,7 +115,9 @@ h1.tk-museo{
     font-weight: 100;
     text-align: left;
 }
-
+#genesis-sidebar-secondary {
+	z-index: 99999;
+}
 /* Hours */
 .hourblock {
     background-color: rgba(136, 175, 193, 0.1);
@@ -405,7 +418,7 @@ img.margblock {
 }
 #carouselHome .alert {
 	position: absolute;
-    z-index: 999;
+    z-index: 8;
     bottom: 0px;
     background: #ff000080;
     color: white;
@@ -506,6 +519,10 @@ span.subtag {
 }
 
 @media (max-width: 1453px) {
+	.mediumlogo {
+    display: inline-block;
+    float: left;
+	}
 #stickem {
     background: white;
     z-index: 99999999;
@@ -518,14 +535,11 @@ span.subtag {
 	.logogroup {
     display: block;
     margin: 0 auto;
-    width: 623px;
+    width: 80%;
 	}
 	#stickem {
 	    margin-left: -10%;
 	}	
-	.logo {
-		display: none;
-	}
 	.tk-museo {
 	font-size: 3.8rem;
     font-weight: 700;
@@ -534,12 +548,6 @@ span.subtag {
     text-align: center;
     padding: 22px 0px;
 	}
-	.mediumlogo {
-		display: inline-block;
-	}
-	.tk-museo {
-		display: inline-block;
-	}	
 }
 @media (max-width: 1200px) { 
 	.main-menu {
@@ -560,26 +568,10 @@ span.subtag {
 }
 
 @media (max-width: 860px) { 
-.logogroup {
-    padding-left: 16%;
-}
-.mediumlogo {
-    max-width: 81px;
-    padding-right: 12px;
-}
+
 }
 @media (max-width: 844px) {
-	.mediumlogo {
-	    padding: 0px;
-	    margin: 0 auto;
-	    display: block;
-	}
-	.tk-museo {
-	    font-family: "museo",serif;
 
-	    font-size: 36px;
-	    display: block;
-	}
 }
 @media (max-width: 633px) { 
 	#genesis-content {

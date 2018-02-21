@@ -17,10 +17,10 @@ jQuery(document).ready(function( $ ) {
 	$( "#hide-alert" ).click(function() {
 	  $( ".alert" ).hide();
 	});
+	// these calls set the offset for the sticky sidebars in pixels
+	$("#genesis-sidebar-secondary").stick_in_parent({offset_top: 0});
+	$("#genesis-sidebar-primary").stick_in_parent({offset_top: 174});
 
-
-
-	$("#genesis-sidebar-secondary, #genesis-sidebar-primary").stick_in_parent({offset_top: 174});
 		$('.squaregrid .col').hover(
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }
