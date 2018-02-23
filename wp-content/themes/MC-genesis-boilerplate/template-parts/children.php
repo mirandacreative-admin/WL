@@ -1,9 +1,14 @@
+   <audio id="grownups" style="display:none;" controls="controls" preload="auto">
+            <source src="http://www.wethersfieldlibrary.dev.cc/wp-content/themes/MC-genesis-boilerplate/childrens-page-audio/grown-ups.mp3"></source>
+            <source src="http://www.wethersfieldlibrary.dev.cc/wp-content/themes/MC-genesis-boilerplate/childrens-page-audio/grown-ups.ogg"></source>
+            Your browser isn't invited for super fun time.
+   </audio>
 <div class="children-box" style="width: 100%; min-height: 888px;">
    <div class="row">
       <div class="col-sm-3">
          <div class="block">
             <div class="rel">
-               <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/grown-ups.svg">
+               <img id="grown" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/grown-ups.svg">
             </div>
          </div>
          <div class="block">
@@ -11,7 +16,7 @@
          </div>
          <div class="block">
             <div class="rel">
-               <img class="easle" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/programs.svg">
+               <img id="programs" class="easle" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/programs.svg">
             </div>
          </div>
       </div>
@@ -27,19 +32,19 @@
             <div class="rel">
             	<img class="rug" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/carpetwl.svg">
             	<img class="abs girlone" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/girl1wl.svg"> 
-            	<img class="abs twokids" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/kids.svg">           	            	           	
+            	<img id="appmonth" class="abs twokids" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/kids.svg">           	            	           	
             </div>
          </div>
       </div>
       <div class="col-sm-3">
          <div class="block">
             <div class="rel">
-           		<img class="games" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/games.svg">  
+           		<img id="games" class="games" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/games.svg">  
             </div>
          </div>
          <div class="block">
             <div class="rel">
-           		<img class="thoubooks" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/books-before-kinder.svg">  
+           		<img id="thoubooks" class="thoubooks" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/books-before-kinder.svg">  
             </div>
          </div>
          <div class="block">  
@@ -50,7 +55,7 @@
          </div>
          <div class="block">
             <div class="rel">
-           		<img class="greatread" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/great-reads.svg">  
+           		<img id="greatreads" class="greatread" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/great-reads.svg">  
             </div>
          </div>
          <div class="block">

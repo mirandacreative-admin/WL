@@ -25,5 +25,25 @@ jQuery(document).ready(function( $ ) {
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }
 		)
+
+
+		var grownClip = $("#grown")[0];
+		$("#grown-ups")
+			.mouseenter(function() {
+				console.log('one');
+				grownClip.play();
+			});
+
+
+
+
+
+		var grownAudio = document.getElementById("grown"); 
+
+		function playGrown() { 
+			console.log('two');
+		    grownAudio.play(); 
+		} 
+		item.addEventListener('mouseover', grownAudio.playGrown, false);		
 	
 });
