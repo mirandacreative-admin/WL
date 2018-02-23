@@ -10,13 +10,6 @@ a:hover{
 
 /* Headers */
 h1 {
-  font-size: 65px;
-  font-size: 6.5rem;
-}
-   .tk-museo {
-  font-size: 65px;
-  font-size: 6.5rem;
-  padding-left: 17px;
 }
 
 h2 {
@@ -25,24 +18,17 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  font-size: 2.4rem;
 }
 
 h4 {
-  font-size: 20px;
-  font-size: 2rem;
 }
 
 h5 {
-  font-size: 18px;
-  font-size: 1.8rem;
 }
 
 h6 {
-  font-size: 16px;
-  font-size: 1.6rem;
 }
+
 p{
   color: rgba(0, 0, 0, 0.38);
   font-family: 'Noto Sans', sans-serif;
@@ -82,6 +68,20 @@ p{
 }
 .btn-dark-slate-blue{
 	background-color: rgb(43, 39, 103);
+}
+
+
+/* ## Main Container
+--------------------------------------------- */
+
+.site-inner {
+  padding-top: 0px;
+} 
+
+.container {
+  max-width: 1440px;!important
+  max-width: 100%;
+  width: 100%;
 }
 
 /* ## Main Navigation
@@ -128,7 +128,7 @@ h1.tk-museo{
 	background-color: rgba(136, 175,193, 0.3);
 	text-decoration: none;
 }
-#stickem { /* Navigation Sticky */ 
+#stickem {
     background: none;
     z-index: 1;
     position: fixed;
@@ -159,9 +159,7 @@ h1.tk-museo{
     font-weight: 100;
     text-align: left;
 }
-#genesis-sidebar-secondary {
-	z-index: 99999;
-}
+
 /* Hours */
 .hourblock {
     background-color: rgba(136, 175, 193, 0.1);
@@ -196,6 +194,7 @@ h1.tk-museo{
 .quicklinks li {
     padding: 4px 0px 8px 35px;
 }
+
 /* icons */
 .friends {
 	background: url('images/ic-people-black-24-px.png') no-repeat center left;
@@ -227,6 +226,33 @@ address {
 	display:block;
 	margin-bottom: 10px;
 }
+/* Sidebar */   
+/* Can this be cleared up? --------------------------------------------- */ 
+#genesis-sidebar-secondary {
+  z-index: 99999;
+}
+.wsoffcanvasopener .wsmenu {
+  z-index: 999999;
+ }
+
+ #genesis-content .sidebar-primary {
+  max-width: 308px;
+}
+#genesis-content .content {
+    width: 801px;
+    padding: 12px;
+}
+#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
+ max-width: 1139px;
+}
+
+#genesis-sidebar-secondary > section { 
+  display: none;
+}
+#genesis-content .row {
+  margin: 0px;
+}
+/* Can this be cleared up? --------------------------------------------- */
 
 
 /* ## Content CSS
@@ -262,48 +288,23 @@ address {
 
 
 
-.site-inner {
-    clear: both;
-    padding-top: 3px;
-    word-wrap: break-word;
-} 
 
-body .container {
-    max-width: 1440px;!important
-    max-width: 100%;
-    width: 100%;
-}
 
-.wsoffcanvasopener .wsmenu {
-    z-index: 999999;
- }
 
-/* Sidebar */
-
-#genesis-content .sidebar-primary {
-	max-width: 308px;
-}
-#genesis-content .content {
-    width: 801px;
-    padding: 12px;
-}
-#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
- max-width: 1139px;
-}
-
-#genesis-sidebar-secondary > section { 
-	display: none;
-}
-#genesis-content .row {
-	margin: 0px;
-}
 .eventblock .date {
 	background: #eee;
 	padding: 15px;
 	text-align: center;
 	margin: 12px 0px;
+  background:pink;
+  border: 2px solid yellow;
 	
 }
+
+
+
+
+
 .blurbrow a {
 	color: white;
     padding: 7px;
