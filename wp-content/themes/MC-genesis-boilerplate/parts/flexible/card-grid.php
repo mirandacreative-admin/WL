@@ -15,8 +15,8 @@
 		//$post_link = get_sub_field('post_link');  
 		$hover_color = get_sub_field('hover_color');
 	?>
-	<a class="col-link" href="<?php echo $link_url; ?>">
-		<div onmouseover="this.style.background=\''.<?php echo $hover_color; ?>.'\'" onmouseout="this.style.background=\'white\'" class="col">
+	<a class="col-link" onmouseover="this.style.background='<?php echo $hover_color; ?>'" onmouseout="this.style.background='white'" href="<?php echo $link_url; ?>">
+		<div class="col">
 			<h2><?php echo $title; ?></h2>
 			<p><?php echo $blurb; ?></p>
 		</div>
