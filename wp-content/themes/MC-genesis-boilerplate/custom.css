@@ -3,10 +3,57 @@
 a{
 	color: #2b2767; 
 }
+a:focus,
 a:hover{
-	color: #88afc1; 
 	text-decoration: none !important;
 }
+
+/* Headers */
+h1 {
+  font-size: 65px;
+  font-size: 6.5rem;
+}
+   .tk-museo {
+  font-size: 65px;
+  font-size: 6.5rem;
+  padding-left: 17px;
+}
+
+h2 {
+  font-size:2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+p{
+  color: rgba(0, 0, 0, 0.38);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+}
+
+
+
 .button {
   display: block;
   min-width: 200px;
@@ -78,7 +125,7 @@ h1.tk-museo{
 	text-align: center;
 }
 .main-menu li a:hover{
-	background-color: rgba(136, 175,193, 0.8);
+	background-color: rgba(136, 175,193, 0.3);
 	text-decoration: none;
 }
 #stickem { /* Navigation Sticky */ 
@@ -188,35 +235,29 @@ address {
   padding-top: 125px;
 }
 
-
 /* Card Content Grids */
- 
-.squaregrid .col {
+.squaregrid a {
+  display:block;
+  margin: 2px;
+  max-width: 32%;
   padding: 28px;
   border: solid 1px #dddddd;
-  margin: 2px;
-}
-.squaregrid a {
-  font-size: 1.2em;
   color: #2b2767;
+  font-size: 1.2em;
   font-family: 'museo', sans-serif;
   font-weight: 600;
 }
-.squaregrid a:hover {
-  color: white;
-  text-decoration: none;
-}
-.squaregrid .col:hover {
-  color: white;
+.squaregrid a .col{
+  padding: 0px;
+  }
+.squaregrid a.col-link:hover {
+  color:#ffffff !important;
   background: #88afc1;
 }
-.hover a {
-  color: white;
+.squaregrid a:hover p{
+  color:#ffffff !important;
+}
 
-}
-.content {
-  background-color: white;
-}
 
 
 

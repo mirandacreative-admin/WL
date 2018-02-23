@@ -183,14 +183,14 @@ textarea:focus,
 }
 
 a {
-	color: #c3251d;
-	text-decoration: underline;
+	color: #2b2767; 
+	text-decoration: none;
 }
 
 a:focus,
 a:hover {
-	color: #333;
-	text-decoration: none;
+	color: #88afc1; 
+	text-decoration: !important;
 }
 
 p {
@@ -198,7 +198,7 @@ p {
 	padding: 0;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 ol,
