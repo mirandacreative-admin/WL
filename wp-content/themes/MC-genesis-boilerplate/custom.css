@@ -3,10 +3,43 @@
 a{
 	color: #2b2767; 
 }
+a:focus,
 a:hover{
-	color: #88afc1; 
 	text-decoration: none !important;
 }
+
+/* Headers */
+h1 {
+}
+
+h2 {
+  font-size:2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p{
+  color: rgba(0, 0, 0, 0.38);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+}
+
+
+
 .button {
   display: block;
   min-width: 200px;
@@ -35,6 +68,20 @@ a:hover{
 }
 .btn-dark-slate-blue{
 	background-color: rgb(43, 39, 103);
+}
+
+
+/* ## Main Container
+--------------------------------------------- */
+
+.site-inner {
+  padding-top: 0px;
+} 
+
+.container {
+  max-width: 1440px;!important
+  max-width: 100%;
+  width: 100%;
 }
 
 /* ## Main Navigation
@@ -78,10 +125,10 @@ h1.tk-museo{
 	text-align: center;
 }
 .main-menu li a:hover{
-	background-color: rgba(136, 175,193, 0.8);
+	background-color: rgba(136, 175,193, 0.3);
 	text-decoration: none;
 }
-#stickem { /* Navigation Sticky */ 
+#stickem {
     background: none;
     z-index: 1;
     position: fixed;
@@ -112,9 +159,7 @@ h1.tk-museo{
     font-weight: 100;
     text-align: left;
 }
-#genesis-sidebar-secondary {
-	z-index: 99999;
-}
+
 /* Hours */
 .hourblock {
     background-color: rgba(136, 175, 193, 0.1);
@@ -149,6 +194,7 @@ h1.tk-museo{
 .quicklinks li {
     padding: 4px 0px 8px 35px;
 }
+
 /* icons */
 .friends {
 	background: url('images/ic-people-black-24-px.png') no-repeat center left;
@@ -180,67 +226,17 @@ address {
 	display:block;
 	margin-bottom: 10px;
 }
-
-
-/* ## Content CSS
---------------------------------------------- */
-.content-sidebar-wrap{
-  padding-top: 125px;
+/* Sidebar */   
+/* Can this be cleared up? --------------------------------------------- */ 
+#genesis-sidebar-secondary {
+  z-index: 99999;
 }
-
-
-/* Card Content Grids */
- 
-.squaregrid .col {
-  padding: 28px;
-  border: solid 1px #dddddd;
-  margin: 2px;
-}
-.squaregrid a {
-  font-size: 1.2em;
-  color: #2b2767;
-  font-family: 'museo', sans-serif;
-  font-weight: 600;
-}
-.squaregrid a:hover {
-  color: white;
-  text-decoration: none;
-}
-.squaregrid .col:hover {
-  color: white;
-  background: #88afc1;
-}
-.hover a {
-  color: white;
-
-}
-.content {
-  background-color: white;
-}
-
-
-
-
-.site-inner {
-    clear: both;
-    padding-top: 3px;
-    word-wrap: break-word;
-} 
-
-body .container {
-    max-width: 1440px;!important
-    max-width: 100%;
-    width: 100%;
-}
-
 .wsoffcanvasopener .wsmenu {
-    z-index: 999999;
+  z-index: 999999;
  }
 
-/* Sidebar */
-
-#genesis-content .sidebar-primary {
-	max-width: 308px;
+ #genesis-content .sidebar-primary {
+  max-width: 308px;
 }
 #genesis-content .content {
     width: 801px;
@@ -251,18 +247,64 @@ body .container {
 }
 
 #genesis-sidebar-secondary > section { 
-	display: none;
+  display: none;
 }
 #genesis-content .row {
-	margin: 0px;
+  margin: 0px;
 }
+/* Can this be cleared up? --------------------------------------------- */
+
+
+/* ## Content CSS
+--------------------------------------------- */
+.content-sidebar-wrap{
+  padding-top: 125px;
+}
+
+/* Card Content Grids */
+.squaregrid a {
+  display:block;
+  margin: 2px;
+  max-width: 32%;
+  padding: 28px;
+  border: solid 1px #dddddd;
+  color: #2b2767;
+  font-size: 1.2em;
+  font-family: 'museo', sans-serif;
+  font-weight: 600;
+}
+.squaregrid a .col{
+  padding: 0px;
+  }
+.squaregrid a.col-link:hover {
+  color:#ffffff !important;
+  background: #88afc1;
+}
+.squaregrid a:hover p{
+  color:#ffffff !important;
+}
+
+
+
+
+
+
+
+
 .eventblock .date {
 	background: #eee;
 	padding: 15px;
 	text-align: center;
 	margin: 12px 0px;
+  background:pink;
+  border: 2px solid yellow;
 	
 }
+
+
+
+
+
 .blurbrow a {
 	color: white;
     padding: 7px;
