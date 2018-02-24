@@ -39,7 +39,6 @@ p{
 }
 
 
-
 .button {
   display: block;
   min-width: 200px;
@@ -227,7 +226,6 @@ address {
 	margin-bottom: 10px;
 }
 /* Sidebar */   
-/* Can this be cleared up? --------------------------------------------- */ 
 #genesis-sidebar-secondary {
   z-index: 99999;
 }
@@ -242,7 +240,9 @@ address {
     width: 801px;
     padding: 12px;
 }
-#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
+#genesis-content .content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
  max-width: 1139px;
 }
 
@@ -252,8 +252,6 @@ address {
 #genesis-content .row {
   margin: 0px;
 }
-/* Can this be cleared up? --------------------------------------------- */
-
 
 /* ## Content CSS
 --------------------------------------------- */
@@ -284,6 +282,10 @@ address {
   color:#ffffff !important;
 }
 
+/* Three Column List */
+.threelist .col{
+  padding: 20px 20px 20px 0px;
+}
 
 
 
@@ -446,9 +448,7 @@ img.margblock {
 .peoplecard span {
 	display:block;
 }
-.threelist .col {
-	padding: 12px 0px;
-}
+
 /*people card end*/
 /*image gallery*/
 .card-columns {
