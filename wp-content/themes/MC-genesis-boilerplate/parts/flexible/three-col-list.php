@@ -12,7 +12,7 @@
     $coltwo = get_sub_field('col_two');
     $colthree = get_sub_field('col_three'); 
   ?>
-
+  
   <div class="col">
     <?php echo $colone; ?>
   </div>
