@@ -16,7 +16,7 @@ if (have_rows('person')):
                 <span><?= $name; ?></span>
                 <span><?= $title; ?></span>
                 <span><?= $detail; ?></span>
-            </div>';
+            </div>
 
             <?php
             if ($count % 2 == 0) { ?>
