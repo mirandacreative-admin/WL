@@ -276,7 +276,7 @@ address {
 .squaregrid a {
   display:block;
   margin: 2px;
-  max-width: 32%;
+  /*max-width: 32%;*/
   padding: 28px;
   border: solid 1px #dddddd;
   color: #2b2767;
@@ -507,7 +507,7 @@ img.margblock {
 	text-align: left;
 	display: block;
 	width: 100%;
-	background:;
+	/*background:; this has been like this since the repo was created, not sure what was supposed to be here   */
 }
 #carouselHome .carousel-caption {
     position: absolute;

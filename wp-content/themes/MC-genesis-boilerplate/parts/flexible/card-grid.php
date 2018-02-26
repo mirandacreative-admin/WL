@@ -10,13 +10,15 @@ if (have_rows('cards')): ?>
             $link_url = get_sub_field('link_url');
             $hover_color = get_sub_field('hover_color');
             ?>
+        <div class="col-xs-12 col-sm-4">
             <a class="col-link" onmouseover="this.style.background='<?php echo $hover_color; ?>'"
                onmouseout="this.style.background='white'" href="<?php echo $link_url; ?>">
-                <div class="col">
+                <div>
                     <h2><?php echo $title; ?></h2>
                     <p><?php echo $blurb; ?></p>
                 </div>
             </a>
+        </div>
         <?php endwhile; ?>
     </section>
 <?php endif; ?>

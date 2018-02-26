@@ -57,7 +57,7 @@ if (have_rows('accordion')):
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0">
                                     <a data-toggle="collapse" data-parent="#accordionhalfy-<?= $uid; ?>"
-                                       href="#collapsehalfy-'<?= $uid; ?>" aria-expanded="true"
+                                       href="#collapsehalfy-<?= $uid; ?>" aria-expanded="true"
                                        aria-controls="collapsehalfy-<?= $uid; ?>">
                                         <?= $aonetitle; ?>
                                     </a>
