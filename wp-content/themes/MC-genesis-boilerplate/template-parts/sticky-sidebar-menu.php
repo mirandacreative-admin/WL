@@ -4,7 +4,7 @@
  */
 ?>
 
-<div id="left-sticky">
+<div id="left-sticky" class="slidemenu">
 	<img class="logo" src="<?php the_field('logo', 'option'); ?>">
 	<a href="#"><h2>About Library</h2></a>
 	<div class="hourblock">

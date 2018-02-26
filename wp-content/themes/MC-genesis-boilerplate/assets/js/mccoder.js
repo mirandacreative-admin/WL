@@ -1,15 +1,6 @@
+console.log("loaded mccode.js");
 jQuery(document).ready(function( $ ) {
-	// $ Works! You can test it with next line if you like
-	// console.log($);
-	var livedivwidth = $(".entry-content").width();
-	// var windowheight = window.innerHeight;
-	// var sidemenuheight = windowheight - headerheight;
-
- 	console.log(livedivwidth);
-
- 	// $('#left-sticky').css( "height", sidemenuheight ); 
- 	// $('#right-sticky').css( "height", sidemenuheight );  	
- 	
+	
  	$('.carousel').carousel();	
 
 
@@ -24,24 +15,11 @@ jQuery(document).ready(function( $ ) {
 		$('.squaregrid .col').hover(
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }
-		)
+		)		
 
-
-		var grownClip = $("#grown")[0];
-		$("#grown-ups")
-			.mouseenter(function() {
-				console.log('one');
-				grownClip.play();
-			});
-
-
-
-		var grownAudio = document.getElementById("grown"); 
-
-		function playGrown() { 
-			console.log('two');
-		    grownAudio.play(); 
-		} 
-		item.addEventListener('mouseover', grownAudio.playGrown, false);		
-	
 });
+
+function classTog(x) {
+x.classList.toggle("change");
+document.getElementById("left-sticky").classList.toggle("open");
+}
