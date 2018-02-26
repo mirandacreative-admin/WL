@@ -15,8 +15,18 @@ jQuery(document).ready(function( $ ) {
 		$('.squaregrid .col').hover(
 		       function(){ $(this).addClass('hover') },
 		       function(){ $(this).removeClass('hover') }
-		)		
+		)
+		var audio = document.getElementsByTagName("audio")[0];
+		$(".rel img").mouseenter(function() {
+		  audio.play();
 
+		});		
+		$(".block").mouseenter(function() {
+			$(this).addClass("jello");
+		});		
+		$(".block").mouseleave(function() {
+			$(this).removeClass("jello");
+		});				
 });
 
 function classTog(x) {
