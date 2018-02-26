@@ -395,3 +395,10 @@ add_action('wp_enqueue_scripts', 'google_fonts');
     }
     return $num.$ext;
   }
+
+/** Adding custom Favicon */
+add_filter( 'genesis_pre_load_favicon', 'custom_favicon' );
+function custom_favicon( $favicon_url ) {
+  $rootfolder = get_stylesheet_directory_uri();
+ return $rootfolder.'/favicon.png';
+}
