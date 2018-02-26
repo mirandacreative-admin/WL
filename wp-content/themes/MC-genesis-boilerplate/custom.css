@@ -39,11 +39,9 @@ p{
 }
 
 
-
 .button {
   display: block;
   min-width: 200px;
-  padding: 8px 0px;
   margin: 16px;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.22);
   background: #2b2767;
@@ -53,7 +51,6 @@ p{
   text-transform: uppercase;
 }
 .button:hover{
-	background: rgba(136, 175, 193, 0);
   opacity: 0.9;
 }
 /* these are not in use yet */
@@ -63,11 +60,26 @@ p{
 .btn-greyblue{
 	background-color: rgb(136, 175, 193);
 }
+.btn-greyblue:hover{
+  background-color: rgb(136, 175, 193);
+  opacity: 0.9;
+}
 .btn-warm-purple{
 	background-color: rgb(169, 46, 137);
 }
+.btn-warm-purple:hover{
+  background-color: rgb(169, 46, 137);
+  opacity: 0.9;
+}
 .btn-dark-slate-blue{
 	background-color: rgb(43, 39, 103);
+}
+.btn-dark-slate-blue:hover{
+  background-color: rgb(43, 39, 103);
+  opacity: 0.9;
+}
+.btn-long{
+  min-width: 100%
 }
 
 
@@ -227,7 +239,6 @@ address {
 	margin-bottom: 10px;
 }
 /* Sidebar */   
-/* Can this be cleared up? --------------------------------------------- */ 
 #genesis-sidebar-secondary {
   z-index: 99999;
 }
@@ -242,7 +253,9 @@ address {
     width: 801px;
     padding: 12px;
 }
-#genesis-content .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap {
+#genesis-content .content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
  max-width: 1139px;
 }
 
@@ -252,8 +265,6 @@ address {
 #genesis-content .row {
   margin: 0px;
 }
-/* Can this be cleared up? --------------------------------------------- */
-
 
 /* ## Content CSS
 --------------------------------------------- */
@@ -284,9 +295,37 @@ address {
   color:#ffffff !important;
 }
 
+/* Three Column List */
+.threelist .col{
+  padding: 20px 20px 20px 0px;
+}
 
+/* Form & Inputs */
+form{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  border: solid 1px rgba(0, 0, 0, 0.12);
+}
 
+/* Resrouce Button & Description */
+.resource div{ 
+  display: flex;
+  align-items: center;
+}
 
+.resource div p{ 
+
+  line-height: 1.63;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'museo', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
 
 
 
@@ -446,9 +485,7 @@ img.margblock {
 .peoplecard span {
 	display:block;
 }
-.threelist .col {
-	padding: 12px 0px;
-}
+
 /*people card end*/
 /*image gallery*/
 .card-columns {

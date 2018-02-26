@@ -1,25 +1,29 @@
-<?php   
-    
-    if( have_rows('row') ):
-    
-      $count = 0; 
-      echo '<div class="row threelist padfix">';
+<?php
+/**
+* Three Column List
+*/
+?>
 
-    // loop through the rows of data
-      while ( have_rows('row') ) : the_row();
-        $count++;
-      $colone = get_sub_field('col_one');
-      $coltwo = get_sub_field('col_two');
-      $colthree = get_sub_field('col_three');     
+<?php if (have_rows('three_col')): ?>
+<section class="row threelist">
+  <?php while(have_rows('three_col')): the_row();
+  $count++;
+    $colone = get_sub_field('col_one');
+    $coltwo = get_sub_field('col_two');
+    $colthree = get_sub_field('col_three'); 
+  ?>
+  
+  <div class="col">
+    <?php echo $colone; ?>
+  </div>
+  <div class="col">
+    <?php echo $coltwo; ?>
+  </div>
+  <div class="col">
+    <?php echo $colthree; ?>
+  </div>
 
-      echo '<div class="col">'.$colone.'</div>';
+  <?php endwhile; ?>
+</section>
+<?php endif; ?>
 
-      echo '<div class="col">'.$coltwo.'</div>';
-      echo '<div class="col">'.$colthree.'</div>';
-      echo '<div class="w-100"></div>';       
-
-  endwhile;
-
-echo '</div>';
-
-endif; ?>
