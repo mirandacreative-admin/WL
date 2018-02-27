@@ -402,3 +402,12 @@ function custom_favicon( $favicon_url ) {
   $rootfolder = get_stylesheet_directory_uri();
  return $rootfolder.'/favicon.png';
 }
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Search Widget', // find in parts-> flexible folder->search.php
+    'before_widget' => '<div class = "serachwidget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
