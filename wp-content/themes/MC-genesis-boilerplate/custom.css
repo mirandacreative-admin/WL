@@ -341,15 +341,15 @@ form{
 
 
 
-.blurbrow a {
-	color: white;
-    padding: 7px;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-	background-color: #2b2767;
-}
+/*.blurbrow a {*/
+	/*color: white;*/
+    /*padding: 7px;*/
+    /*display: block;*/
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+	/*background-color: #2b2767;*/
+/*}*/
 
 /* Childrens Programs */
 .dates span {
@@ -700,3 +700,53 @@ span.subtag {
 	    padding-top: 176px;
 	}	
 }
+/*contact us*/
+.contact-us {
+	width: 638px;
+	height: 96px;
+	font-family: Museo;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 2.4;
+	text-align: left;
+	color: #2b2767; !important;
+}
+.wethersfield-library {
+	width: 280px;
+	height: 108px;
+	font-family: NotoSans;
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.87);
+}
+.departments-copy {
+	width: 203px;
+	height: 32px;
+	font-family: Museo;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: left;
+	color: #2b2767;
+}
+.borrower-services {
+	width: 163px;
+	height: 25px;
+	font-family: NotoSans;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.39;
+	text-align: left;
+	color: rgba(0, 0, 0, 0.87);
+}
+.phone-numbers-contact-us-page{
+	width: 112px;
+	height: 25px;
+	font-family: NotoSans;
+	font-size: 18px;
+	line-height: 1.39;
+	text-align: left;
+	color: #88afc1;
+}
+
