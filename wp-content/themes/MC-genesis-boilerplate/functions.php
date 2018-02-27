@@ -405,7 +405,7 @@ function custom_favicon( $favicon_url ) {
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
     'name' => 'Search Widget', // find in parts-> flexible folder->search.php
-    'before_widget' => '<div class = "serachwidget">',
+    'before_widget' => '<div id="sitesearch" class="searchwidget">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
