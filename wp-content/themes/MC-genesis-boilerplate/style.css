@@ -447,6 +447,13 @@ input[type="submit"],
 	white-space: normal;
 	width: auto;
 }
+#sitesearch input[type="submit"] {
+	background: white;
+	color: black;
+	border: none;
+	    background: url(images/search-icon.png)  no-repeat center right #fff;
+	color:white;
+}
 
 button:focus,
 button:hover,
@@ -788,10 +795,10 @@ th:first-child {
 	margin: 12px auto 0;
 }
 
-.post-password-form input[type="submit"],
+/*.post-password-form input[type="submit"],
 .search-form input[type="submit"] {
 	margin-top: 10px;
-}
+}*/
 
 .genesis-nav-menu .search input[type="submit"],
 .widget_search input[type="submit"] {
