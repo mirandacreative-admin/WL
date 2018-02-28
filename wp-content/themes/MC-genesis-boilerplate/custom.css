@@ -625,6 +625,7 @@ span.subtag {
 	.mediumlogo {
     display: inline-block;
     float: left;
+    padding-top:22px;
 	}
 #stickem {
     background: white;
@@ -635,22 +636,18 @@ span.subtag {
 }
 }
 @media (max-width: 1320px) {
+	.homelink {
+		display: none;
+	}
 	.logogroup {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 	}
 	#stickem {
 	    margin-left: -10%;
 	}	
-	.tk-museo {
-	font-size: 3.8rem;
-    font-weight: 700;
-    padding-left: 0px;
-    color: #2b2767;
-    text-align: center;
-    padding: 22px 0px;
-	}
+
 }
 @media (max-width: 1200px) { 
 	.main-menu {
@@ -682,11 +679,28 @@ span.subtag {
 
 
 @media (max-width: 1090px) { 
-
-		
+	
 	#genesis-content {
-	    padding-top: 68px;
+	    padding-top: 0px;
 	}	
+	.mediumlogo {
+	    display: inline-block;
+	    float: left;
+	    max-width: 42px;
+	    padding-top: 5px;
+	    margin-right: 12px;
+	}
+		body .tk-museo {
+	    font-family: "museo",serif;
+	    font-size: 3rem;
+	    color: #2b2767;
+	    font-weight: 700;
+	    padding: 0.3em 1px;
+	    text-align: left;
+		}	
+		.content-sidebar-wrap {
+	    padding-top: 20px;
+	}
 }
 
 @media (max-width: 860px) { 
@@ -699,6 +713,7 @@ span.subtag {
 	#genesis-content {
 	    padding-top: 176px;
 	}	
+
 }
 /*contact us*/
 .contact-us {
