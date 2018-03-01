@@ -7,6 +7,7 @@
 <div id="left-sticky" class="slidemenu">
 	<a href="<?php echo get_option("siteurl"); ?>"><img class="logo" src="<?php the_field('logo', 'option'); ?>"></a>
 	<a href="<?php echo get_option("siteurl"); ?>/about"><h2>About Library</h2></a>
+	<div id="menuslot"></div>
 	<div class="hourblock">
 		<h2>Library Hours</h2>
 		<div class="row hour-inner">
