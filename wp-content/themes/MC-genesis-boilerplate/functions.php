@@ -168,9 +168,12 @@ function maybe_site_description() {
 // enqueu MCcoder's js
 
 function mc_enqueue_mccode() {
-    // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts 
+  // tether is required for bootstrap 4
+  wp_enqueue_script('tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js', array('jquery'), true);
+     // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts  
     wp_enqueue_script( 'mccoder-js', get_stylesheet_directory_uri() . '/assets/js/mccoder.js'); // all the bootstrap javascript goodness
-    wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');        
+    wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');  
+
 }
 add_action('wp_enqueue_scripts', 'mc_enqueue_mccode');
 

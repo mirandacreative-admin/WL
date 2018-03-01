@@ -26,10 +26,15 @@ jQuery(document).ready(function( $ ) {
 		});		
 		$(".block").mouseleave(function() {
 			$(this).removeClass("jello");
-		});				
+		});	
+		if ($(window).width() < 1090) {
+   			$("#menu-test").appendTo("#menuslot");
+		}
+					
 });
 
 function classTog(x) {
 x.classList.toggle("change");
 document.getElementById("left-sticky").classList.toggle("open");
 }
+
