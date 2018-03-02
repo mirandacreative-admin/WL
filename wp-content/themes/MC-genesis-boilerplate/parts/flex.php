@@ -1,4 +1,3 @@
-<h1>hello flex</h1>
 <?php
 // check if the flexible content field has rows of data
 if (have_rows('main')):

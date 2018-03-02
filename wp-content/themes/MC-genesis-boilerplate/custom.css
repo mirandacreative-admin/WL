@@ -269,7 +269,7 @@ address {
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
-  padding-top: 125px;
+  padding-top: 154px;
 }
 
 /* Card Content Grids */
@@ -389,6 +389,18 @@ a.regbtn  {
 	letter-spacing: 0.5px;
 	text-align: center;	
 }
+#todaysmsg p {
+	position: absolute;
+    top: 100px;
+    left: 59px;
+    right: 43px;
+}
+#todaysmsg .hidden {
+	display: none;
+}
+#todaysmsg .active {
+	display: block;
+	}
 /*childrens program end*/
 /*childrens page styles*/
 #genesis-content > h1 {
@@ -410,10 +422,10 @@ img.margblock {
 	font-size: 26px;	
 }
 .rug {
-	margin-top: 44%;
+	margin-top: 60%;
 }
 .twokids {
-	top:22%;
+	top:33%;
 	left:22%;
 	width:58%;
 }
@@ -423,7 +435,7 @@ img.margblock {
 	width: 25%;
 }
 .girlone {
-	top:46%;
+	top:50%;
 	left:2%;
 	width:25%;
 }
@@ -629,14 +641,21 @@ span.subtag {
 	.mediumlogo {
     display: inline-block;
     float: left;
-    padding-top:22px;
+    padding-top: 4px;
+    max-width: 65px;
 	}
-#stickem {
-    background: white;
-    z-index: 99999999;
-    position: fixed;
-    width: 100%;
-    margin-left: -1%;
+	#stickem {
+	    background: white;
+	    z-index: 99999999;
+	    position: fixed;
+	    width: 100%;
+	    margin-left: -1%;
+	}
+	h1.tk-museo {
+	    font-size: 4rem;
+	}
+	.logogroup {
+    margin-left: 249px;
 }
 }
 @media (max-width: 1320px) {
@@ -681,7 +700,7 @@ span.subtag {
 
 	
 	#genesis-content {
-	    padding-top: 0px;
+	    padding-top: 50px;
 	}	
 	.mediumlogo {
 	    display: inline-block;
