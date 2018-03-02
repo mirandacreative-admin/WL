@@ -3,7 +3,7 @@
 if (have_rows('single_card')):
     $count = 0;
     ?>
-    <section class="row padfix">
+    <section id="boardavatar" class="row padfix">
         <?php
         // loop through the rows of data
         while (have_rows('single_card')) : the_row();
@@ -12,8 +12,8 @@ if (have_rows('single_card')):
             $details = get_sub_field('director_details');
             ?>
             <div class="col-sm-6">
-                <div class="row eventblock">
-                    <div class="col-sm-4 date">
+                <div class="row">
+                    <div class="col-sm-4">
                         <img src="<?= $image; ?>">
                     </div>
                     <div class="col-sm-8"><?= $details; ?></div>
