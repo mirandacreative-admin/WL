@@ -25,19 +25,19 @@
 			<div class="col-8 hours">
 				<ul>
 					<li class="off-canvas-menu-hours" data-day="monday"
-                                    name="Mon"><?php the_field('monday_hours', 'option'); ?></li>
+                                        name="Mon"><?php the_field('monday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="tuesday"
-                                    name="Tue"><?php the_field('tuesday_hours', 'option'); ?></li>
+                                        name="Tue"><?php the_field('tuesday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="wednesday"
-                                    name="Wed"><?php the_field('wednesday_hours', 'option'); ?></li>
+                                        name="Wed"><?php the_field('wednesday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="thursday"
-                                    name="Thu"><?php the_field('thursday_hours', 'option'); ?></li>
+                                        name="Thu"><?php the_field('thursday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="friday"
-                                    name="Fri"><?php the_field('friday_hours', 'option'); ?></li>
+                                        name="Fri"><?php the_field('friday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="saturday"
-                                    name="Sat"><?php the_field('saturday_hours', 'option'); ?></li>
+                                        name="Sat"><?php the_field('saturday_hours', 'option'); ?></li>
 					<li class="off-canvas-menu-hours" data-day="sunday"
-                                    name="Sun"><?php the_field('sunday_hours', 'option'); ?></li>
+                                        name="Sun"><?php the_field('sunday_hours', 'option'); ?></li>
 				</ul>
 			</div>
 		</div>
