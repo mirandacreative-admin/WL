@@ -10,24 +10,54 @@ a:hover{
 
 /* Headers */
 h1 {
-
+  font-family: "museo-sans",sans-serif;
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #88afc1;
 }
 
 h2 {
-  font-size:2.2rem;
+  font-family: "museo-sans",sans-serif;
+  font-size: 2.4em;
   font-weight: 700;
+  color: #88afc1;
 }
 
 h3 {
+  font-family: "museo",serif;;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #2b2767;
 }
 
 h4 {
+  font-family: "museo",serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  line-height: 1.45;
+  color: #2b2767;
+}
+h4.subheader{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.39;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 h5 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.0em;
+  text-align: left;
+  color: #a92e89;
 }
 
 h6 {
+  font-family: "museo-sans",sans-serif;
+  font-size: 1.0em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 
@@ -100,7 +130,6 @@ h6 {
 
 
 
-
 /* ## Main Container
 --------------------------------------------- */
 
@@ -113,6 +142,7 @@ h6 {
   max-width: 100%;
   width: 100%;
 }
+
 
 /* ## Main Navigation
 --------------------------------------------- */
@@ -281,13 +311,20 @@ h1.tk-museo{
   display: none;
 }
 
+
+
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
   padding-top: 154px;
 }
 
-
+/* Global Content */
+.content a{
+  color: #88afc1;
+  font-family: "museo-sans",sans-serif;
+  font-size:20px;
+}
 
 /* Title & Blurb */
 .title{
@@ -304,13 +341,13 @@ h1.tk-museo{
 }
 
 .title .excerpt{
-  font-family: NotoSans;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 24px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
 }
 
-.content p{
+.content{
   color: rgba(0, 0, 0, 0.38);
   font-family: 'Noto Sans', sans-serif;
   font-size: 13px;
@@ -319,6 +356,21 @@ h1.tk-museo{
   font-weight: 100;
 }
 
+/* Blurb Sections */
+.maintitle{
+  font-family: Museo;
+  font-size: 2.2em;
+  font-weight: bold;
+  line-height: 2.0;
+  color: #2b2767;
+}
+.blurb p{
+  font-family: "museo-sans",sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.87);
+}
 
 
 /* Card Content Grids */
@@ -784,24 +836,9 @@ span.subtag {
 
 }
 /*contact us*/
-.contact-us {
-	width: 638px;
-	height: 96px;
-	font-family: Museo;
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 2.4;
-	text-align: left;
-	color: #2b2767; !important;
-}
-.wethersfield-library {
 
-	font-family: NotoSans;
-	font-size: 24px;
-	line-height: 1.5;
 
-}
-.departments-copy {
+/*.departments-copy {
 	font-family: Museo;
 	font-size: 24px;
 	font-weight: bold;
@@ -822,11 +859,8 @@ span.subtag {
 .borrower-services {
 	padding-top:18px;
 	font-weight: bolder;
-}
-h2 {
-	padding-top: 18px;
-	color:  #2b2767;
-}
+}*/
+
 #gform_1 {
 	margin-top:18px;
 }

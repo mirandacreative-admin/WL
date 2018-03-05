@@ -3,14 +3,14 @@
  * Blurb Section - Single Column
  */
 ?>
-<div class="row blurbrow padfix">
+<div class="row">
     <div class="col">
         <?php if ( $maintitle = get_sub_field( 'maintitle' ) ): ?>
-        <h1><?php echo $maintitle; ?></h1>
+        <h2 class="maintitle"><?php echo $maintitle; ?></h2>
         <?php endif; ?>
     </div>
 </div>
-    <section class="row blurbrow padfix">
+    <section class="row blurb">
     <?php if (have_rows('blurb_single')):?>
         <?php while (have_rows('blurb_single')) : the_row();
             $title = get_sub_field('title');
@@ -21,10 +21,12 @@
             $link = get_sub_field('link');
             ?>
             <div class="col">
-                <h1><?= $title; ?></h1>
-                <h2 class="contact-us"><?= $header; ?> </h2>
-                <h4 class="wethersfield-library"><?= $subheader; ?></h4>
-                <p><?= $column; ?></p>
+                <h2><?= $title; ?></h2>
+                <h3><?= $header; ?></h3>
+                <h4><?= $subheader; ?></h4>
+                <div class="column">
+                    <p><?= $column; ?></p>
+                </div>
                 <a href="<?= $link; ?>"><?= $linktext; ?></a>
             </div>
             
