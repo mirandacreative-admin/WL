@@ -1,6 +1,7 @@
 <?php
 /** People Cards **/
-if (have_rows('person')):
+?>
+<?php if (have_rows('person')):
     $count = 0;
     ?>
     <section class="row threelist padfix">

@@ -10,6 +10,7 @@ a:hover{
 
 /* Headers */
 h1 {
+
 }
 
 h2 {
@@ -29,16 +30,31 @@ h5 {
 h6 {
 }
 
-p{
-  color: rgba(0, 0, 0, 0.38);
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: left;
-  font-weight: 100;
+
+/* Color text */
+.text-greyblue{
+  background-color: rgb(136, 175, 193);
+}
+.text-greyblue:hover{
+  background-color: rgb(136, 175, 193);
+  opacity: 0.9;
+}
+.text-warm-purple{
+  background-color: rgb(169, 46, 137);
+}
+.text-warm-purple:hover{
+  background-color: rgb(169, 46, 137);
+  opacity: 0.9;
+}
+.text-dark-slate-blue{
+  background-color: rgb(43, 39, 103);
+}
+.text-dark-slate-blue:hover{
+  background-color: rgb(43, 39, 103);
+  opacity: 0.9;
 }
 
-
+/* Button color */
 .button {
   display: block;
   min-width: 200px;
@@ -81,6 +97,8 @@ p{
 .btn-long{
   min-width: 100%
 }
+
+
 
 
 /* ## Main Container
@@ -226,7 +244,7 @@ h1.tk-museo{
 .twitter {
 	background: url('images/fa-twitter-copy.png') no-repeat center left;	
 }
-address {
+.sidebar address {
 	max-width: 212px;
 	padding: 8px 16px;
 	margin: 12px 0 30px;
@@ -262,15 +280,46 @@ address {
 #genesis-sidebar-secondary > section { 
   display: none;
 }
-#genesis-content .row {
-  margin: 0px;
-}
 
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
   padding-top: 154px;
 }
+
+
+
+/* Title & Blurb */
+.title{
+  margin-bottom: 48px;
+}
+
+.title h1{
+  font-family: Museo;
+  font-size: 2.8em;
+  font-weight: bold;
+  line-height: 2.0;
+  letter-spacing: normal;
+  color: #2b2767;
+}
+
+.title .excerpt{
+  font-family: NotoSans;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.content p{
+  color: rgba(0, 0, 0, 0.38);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+}
+
+
 
 /* Card Content Grids */
 .squaregrid a {
@@ -307,7 +356,7 @@ form{
   border: solid 1px rgba(0, 0, 0, 0.12);
 }
 
-/* Resrouce Button & Description */
+/* Resource Button & Description */
 .resource div{ 
   display: flex;
   align-items: center;
@@ -324,9 +373,6 @@ form{
   font-style: italic;
 }
 
-
-
-
 .eventblock .date {
 	background: #eee;
 	padding: 15px;
@@ -339,7 +385,7 @@ form{
 
 
 
-
+/* Creating buttons */
 
 /*.blurbrow a {*/
 	/*color: white;*/

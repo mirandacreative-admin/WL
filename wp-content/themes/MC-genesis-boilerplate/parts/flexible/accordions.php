@@ -1,6 +1,7 @@
 <?php
 /** Accordions **/
-if (have_rows('accordion')):
+?>
+<?php if (have_rows('accordion')):
     $count = 0;
     $uid = 3;
     ?>
