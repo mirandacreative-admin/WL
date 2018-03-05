@@ -188,6 +188,10 @@ h1.tk-museo{
 .dow, .hours{
 	padding:0;
 }
+/* Header off-canvas Menu > Library Hours  */
+.current-day-hours-warm-purple{
+	color: #a92e89;
+}
 
 /* Quick Links */
 .quicklinks  {
@@ -810,8 +814,4 @@ font-size: 1.1em;
     padding: 0px 0px 0px 0px;
     text-align: center;
     margin: 0px 0px 20px 0px;
-}
-/* Header off-canvas Menu > Library Hours  */
-.current-day-hours-warm-purple{
-	color: #a92e89;
 }
