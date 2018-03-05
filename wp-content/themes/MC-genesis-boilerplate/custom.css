@@ -811,3 +811,7 @@ font-size: 1.1em;
     text-align: center;
     margin: 0px 0px 20px 0px;
 }
+/* Header off-canvas Menu > Library Hours  */
+.current-day-hours-warm-purple{
+	color: #a92e89;
+}
