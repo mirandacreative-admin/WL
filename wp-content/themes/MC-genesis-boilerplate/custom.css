@@ -364,6 +364,9 @@ h1.tk-museo{
   line-height: 2.0;
   color: #2b2767;
 }
+.blurb{
+  margin-bottom:32px;
+}
 .blurb p{
   font-family: "museo-sans",sans-serif;
   font-size: 18px;
@@ -371,6 +374,7 @@ h1.tk-museo{
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
 }
+
 
 
 /* Card Content Grids */

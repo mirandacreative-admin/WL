@@ -11,14 +11,14 @@
     </div>
 </div>
 <?php if (have_rows('blurb_col')):?>
-    <section class="row blurb">
+    <section class="row blurb-hold">
         <?php while (have_rows('blurb_col')) : the_row();
             $title = get_sub_field('title');
             $header = get_sub_field('header');
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
             ?>
-         <div class="col-6">
+         <div class="col-6 blurb">
                 <h2><?= $title; ?></h2>
                 <h3><?= $header; ?></h3>
                 <h4 class="subheader"><?= $subheader; ?></h4>
@@ -30,7 +30,7 @@
                         $linktext = get_sub_field('linktext');
                         $link = get_sub_field('link');
                         ?>
-                    <a href="<?= $link; ?>"><?= $linktext; ?> LinkText</a>
+                    <a href="<?= $link; ?>"><?= $linktext; ?></a>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>

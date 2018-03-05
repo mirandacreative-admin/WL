@@ -17,8 +17,6 @@
             $header = get_sub_field('header');
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
-            $linktext = get_sub_field('linktext');
-            $link = get_sub_field('link');
             ?>
             <div class="col">
                 <h2><?= $title; ?></h2>
@@ -27,7 +25,14 @@
                 <div class="column">
                     <p><?= $column; ?></p>
                 </div>
-                <a href="<?= $link; ?>"><?= $linktext; ?></a>
+                <?php if (have_rows('link_list')):?>
+                    <?php while (have_rows('link_list')) : the_row();
+                        $linktext = get_sub_field('linktext');
+                        $link = get_sub_field('link');
+                        ?>
+                    <a href="<?= $link; ?>"><?= $linktext; ?></a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
             
         <div class="w-100"></div>
