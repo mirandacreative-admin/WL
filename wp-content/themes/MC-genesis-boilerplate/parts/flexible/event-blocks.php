@@ -1,6 +1,7 @@
 <?php
 /**    Event Blocks **/
-if (have_rows('event_block')):
+?>
+<?php if (have_rows('event_block')):
     $count = 0; ?>
     <section class="row padfix">
         <?php

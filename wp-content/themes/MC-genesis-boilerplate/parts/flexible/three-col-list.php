@@ -1,6 +1,10 @@
 <?php
 /** Three Column List */
-if (have_rows('three_col')): ?>
+?>
+
+<h2><?php the_field('maintitle'); ?></h2>
+
+<?php if (have_rows('three_col')): ?>
     <section class="row threelist">
         <?php while (have_rows('three_col')): the_row();
             $count++;

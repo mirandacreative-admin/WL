@@ -11,7 +11,6 @@
             $link_url = get_sub_field('link_url');
             $hover_color = get_sub_field('hover_color');
             ?>
-<!--        <div class="col-xs-12 col-sm-4">-->
             <a class="col-link col-xs-12 col-sm-4" onmouseover="this.style.background='<?php echo $hover_color; ?>'"
                onmouseout="this.style.background='white'" href="<?php echo $link_url; ?>">
                 <div>
@@ -19,7 +18,6 @@
                     <p><?php echo $blurb; ?></p>
                 </div>
             </a>
-<!--        </div>-->
         <?php endwhile; ?>
     </section>
 <?php endif; ?>

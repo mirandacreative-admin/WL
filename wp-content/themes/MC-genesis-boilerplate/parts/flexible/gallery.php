@@ -1,6 +1,8 @@
 <?php
 /** Gallery **/
-if (have_rows('image')):
+?>
+
+<?php if (have_rows('image')):
 
     $count = 0; ?>
     <section class="row padfix">

@@ -1,6 +1,7 @@
 <?php
 /** Director Cards **/
-if (have_rows('single_card')):
+?>
+<?php if (have_rows('single_card')):
     $count = 0;
     ?>
     <section id="boardavatar" class="row padfix">
