@@ -2,7 +2,8 @@
 /**
  * Card Content Grid
  */
-if (have_rows('cards')): ?>
+?>
+<?php if (have_rows('cards')): ?>
     <section class="row squaregrid padfix">
         <?php while (have_rows('cards')): the_row();
             $title = get_sub_field('title');

@@ -5,8 +5,17 @@ if (have_rows('main')):
     // loop through the rows of data
     while (have_rows('main')) : the_row();
 
-        if (get_row_layout() == 'blurb_rows'):
+        if (get_row_layout() == 'title'):
+            get_template_part('parts/flexible/title');
+
+        elseif (get_row_layout() == 'blurb_rows'):
             get_template_part('parts/flexible/blurb-row');
+
+        elseif (get_row_layout() == 'blurb_col'):
+            get_template_part('parts/flexible/blurb-col');
+
+        elseif (get_row_layout() == 'blurb_single'):
+            get_template_part('parts/flexible/blurb-single');
 
         elseif (get_row_layout() == 'tile_cards'):
             get_template_part('parts/flexible/card-grid');
