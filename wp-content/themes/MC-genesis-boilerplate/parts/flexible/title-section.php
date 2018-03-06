@@ -1,7 +1,7 @@
 <?php
-/**
- * Title and Blurb
- */
+/*
+Title and Blurb
+*/
 ?>
 <?php if (have_rows('titleblurb')):?>
     <section class="row title">

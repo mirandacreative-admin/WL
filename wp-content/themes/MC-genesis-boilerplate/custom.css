@@ -276,21 +276,20 @@ h1.tk-museo{
 }
 
 /* Search Bars */
-.searchbar {
+.searchbars {
   border: 2px solid blue;
 }
 
 /* Card Content Grids */
-.squaregrid{
-  margin-top:8px;
-}
-.squaregrid .cards{
-  padding:2px;
+.squaregrid .hold{
+  padding: 2px;
 }
 .squaregrid a {
   display:block;
   border: solid 1px #dddddd;
   padding: 28px;
+  margin:1px;
+  height:100%;
 }
 .squaregrid .link .header{
   font-family: 'museo', sans-serif;
@@ -303,9 +302,7 @@ h1.tk-museo{
   line-height: 1.54;
   color: rgba(0, 0, 0, 0.38);
 }
-.squaregrid a.link .col{
-  padding: 0px;
-}
+
 .squaregrid a.link:hover {
   color:#ffffff;
   background: #88afc1;

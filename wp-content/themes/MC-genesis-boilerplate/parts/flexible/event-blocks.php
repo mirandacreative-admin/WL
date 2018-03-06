@@ -1,5 +1,7 @@
 <?php
-/**    Event Blocks **/
+/*
+Event Blocks
+*/
 ?>
 <?php if (have_rows('event_block')):
     $count = 0; ?>

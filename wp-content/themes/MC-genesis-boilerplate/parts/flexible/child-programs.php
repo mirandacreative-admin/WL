@@ -1,5 +1,7 @@
 <?php
-/** Child Programs **/
+/*
+Child Programs 
+*/
 ?>
 <?php if (have_rows('program')):
     $count = 0;

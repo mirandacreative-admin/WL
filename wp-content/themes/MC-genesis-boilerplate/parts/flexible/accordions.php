@@ -1,6 +1,6 @@
 <?php
-/** 
-* Accordions 
+/*
+Accordions 
 */
 ?>
 <?php if (have_rows('accordion')):

@@ -1,5 +1,7 @@
 <?php
-/** Resource Button Links **/
+/*
+Resource Button Links
+*/
 ?>
 <?php if (have_rows('single_resource')): ?>
     <section class="row resource padfix">

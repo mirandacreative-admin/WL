@@ -1,5 +1,7 @@
 <?php
-/** Three Column List */
+/*
+Three Column List
+*/
 ?>
 
 <h2><?php the_field('maintitle'); ?></h2>

@@ -1,6 +1,6 @@
 <?php
-/** 
-* Carousel Module 
+/*
+Carousel Module 
 */
 ?>
 <section id="carouselHome" class="carousel slide" data-ride="carousel">
