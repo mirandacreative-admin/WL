@@ -1,6 +1,7 @@
 <?php
 /** Resource Button Links **/
-if (have_rows('single_resource')): ?>
+?>
+<?php if (have_rows('single_resource')): ?>
     <section class="row resource padfix">
         <?php while (have_rows('single_resource')): the_row();
             $count++;

@@ -1,6 +1,7 @@
 <?php
 /** Color-Buttons **/
-if (have_rows('buttons')):
+?>
+<?php if (have_rows('buttons')):
     // loop through the rows of data
     while (have_rows('buttons')) : the_row();
         $btntext = get_sub_field('button_text');

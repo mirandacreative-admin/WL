@@ -9,36 +9,32 @@ a:hover{
 }
 
 /* Headers */
-h1 {
+
+
+/* Color text */
+.text-greyblue{
+  background-color: rgb(136, 175, 193);
+}
+.text-greyblue:hover{
+  background-color: rgb(136, 175, 193);
+  opacity: 0.9;
+}
+.text-warm-purple{
+  background-color: rgb(169, 46, 137);
+}
+.text-warm-purple:hover{
+  background-color: rgb(169, 46, 137);
+  opacity: 0.9;
+}
+.text-dark-slate-blue{
+  background-color: rgb(43, 39, 103);
+}
+.text-dark-slate-blue:hover{
+  background-color: rgb(43, 39, 103);
+  opacity: 0.9;
 }
 
-h2 {
-  font-size:2.2rem;
-  font-weight: 700;
-}
-
-h3 {
-}
-
-h4 {
-}
-
-h5 {
-}
-
-h6 {
-}
-
-p{
-  color: rgba(0, 0, 0, 0.38);
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: left;
-  font-weight: 100;
-}
-
-
+/* Button color */
 .button {
   display: block;
   min-width: 200px;
@@ -83,6 +79,7 @@ p{
 }
 
 
+
 /* ## Main Container
 --------------------------------------------- */
 
@@ -95,6 +92,7 @@ p{
   max-width: 100%;
   width: 100%;
 }
+
 
 /* ## Main Navigation
 --------------------------------------------- */
@@ -236,7 +234,7 @@ h1.tk-museo{
 .twitter {
 	background: url('images/fa-twitter-copy.png') no-repeat center left;	
 }
-address {
+.sidebar address {
 	max-width: 212px;
 	padding: 8px 16px;
 	margin: 12px 0 30px;
@@ -272,9 +270,8 @@ address {
 #genesis-sidebar-secondary > section { 
   display: none;
 }
-#genesis-content .row {
-  margin: 0px;
-}
+
+
 
 /* ## Content CSS
 --------------------------------------------- */
@@ -282,42 +279,174 @@ address {
   padding-top: 154px;
 }
 
+
+/* Title & Blurb */
+.title{
+  margin-bottom: 48px;
+}
+.title h1{
+  font-family: Museo;
+  font-size: 2.8em;
+  font-weight: bold;
+  line-height: 2.0;
+  letter-spacing: normal;
+  color: #2b2767;
+}
+.title .excerpt{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
+}
+.content{
+  color: rgba(0, 0, 0, 0.38);
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+}
+
+/* Blurb Sections */
+.maintitle{
+  font-family: Museo;
+  font-size: 2.2em;
+  font-weight: bold;
+  line-height: 2.0;
+  color: #2b2767;
+}
+.blurb{
+  margin-bottom:32px;
+}
+.blurb-hold a{
+  color: #88afc1;
+  font-family: "museo-sans",sans-serif;
+  font-size:18px;
+}
+.blurb-hold h1 {
+  font-family: "museo-sans",sans-serif;
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #88afc1;
+}
+.blurb-hold h2 {
+  font-family: "museo-sans",sans-serif;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #88afc1;
+}
+.blurb-hold h3 {
+  font-family: "museo",serif;;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.33;
+  color: #2b2767;
+}
+.blurb-hold h4 {
+  font-family: "museo",serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  line-height: 1.45;
+  color: #2b2767;
+}
+.blurb-hold h4.subheader{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.39;
+  color: rgba(0, 0, 0, 0.87);
+}
+.blurb-hold h5 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.0em;
+  text-align: left;
+  color: #a92e89;
+}
+.blurb-hold h6 {
+  font-family: "museo-sans",sans-serif;
+  font-size: 1.0em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.87);
+}
+.blurb-hold .blurb p{
+  font-family: "museo-sans",sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 /* Card Content Grids */
+.squaregrid{
+  margin-top:8px;
+}
 .squaregrid a {
   display:block;
-  padding: 28px;
   border: solid 1px #dddddd;
-  color: #2b2767;
-  font-size: 1.2em;
+  padding: 28px;
+}
+.squaregrid .link .header{
   font-family: 'museo', sans-serif;
   font-weight: 600;
 }
-.squaregrid a .col{
+.squaregrid a.link .blurb{
+  font-family: NotoSans;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.54;
+  color: rgba(0, 0, 0, 0.38);
+}
+.squaregrid a.link .col{
   padding: 0px;
-  }
-.squaregrid a.col-link:hover {
-  color:#ffffff !important;
+}
+.squaregrid a.link:hover {
+  color:#ffffff;
   background: #88afc1;
 }
-.squaregrid a:hover p{
-  color:#ffffff !important;
+.squaregrid a.link:hover .blurb{
+  color:#ffffff;
 }
+.squaregrid{
+  font-family: NotoSans;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+/* Form & Inputs */
+.contact-form{
+  position: relative;
+  font-size: 0.8em;
+}
+.contact-form ul, .contact-form ul > li{
+  list-style: none;
+  margin: 0;
+}
+.contact-form label{
+  color: rgba(0, 0, 0, 0.66);
+  font-weight: 900;
+}
+.contact-form .gf_left_half{
+  float: left;
+  width: 45%;
+  margin:10px;
+}
+.contact-form .gf_right_half{
+  float:right;
+  width: 45%;
+  margin:10px;
+}
+#gform_submit_button_1{
+
+}
+
 
 /* Three Column List */
 .threelist .col{
   padding: 20px 20px 20px 0px;
 }
 
-/* Form & Inputs */
-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1px;
-  border: solid 1px rgba(0, 0, 0, 0.12);
-}
 
-/* Resrouce Button & Description */
+/* Resource Button & Description */
 .resource div{ 
   display: flex;
   align-items: center;
@@ -334,9 +463,6 @@ form{
   font-style: italic;
 }
 
-
-
-
 .eventblock .date {
 	background: #eee;
 	padding: 15px;
@@ -350,16 +476,6 @@ form{
 
 
 
-
-/*.blurbrow a {*/
-	/*color: white;*/
-    /*padding: 7px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
-    /*text-align: center;*/
-    /*text-transform: uppercase;*/
-	/*background-color: #2b2767;*/
-/*}*/
 
 /* Childrens Programs */
 .dates span {
@@ -747,73 +863,8 @@ span.subtag {
 	}	
 
 }
-/*contact us*/
-.contact-us {
-	width: 638px;
-	height: 96px;
-	font-family: Museo;
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 2.4;
-	text-align: left;
-	color: #2b2767; !important;
-}
-.wethersfield-library {
 
-	font-family: NotoSans;
-	font-size: 24px;
-	line-height: 1.5;
 
-}
-.departments-copy {
-	font-family: Museo;
-	font-size: 24px;
-	font-weight: bold;
-	color: #2b2767;
-}
-.borrower-services {
-	font-family: NotoSans;
-	font-size: 18px;
-
-}
-.phone-numbers-contact-us-page{
-
-	font-family: NotoSans;
-	font-size: 18px;
-	line-height: 1.39;
-
-}
-.borrower-services {
-	padding-top:18px;
-	font-weight: bolder;
-}
-h2 {
-	padding-top: 18px;
-	color:  #2b2767;
-}
-#gform_1 {
-	margin-top:18px;
-}
-#gform_1 li {
-	list-style: none;
-	margin-top:22px;
-	font-size: .8em;
-	font-weight: 800;
-}
-#gform_submit_button_1 {
-    position: absolute;
-    bottom: 0px;
-    right: 36%;
-}
-
-#gform_1 .gform_footer {
-	display: inline-block;
-	width: 0%;
-}
-.p1 {
-font-size: 1.1em;
-	color: black;
-}
 /*library board page*/
 #boardavatar .col-sm-4 {
     background: #eee;
@@ -822,13 +873,12 @@ font-size: 1.1em;
     margin: 0px 0px 20px 0px;
 }
 
+
 #hours_language_breadcrumbs {
 	font-family: "Museo" , Serif;
 	width: auto;
 	height: auto;
 	opacity: 0.39;
 	background-color: rgba(136, 175, 193, 0.2);
-	/*background-color: var(--greyblue-20);*/
 	box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
-	/*box-shadow: 0 -1px 0 0 var(--greyblue), 0 1px 0 0 var(--greyblue);*/
 }

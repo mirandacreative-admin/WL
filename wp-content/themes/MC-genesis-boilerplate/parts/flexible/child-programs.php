@@ -1,6 +1,7 @@
 <?php
 /** Child Programs **/
-if (have_rows('program')):
+?>
+<?php if (have_rows('program')):
     $count = 0;
     ?>
     <section class="row padfix">

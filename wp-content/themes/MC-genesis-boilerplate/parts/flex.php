@@ -5,11 +5,11 @@ if (have_rows('main')):
     // loop through the rows of data
     while (have_rows('main')) : the_row();
 
-        if (get_row_layout() == 'title'):
-            get_template_part('parts/flexible/title');
+        if (get_row_layout() == 'title_section'):
+            get_template_part('parts/flexible/title-section');
 
-        elseif (get_row_layout() == 'blurb_rows'):
-            get_template_part('parts/flexible/blurb-row');
+        // elseif (get_row_layout() == 'blurb_rows'):
+        //     get_template_part('parts/flexible/blurb-row');
 
         elseif (get_row_layout() == 'blurb_col'):
             get_template_part('parts/flexible/blurb-col');
