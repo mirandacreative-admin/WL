@@ -85,7 +85,6 @@ jQuery(document).ready(function( $ ) {
 	setTimeout(function(){
         googleTranslateElementInit();
 	}, 250);
-
 });
 
 // configures the userway javascript plugin location
