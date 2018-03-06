@@ -194,11 +194,11 @@ a:hover {
 }
 
 p {
-	margin: 0 0 28px;
+/*	margin: 0 0 28px;
 	padding: 0;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.8;*/
 }
 
 ol,
@@ -255,7 +255,7 @@ blockquote::before {
 /* ## Headings
 --------------------------------------------- */
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -301,7 +301,7 @@ h6 {
 	font-size: 16px;
 	font-size: 1.6rem;
 }
-
+*/
 /* ## Objects
 --------------------------------------------- */
 

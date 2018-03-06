@@ -10,8 +10,8 @@
     <?php endif; ?>
     </div>
 </div>
-<?php if (have_rows('blurb_col')):?>
-    <section class="row blurb-hold">
+<section class="row blurb-hold">
+    <?php if (have_rows('blurb_col')):?>
         <?php while (have_rows('blurb_col')) : the_row();
             $title = get_sub_field('title');
             $header = get_sub_field('header');
