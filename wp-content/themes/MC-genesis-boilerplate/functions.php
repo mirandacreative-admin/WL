@@ -172,7 +172,8 @@ function mc_enqueue_mccode() {
   wp_enqueue_script('tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js', array('jquery'), true);
      // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts  
     wp_enqueue_script( 'mccoder-js', get_stylesheet_directory_uri() . '/assets/js/mccoder.js'); // all the bootstrap javascript goodness
-    wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');  
+    wp_enqueue_script( 'library-hours', get_stylesheet_directory_uri() . '/assets/js/library-hours.js');
+    wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');
     wp_enqueue_script( 'google-trans', 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
     wp_enqueue_script( 'userway', 'https://cdn.userway.org/widget.js');
 

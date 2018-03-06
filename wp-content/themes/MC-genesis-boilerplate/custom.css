@@ -878,6 +878,7 @@ span.subtag {
 
 /* mobile widget for hours & language */
 #hours_language_mobile {
+    display: none;
 	font-family: "Museo", Serif;
 	width: auto;
 	height: auto;
@@ -919,4 +920,10 @@ span.subtag {
 .library-hours-down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+/* only show on mobile */
+@media screen and (max-width: 640px){
+    #hours_language_mobile {
+        display: block;
+    }
 }
