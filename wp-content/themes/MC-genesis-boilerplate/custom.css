@@ -53,10 +53,10 @@ a:hover{
 .btn.btn-primary{
 	border-radius: none;
 }
-.btn-greyblue{
+.btn-greyblue, .gform_button.button{
 	background-color: rgb(136, 175, 193);
 }
-.btn-greyblue:hover{
+.btn-greyblue:hover, .gform_button.button:hover{
   background-color: rgb(136, 175, 193);
   opacity: 0.9;
 }
@@ -417,26 +417,15 @@ h1.tk-museo{
   position: relative;
   font-size: 0.8em;
 }
-.contact-form ul, .contact-form ul > li{
-  list-style: none;
-  margin: 0;
+.contact-form .gfield_label{
+  color: rgba(0, 0, 0, 0.86);
 }
-.contact-form label{
-  color: rgba(0, 0, 0, 0.66);
-  font-weight: 900;
+.contact-form .gform_footer {
+    width: auto;
 }
-.contact-form .gf_left_half{
-  float: left;
-  width: 45%;
-  margin:10px;
-}
-.contact-form .gf_right_half{
+.contact-form .gform_button.button{
   float:right;
-  width: 45%;
-  margin:10px;
-}
-#gform_submit_button_1{
-
+  
 }
 
 
