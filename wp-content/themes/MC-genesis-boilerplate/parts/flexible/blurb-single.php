@@ -10,7 +10,7 @@
         <?php endif; ?>
     </div>
 </div>
-    <section class="row blurb">
+<section class="row blurb-hold">
     <?php if (have_rows('blurb_single')):?>
         <?php while (have_rows('blurb_single')) : the_row();
             $title = get_sub_field('title');
@@ -18,10 +18,10 @@
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
             ?>
-            <div class="col">
+            <div class="col blurb">
                 <h2><?= $title; ?></h2>
                 <h3><?= $header; ?></h3>
-                <h4><?= $subheader; ?></h4>
+                <h4 class="subheader"><?= $subheader; ?></h4>
                 <div class="column">
                     <p><?= $column; ?></p>
                 </div>
@@ -34,8 +34,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-            
-        <div class="w-100"></div>
         <?php endwhile; ?>
     </section>
 <?php endif; ?>
