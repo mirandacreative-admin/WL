@@ -38,6 +38,22 @@ x.classList.toggle("change");
 document.getElementById("left-sticky").classList.toggle("open");
 }
 
+function googleTranslateElementInit() {
+	// set the default for desktop
+	var google_element = 'google_translate_desktop';
+	if(window.innerWidth < 800){
+		// if mobile size, and there is no search bar
+		console.log('google translate in sticky menu');
+		google_element = 'google_translate_mobile'
+	}
+
+
+    new google.translate.TranslateElement({pageLanguage: 'en',
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		includedLanguages: 'es,fr,pt,zh-CN,it,ja,ko,nl,el'
+	}, google_element);
+}
+
 // off canvas menu hours
 jQuery(document).ready(function( $ ) {
 	// get the current day
@@ -63,6 +79,22 @@ jQuery(document).ready(function( $ ) {
 		// there's no need to remove a class that isn't there in the first place, but... just in case...
 			$(this).removeClass('current-day-hours-warm-purple');
 		}
-
 	});
+
+	// google translate
+	setTimeout(function(){
+        googleTranslateElementInit();
+	}, 250);
+
 });
+
+// configures the userway javascript plugin location
+var _userway_config = {
+// uncomment the following line to override default position
+ position: 1,
+// uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)
+// language: null,
+// uncomment the following line to override color set via widget
+// color: '#2b2767',
+    account: 'v4en4jJDsL'
+};

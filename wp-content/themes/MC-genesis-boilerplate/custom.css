@@ -117,6 +117,12 @@ h1.tk-museo{
 .logogroup {
 	margin-left: 15px;
 }
+#google_translate_desktop{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 1;
+}
 
 /* Menu */
 .main-menu ul{
@@ -814,4 +820,15 @@ font-size: 1.1em;
     padding: 0px 0px 0px 0px;
     text-align: center;
     margin: 0px 0px 20px 0px;
+}
+
+#hours_language_breadcrumbs {
+	font-family: "Museo" , Serif;
+	width: auto;
+	height: auto;
+	opacity: 0.39;
+	background-color: rgba(136, 175, 193, 0.2);
+	/*background-color: var(--greyblue-20);*/
+	box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
+	/*box-shadow: 0 -1px 0 0 var(--greyblue), 0 1px 0 0 var(--greyblue);*/
 }
