@@ -732,6 +732,7 @@ span.subtag {
 }
 /*slide menu*/
 .contmenu {
+    transform: scale(0.65);
     display: inline-block;
     cursor: pointer;
 }
