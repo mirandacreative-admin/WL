@@ -417,11 +417,11 @@ if ( function_exists('register_sidebar') )
   )
 );
 
-function hours_language_breadcrumbs(){
+function hours_language_mobile(){
 	if(!is_front_page()){
-		get_template_part('template-parts/hours_language_breadcrumbs');
+		get_template_part('template-parts/hours_language_mobile');
 	}
 }
 
-add_action('genesis_before_loop', 'hours_language_breadcrumbs');
+add_action('genesis_before_loop', 'hours_language_mobile');
 

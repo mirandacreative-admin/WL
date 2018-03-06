@@ -873,12 +873,47 @@ span.subtag {
     margin: 0px 0px 20px 0px;
 }
 
-
-#hours_language_breadcrumbs {
-	font-family: "Museo" , Serif;
+/* mobile widget for hours & language */
+#hours_language_mobile {
+	font-family: "Museo", Serif;
 	width: auto;
 	height: auto;
-	opacity: 0.39;
+	opacity: 0.60;
+    color: #333;
 	background-color: rgba(136, 175, 193, 0.2);
 	box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
+}
+.library-hours{
+    font-family: "Museo", Serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: left;
+    color: #2b2767;
+}
+.library-hours-arrows{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.library-hours-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.library-hours-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.library-hours-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.library-hours-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
