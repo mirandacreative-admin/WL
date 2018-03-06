@@ -173,6 +173,8 @@ function mc_enqueue_mccode() {
      // jQuery is stated as a dependancy of bootstrap-js - it will be loaded by WordPress before the BS scripts  
     wp_enqueue_script( 'mccoder-js', get_stylesheet_directory_uri() . '/assets/js/mccoder.js'); // all the bootstrap javascript goodness
     wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');  
+    wp_enqueue_script( 'google-trans', 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
+    wp_enqueue_script( 'userway', 'https://cdn.userway.org/widget.js');
 
 }
 add_action('wp_enqueue_scripts', 'mc_enqueue_mccode');
@@ -414,3 +416,12 @@ if ( function_exists('register_sidebar') )
     'after_title' => '</h3>',
   )
 );
+
+function hours_language_breadcrumbs(){
+	if(!is_front_page()){
+		get_template_part('template-parts/hours_language_breadcrumbs');
+	}
+}
+
+add_action('genesis_before_loop', 'hours_language_breadcrumbs');
+
