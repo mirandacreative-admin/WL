@@ -41,12 +41,10 @@ document.getElementById("left-sticky").classList.toggle("open");
 function googleTranslateElementInit() {
 	// set the default for desktop
 	var google_element = 'google_translate_desktop';
-	if(window.innerWidth < 800){
-		// if mobile size, and there is no search bar
-		console.log('google translate in sticky menu');
+	if(window.innerWidth < 641){
+		// if mobile size
 		google_element = 'google_translate_mobile'
 	}
-
 
     new google.translate.TranslateElement({pageLanguage: 'en',
 		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
