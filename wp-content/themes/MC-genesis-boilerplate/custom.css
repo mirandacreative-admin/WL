@@ -7,7 +7,9 @@ a:focus,
 a:hover{
 	text-decoration: none !important;
 }
-
+section{
+  margin-top: 8px;
+}
 /* Headers */
 
 
@@ -49,7 +51,7 @@ a:hover{
 .button:hover{
   opacity: 0.9;
 }
-/* these are not in use yet */
+
 .btn.btn-primary{
 	border-radius: none;
 }
@@ -79,14 +81,12 @@ a:hover{
 }
 
 
-
 /* ## Main Container
 --------------------------------------------- */
 
 .site-inner {
   padding-top: 0px;
 } 
-
 .container {
   max-width: 1440px;!important
   max-width: 100%;
@@ -145,11 +145,11 @@ h1.tk-museo{
 	text-decoration: none;
 }
 #stickem {
-    background: none;
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    top:0;
+  background: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 /* Left Sidebar */
@@ -169,16 +169,15 @@ h1.tk-museo{
 	padding: 8%;
 	border-top: 0.5px solid rgba(136, 175, 193, 0.8);
 	margin:0;
-    color: #2b2767;
-    font-family: "museo",serif;
-    font-size: 22px;
-    font-weight: 100;
-    text-align: left;
+  color: #2b2767;
+  font-family: "museo",serif;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 /* Hours */
 .hourblock {
-    background-color: rgba(136, 175, 193, 0.1);
+  background-color: rgba(136, 175, 193, 0.1);
 }
 .hour-inner{
 	padding: 0 15%;
@@ -197,12 +196,12 @@ h1.tk-museo{
 	color: #a92e89;
 }
 
-/* Quick Links */
+/* Connect Links */
 .quicklinks  {
-    text-align: left;
-    padding-left: 22px;
-    list-style: none;
-    font-size: 0.8em;
+  text-align: left;
+  padding-left: 22px;
+  list-style: none;
+  font-size: 0.8em;
 }
 .quicklinks a {
     color:#2b2767;
@@ -214,8 +213,7 @@ h1.tk-museo{
 .quicklinks li {
     padding: 4px 0px 8px 35px;
 }
-
-/* icons */
+/* Icons */
 .friends {
 	background: url('images/ic-people-black-24-px.png') no-repeat center left;
 }
@@ -238,7 +236,7 @@ h1.tk-museo{
 	max-width: 212px;
 	padding: 8px 16px;
 	margin: 12px 0 30px;
-    color: #2b2767;	
+  color: #2b2767;	
 	font-size: 0.8em;
 	text-align: left;
 }
@@ -246,37 +244,80 @@ h1.tk-museo{
 	display:block;
 	margin-bottom: 10px;
 }
-/* Sidebar */   
+
+/* Sidebar Fixed Positiions */   
 #genesis-sidebar-secondary {
   z-index: 99999;
 }
 .wsoffcanvasopener .wsmenu {
   z-index: 999999;
  }
-
  #genesis-content .sidebar-primary {
   max-width: 308px;
 }
 #genesis-content .content {
-    width: 801px;
-    padding: 12px;
+  width: 801px;
+  padding: 12px;
 }
 #genesis-content .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
- max-width: 1139px;
+  max-width: 1139px;
 }
-
 #genesis-sidebar-secondary > section { 
   display: none;
 }
-
 
 
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
   padding-top: 154px;
+}
+
+/* Search Bars */
+.searchbar {
+  border: 2px solid blue;
+}
+
+/* Card Content Grids */
+.squaregrid{
+  margin-top:8px;
+}
+.squaregrid .cards{
+  padding:2px;
+}
+.squaregrid a {
+  display:block;
+  border: solid 1px #dddddd;
+  padding: 28px;
+}
+.squaregrid .link .header{
+  font-family: 'museo', sans-serif;
+  font-weight: 600;
+}
+.squaregrid a.link .blurb{
+  font-family: NotoSans;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.54;
+  color: rgba(0, 0, 0, 0.38);
+}
+.squaregrid a.link .col{
+  padding: 0px;
+}
+.squaregrid a.link:hover {
+  color:#ffffff;
+  background: #88afc1;
+}
+.squaregrid a.link:hover .blurb{
+  color:#ffffff;
+}
+.squaregrid{
+  font-family: NotoSans;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.54;
 }
 
 
@@ -375,42 +416,7 @@ h1.tk-museo{
   color: rgba(0, 0, 0, 0.87);
 }
 
-/* Card Content Grids */
-.squaregrid{
-  margin-top:8px;
-}
-.squaregrid a {
-  display:block;
-  border: solid 1px #dddddd;
-  padding: 28px;
-}
-.squaregrid .link .header{
-  font-family: 'museo', sans-serif;
-  font-weight: 600;
-}
-.squaregrid a.link .blurb{
-  font-family: NotoSans;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 1.54;
-  color: rgba(0, 0, 0, 0.38);
-}
-.squaregrid a.link .col{
-  padding: 0px;
-}
-.squaregrid a.link:hover {
-  color:#ffffff;
-  background: #88afc1;
-}
-.squaregrid a.link:hover .blurb{
-  color:#ffffff;
-}
-.squaregrid{
-  font-family: NotoSans;
-  font-weight: 100;
-  font-size: 13px;
-  line-height: 1.54;
-}
+
 
 /* Form & Inputs */
 .contact-form{
@@ -425,8 +431,16 @@ h1.tk-museo{
 }
 .contact-form .gform_button.button{
   float:right;
-  
 }
+
+
+/*-------------------------------------- Where Mika Ended ---------------------------------------*/
+
+
+
+
+
+
 
 
 /* Three Column List */
