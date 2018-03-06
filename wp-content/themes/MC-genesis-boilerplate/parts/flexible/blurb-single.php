@@ -1,7 +1,7 @@
 <?php
-/**
- * Blurb Section - Single Column
- */
+/*
+ Blurb Section - Single Column
+*/
 ?>
 <div class="row">
     <div class="col">

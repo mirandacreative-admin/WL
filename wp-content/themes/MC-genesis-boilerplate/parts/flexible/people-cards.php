@@ -1,5 +1,7 @@
 <?php
-/** People Cards **/
+/*
+People Cards
+*/
 ?>
 <?php if (have_rows('person')):
     $count = 0;

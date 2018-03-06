@@ -1,6 +1,6 @@
 <?php
-/**
- * Blurb Section - Two Columns
+/*
+Blurb Section - Two Columns
  */
 ?>
  <div class="row">

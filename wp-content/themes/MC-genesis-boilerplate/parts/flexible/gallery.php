@@ -1,5 +1,7 @@
 <?php
-/** Gallery **/
+/*
+Gallery
+*/
 ?>
 
 <?php if (have_rows('image')):

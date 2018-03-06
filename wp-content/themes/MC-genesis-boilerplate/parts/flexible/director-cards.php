@@ -1,5 +1,7 @@
 <?php
-/** Director Cards **/
+/*
+Director Cards
+*/
 ?>
 <?php if (have_rows('single_card')):
     $count = 0;

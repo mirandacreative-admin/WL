@@ -1,6 +1,6 @@
 <?php
-/** 
-* Search Bars
+/* 
+Search Bars
 */
 ?>
 <section class="searchbars">

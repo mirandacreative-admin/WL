@@ -1,5 +1,7 @@
 <?php
-/** Color-Buttons **/
+/*
+Color-Buttons
+*/
 ?>
 <?php if (have_rows('buttons')):
     // loop through the rows of data
