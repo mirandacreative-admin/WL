@@ -279,7 +279,17 @@ h1.tk-museo{
 .searchbars {
 /*  border: 2px solid blue;*/
 }
-
+.searchwrapper {
+  position:relative;
+}
+.imgsubmit {
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+body input.imgsubmit {
+  padding: 12px;
+} 
 /* Card Content Grids */
 .squaregrid .hold{
   padding: 2px;

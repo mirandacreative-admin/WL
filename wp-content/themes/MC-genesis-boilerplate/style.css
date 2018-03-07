@@ -1280,12 +1280,7 @@ img.alignright,
 #catform {
 	position:relative;
 }
-#catform .submit {
-    position: absolute;
-    right: 0px;
-    top: 1px;
-    background: url('images/search-icon.png') center center #fff;	
-}
+
 
 .entry-content ol,
 .entry-content ul {
