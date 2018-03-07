@@ -40,6 +40,9 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 // Add the Genesis Connect WooCommerce notice.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
+// allows a custom search form template 
+add_theme_support( 'html5', array( 'search-form' ) );
+
 // Child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Genesis Sample' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
