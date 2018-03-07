@@ -221,7 +221,7 @@ h1.tk-museo{
   padding: 4px 8px 4px 8px;
 }
 .connect li span{
-    font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -229,8 +229,6 @@ h1.tk-museo{
   line-height: 1.46;
   letter-spacing: normal;
 }
-
-
 
 
 .sidebar address {

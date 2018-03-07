@@ -58,12 +58,12 @@ Left Sidebar
             $linktype = get_sub_field('link_type');
                 $internal_link = get_sub_field('internal_link');
                 $external_link = get_sub_field('external_link');
-                if ($linktype == 'internal') {
-                    $destination = $internal_link;
-                }
-                if ($linktype == 'external') {
-                    $destination = $external_link;
-                }
+                    if ($linktype == 'internal') {
+                        $destination = $internal_link;
+                    }
+                    if ($linktype == 'external') {
+                        $destination = $external_link;
+                    }
             ?>
             <li class="connect-link">
                 <a href="<?= $destination; ?>">
