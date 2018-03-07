@@ -67,7 +67,7 @@ Left Sidebar
             ?>
             <li class="connect-link">
                 <a href="<?= $destination; ?>">
-                    <i class="material-ic"><?= $icon; ?></i>
+                    <i class="material-icons"><?= $icon; ?></i>
                     <span><?= $link_text; ?></span>
                 </a>
             </li>
