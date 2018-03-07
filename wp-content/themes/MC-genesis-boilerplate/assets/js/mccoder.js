@@ -1,6 +1,21 @@
-console.log("loaded mccode.js");
+	// function ready to reveal our secret iframe
+	function enlargeiframe() {
+	    jQuery('#searchresults').css('height','999px');	
+	}
+
+
 jQuery(document).ready(function( $ ) {
-	
+
+	// this checks to see if there is any text in the library cat search
+     $('#libcatsearch').attr('disabled','disabled');
+     $('input[type="text"]').keyup(function() {
+        if($(this).val() != '') {
+           $('#libcatsearch').removeAttr('disabled');
+        }
+     });
+
+    	
+ 
  	$('.carousel').carousel();	
 
 
@@ -59,6 +74,7 @@ jQuery(document).ready(function( $ ) {
         googleTranslateElementInit();
 	}, 250);
 });
+
 
 // configures the userway javascript plugin location
 var _userway_config = {
