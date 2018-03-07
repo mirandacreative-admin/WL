@@ -197,41 +197,42 @@ h1.tk-museo{
 }
 
 /* Connect Links */
-.quicklinks  {
+.connect  {
   text-align: left;
-  padding-left: 22px;
+  padding: 0 5%;
   list-style: none;
-  font-size: 0.8em;
 }
-.quicklinks a {
-    color:#2b2767;
+.connect a {
+  color:#2b2767;
+  display: block;
+  height: 30%; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
-.quicklinks a:hover {
-    color: #66619c;
-    text-decoration: none;
+.connect a:hover {
+  color: #66619c;
+  text-decoration: none;
 }
-.quicklinks li {
-    padding: 4px 0px 8px 35px;
+.connect li i{
+  padding: 4px 8px 4px 8px;
 }
-/* Icons */
-.friends {
-	background: url('images/ic-people-black-24-px.png') no-repeat center left;
+.connect li span{
+    font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
 }
-.contact {
-	background: url('images/ic-email-copy.png') no-repeat center left;
-}
-.enews {
-	background: url('images/ic-view-list-copy.png') no-repeat center left;
-}
-.directions {
-	background: url('images/ic-place-copy.png') no-repeat center left;
-}
-.facebook {
-	background: url('images/fa-facebook-copy.png') no-repeat center left;
-}
-.twitter {
-	background: url('images/fa-twitter-copy.png') no-repeat center left;	
-}
+
+
+
+
 .sidebar address {
 	max-width: 212px;
 	padding: 8px 16px;

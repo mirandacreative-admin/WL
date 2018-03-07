@@ -8,9 +8,6 @@ if (have_rows('main')):
         if (get_row_layout() == 'title_section'):
             get_template_part('parts/flexible/title-section');
 
-        // elseif (get_row_layout() == 'blurb_rows'):
-        //     get_template_part('parts/flexible/blurb-row');
-
         elseif (get_row_layout() == 'blurb_col'):
             get_template_part('parts/flexible/blurb-col');
 
