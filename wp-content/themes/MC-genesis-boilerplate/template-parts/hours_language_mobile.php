@@ -18,13 +18,27 @@
         </div>
         <div class="col-8">
             <ul>
-                <li class="hours-widget-item" data-day="monday"><?php the_field( 'monday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="tuesday"><?php the_field( 'tuesday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="wednesday"><?php the_field( 'wednesday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="thursday"><?php the_field( 'thursday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="friday"><?php the_field( 'friday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="saturday"><?php the_field( 'saturday_hours', 'option' ); ?></li>
-                <li class="hours-widget-item" data-day="sunday"><?php the_field( 'sunday_hours', 'option' ); ?></li>
+                <li class="hours-widget-item" data-day="monday">
+                    <?php the_field( 'monday_hours', 'option' ); ?>
+                </li>
+                <li class="hours-widget-item" data-day="tuesday">
+                    <?php the_field( 'tuesday_hours', 'option' ); ?>
+                </li>
+                <li class="hours-widget-item" data-day="wednesday">
+                    <?php the_field( 'wednesday_hours', 'option' ); ?>
+                </li>
+                <li class="hours-widget-item" data-day="thursday">
+                    <?php the_field( 'thursday_hours', 'option' ); ?>
+                </li>
+                <li class="hours-widget-item" data-day="friday">
+                    <?php the_field( 'friday_hours', 'option' ); ?>
+                </li>
+                <li class="hours-widget-item" data-day="saturday">
+                    <?php the_field( 'saturday_hours', 'option' ); ?>
+                 </li>
+                <li class="hours-widget-item" data-day="sunday">
+                    <?php the_field( 'sunday_hours', 'option' ); ?>
+                </li>
             </ul>
         </div>
         <div class="col-2">
