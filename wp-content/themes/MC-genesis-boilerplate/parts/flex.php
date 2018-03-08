@@ -8,20 +8,20 @@ if (have_rows('main')):
         if (get_row_layout() == 'title_section'):
             get_template_part('parts/flexible/title-section');
 
-        elseif (get_row_layout() == 'blurb_col'):
-            get_template_part('parts/flexible/blurb-col');
-
         elseif (get_row_layout() == 'blurb_single'):
             get_template_part('parts/flexible/blurb-single');
+
+        elseif (get_row_layout() == 'blurb_col'):
+            get_template_part('parts/flexible/blurb-col');
 
         elseif (get_row_layout() == 'tile_cards'):
             get_template_part('parts/flexible/card-grid');
 
-        elseif (get_row_layout() == 'color_buttons'):
-            get_template_part('parts/flexible/color-buttons'); 
-
         elseif (get_row_layout() == 'event_blocks'):
-            get_template_part('parts/flexible/event-blocks');  
+            get_template_part('parts/flexible/event-blocks'); 
+
+        elseif (get_row_layout() == 'color_buttons'):
+            get_template_part('parts/flexible/color-buttons');  
 
         elseif (get_row_layout() == 'accordions'):
             get_template_part('parts/flexible/accordions'); 

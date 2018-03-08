@@ -3,36 +3,46 @@
 Event Blocks
 */
 ?>
-<?php if (have_rows('event_block')):
-    $count = 0; ?>
-    <section class="row padfix">
-        <?php
-        // loop through the rows of data
-        while (have_rows('event_block')) : the_row();
-            $count++;
-            $date = get_sub_field('date');
-            $time = get_sub_field('time');
-            $extainfo = get_sub_field('extra_info');
-            $weekday = date('l', strtotime($date)); // note: first arg to date() is lower-case L
-            $month = date('M', strtotime($date));
-            $day = date('j', strtotime($date));
-            // see functions file for this function that gets 1st 3rd and 2nd type days with ordinal
-            $dayth = ordinal($day);
-            ?>
-            <div class="col-sm-6">
-                <div class="row eventblock">
-                    <div class="col-sm-4 date">
-                        <?= $weekday; ?>,<br><?= $month; ?>&nbsp;<?= $dayth; ?>
-                    </div>
-                    <div class="col-sm-8" ><?= $extainfo; ?><br/><?= $time; ?></div>
+<section class="row eventblocks">
+    <div class="col">
+        <h2 class="maintitle"><?php the_sub_field('title'); ?></h2>
+        <h5><?php the_sub_field('subheader'); ?></h5>
+    </div>
+</section>
+<section class="row eventblocks">
+    <?php if (have_rows('event_block')): ?>
+    <?php while (have_rows('event_block')) : the_row();
+        $date = get_sub_field('date');
+        $time = get_sub_field('time');
+        $extra_info = get_sub_field('extra_info');
+        $weekday = date('l', strtotime($date));
+        $month = date('M', strtotime($date));
+        $day = date('j', strtotime($date));
+        $dayth = ordinal($day);
+        ?>
+    <div class="col-sm-6">
+        <div class="row block">
+             <div class="col-sm-4">
+                <div class="date">
+                    <div> <?= $weekday; ?>,</div>
+                    <div><?= $month; ?>&nbsp;<?= $dayth; ?></div>
                 </div>
             </div>
-            <?php
-            if ($count % 2 == 0) { // if this is an even row...
-                ?>
-                <div class="w-100"></div>
-            <?php } endwhile; ?>
-
-    </section>
+            <div class="col-sm-8 extra-hold">
+                <div class="extra"> 
+                    <span><?= $extra_info; ?></span>
+                    <span><?= $time; ?></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endwhile; ?>
+</section>
+<section class="eventblocks">
+    <div class="details">
+        <p><?php the_sub_field('details'); ?></p>
+    </div>
+</section>
 
 <?php endif; ?>
+
