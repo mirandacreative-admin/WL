@@ -86,7 +86,11 @@ Left Sidebar
             </a>
         </li>
     </ul>
-    <button type="button" class="button">SUPPORT<br/>THE LIBRARY</button>
+    <button type="button" class="button btn-dark-slate-blue">
+        <a class="btn-dark-slate-blue" href="#">
+        SUPPORT<br/>THE LIBRARY
+        </a>
+    </button>
     <address>
         <span class="address">
             515 Silas Deane Highway  Wethersfield, CT 06109
