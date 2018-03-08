@@ -229,6 +229,11 @@ h1.tk-museo{
   line-height: 1.46;
   letter-spacing: normal;
 }
+/* Social */
+.social {
+ padding: 4px 8px 4px 4px;
+}
+
 
 
 .sidebar address {
