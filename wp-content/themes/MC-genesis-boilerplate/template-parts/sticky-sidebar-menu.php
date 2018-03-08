@@ -73,6 +73,18 @@ Left Sidebar
             </li>
             <?php endwhile; ?>
         <?php endif; ?>
+        <li class="connect-link">
+            <a href="#">
+                <i><img class="social" src="/wp-content/themes/MC-genesis-boilerplate/images/fa-facebook-copy.png"></i>
+                <span>Facebook</span>
+            </a>
+        </li>
+       <li class="connect-link">
+            <a href="#">
+                <i><img class="social" src="/wp-content/themes/MC-genesis-boilerplate/images/fa-twitter-copy.png"></i>
+                <span>Twitter</span>
+            </a>
+        </li>
     </ul>
     <button type="button" class="button">SUPPORT<br/>THE LIBRARY</button>
     <address>
