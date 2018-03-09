@@ -1,9 +1,8 @@
 <?php
 /*
-Color-Buttons
+Color Buttons
 */
 ?>
-
 <section class="row buttonblocks">
     <div class="col">
         <h2 class="maintitle"><?php the_sub_field('title'); ?></h2>
@@ -33,7 +32,7 @@ Color-Buttons
                 $destination = $extlink;
             }
             ?>
-            <div class="button-hold">
+            <div class="col-sm-4  button-hold">
                 <a class="button" style="background-color: <?= $btncolor; ?>" href="<?= $destination; ?>"target="_blank">
                     <?= $btntext; ?>       
                 </a>
@@ -47,3 +46,4 @@ Color-Buttons
         <p><?php the_sub_field('details'); ?></p>
     </div>
 </section>
+
