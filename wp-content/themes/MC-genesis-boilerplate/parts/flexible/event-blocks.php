@@ -43,6 +43,5 @@ Event Blocks
         <p><?php the_sub_field('details'); ?></p>
     </div>
 </section>
-
 <?php endif; ?>
 

@@ -15,24 +15,24 @@ section{
 
 /* Color text */
 .text-greyblue{
-  background-color: rgb(136, 175, 193);
+  color: rgb(136, 175, 193);
 }
 .text-greyblue:hover{
-  background-color: rgb(136, 175, 193);
+  color: rgb(136, 175, 193);
   opacity: 0.9;
 }
 .text-warm-purple{
-  background-color: rgb(169, 46, 137);
+  color: rgb(169, 46, 137);
 }
 .text-warm-purple:hover{
-  background-color: rgb(169, 46, 137);
+  color: rgb(169, 46, 137);
   opacity: 0.9;
 }
 .text-dark-slate-blue{
-  background-color: rgb(43, 39, 103);
+  color: rgb(43, 39, 103);
 }
 .text-dark-slate-blue:hover{
-  background-color: rgb(43, 39, 103);
+  color: rgb(43, 39, 103);
   opacity: 0.9;
 }
 
@@ -386,14 +386,15 @@ body input.imgsubmit {
   font-weight: 700;
   color: #88afc1;
 }
-.blurb-hold h3 {
+.blurb-hold h3, 
+.contentblocks h3{
   font-family: "museo",serif;;
   font-size: 1.4em;
   font-weight: 700;
   line-height: 1.33;
   color: #2b2767;
 }
-.blurb-hold h4 {
+.blurb-hold h4  {
   font-family: "museo",serif;
   font-weight: 100;
   font-size: 1.4em;
@@ -407,7 +408,7 @@ body input.imgsubmit {
   line-height: 1.39;
   color: rgba(0, 0, 0, 0.87);
 }
-.blurb-hold h5 {
+.blurb-hold h5{
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.0em;
   text-align: left;
@@ -419,7 +420,11 @@ body input.imgsubmit {
   font-style: italic;
   color: rgba(0, 0, 0, 0.87);
 }
-.blurb-hold .blurb p, .eventblocks .details p, .buttonblocks .details p{
+.blurb-hold .blurb p, 
+.eventblocks .details p, 
+.buttonblocks .details p,
+.contentblocks .details p
+{
   font-family: "museo-sans",sans-serif;
   font-size: 16px;
   line-height: 26px;
@@ -476,6 +481,17 @@ body input.imgsubmit {
 /* Color Buttons */
 .button-hold{
   max-width: 70%
+}
+
+/* PDF Section */
+a.pdflink{
+  font-family: "museo-sans",sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(136, 175, 193);
+}
+a.pdflink:hover{
+  color: rgb(169, 46, 137);
 }
 
 
