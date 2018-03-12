@@ -495,6 +495,30 @@ a.pdflink:hover{
 }
 
 
+/* Three Column List */
+.threecol{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.28;
+  color: #2b2767;
+}
+.threelist{
+  margin-bottom: 24px;
+}
+.threelist .col{
+  color: rgba(0, 0, 0, 0.8);
+}
+.threelist .col ul li
+{
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0 0 0, 0.9);
+  list-style: disc;
+  margin-left:24px;
+}
+
 
 
 
@@ -527,11 +551,6 @@ a.pdflink:hover{
 
 
 
-
-/* Three Column List */
-.threelist .col{
-  padding: 20px 20px 20px 0px;
-}
 
 
 /* Resource Button & Description */
