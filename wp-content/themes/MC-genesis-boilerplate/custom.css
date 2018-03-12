@@ -536,9 +536,15 @@ a.pdflink:hover{
 }
 
 
-
-
-
+/* Gallery Module */
+.card-columns {
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+}
+.card-columns .img-fluid{
+  width:100%;
+}
 
 
 
@@ -563,13 +569,6 @@ a.pdflink:hover{
 /*-------------------------------------- Where Mika Ended ---------------------------------------*/
 
 
-
-
-
-
-
-
-
 /* Resource Button & Description */
 .resource div{ 
   display: flex;
@@ -586,12 +585,6 @@ a.pdflink:hover{
   font-size: 16px;
   font-style: italic;
 }
-
-
-
-
-
-
 
 /* Childrens Programs */
 .dates span {
@@ -729,27 +722,6 @@ img.margblock {
     margin: 0 auto;
     display: block;
 }
-
-
-
-
-
-
-
-
-/*childrens page styles*/
-
-/*people card end*/
-/*image gallery*/
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 2;
-  }
-}
-/*image gallery end*/
 
 /*carousel*/
 #carouselHome h3 {
