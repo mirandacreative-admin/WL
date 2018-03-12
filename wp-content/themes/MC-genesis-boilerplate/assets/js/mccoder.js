@@ -45,7 +45,19 @@ jQuery(document).ready(function( $ ) {
 		if ($(window).width() < 1090) {
    			$("#menu-test").appendTo("#menuslot");
 		}
-					
+		if ($(window).width() > 1090) {
+		// drop down menu jquery
+		$("#menu-test li").mouseenter(function() {
+			$(this).children("ul.sub-menu").addClass("reveal");
+			$(this).find(".sub-menu ul").addClass("shift");			
+			console.log('reveal class added');
+		});		
+		$("#menu-test li").mouseleave(function() {
+			$(this).children("ul.sub-menu").removeClass("reveal");
+			$(this).find(".sub-menu ul").removeClass("shift");
+			console.log('reveal class removed');
+		});		
+		};				
 });
 
 function classTog(x) {
