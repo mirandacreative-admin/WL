@@ -350,6 +350,10 @@ body input.imgsubmit {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
 }
+.title .excerpt a{
+  font-weight: bold;
+  color: rgb(136, 175, 193);
+}
 .content{
   color: rgba(0, 0, 0, 0.38);
   font-family: 'Noto Sans', sans-serif;
@@ -495,9 +499,52 @@ a.pdflink:hover{
 }
 
 
+/* Three Column List */
+.threecol{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.28;
+  color: #2b2767;
+}
+.threelist{
+  margin-bottom: 24px;
+}
+.threelist .col{
+  color: rgba(0, 0, 0, 0.8);
+}
+.threelist .col ul li{
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0 0 0, 0.9);
+  list-style: disc;
+  margin-left:24px;
+}
+
+/* People Cards*/
+.peoplecard{
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.39;
+  color: rgba(0, 0, 0, 0.87);
+
+}
+.peoplecard span {
+  min-height: 20px;
+  display:block;
+}
 
 
-
+/* Gallery Module */
+.card-columns {
+  -webkit-column-count:2;
+  -moz-column-count:2;
+  column-count:2;
+}
+.card-columns .img-fluid{
+  width:100%;
+}
 
 
 
@@ -522,18 +569,6 @@ a.pdflink:hover{
 /*-------------------------------------- Where Mika Ended ---------------------------------------*/
 
 
-
-
-
-
-
-
-/* Three Column List */
-.threelist .col{
-  padding: 20px 20px 20px 0px;
-}
-
-
 /* Resource Button & Description */
 .resource div{ 
   display: flex;
@@ -550,12 +585,6 @@ a.pdflink:hover{
   font-size: 16px;
   font-style: italic;
 }
-
-
-
-
-
-
 
 /* Childrens Programs */
 .dates span {
@@ -693,25 +722,6 @@ img.margblock {
     margin: 0 auto;
     display: block;
 }
-
-
-/*childrens page styles*/
-/*people card*/
-.peoplecard span {
-	display:block;
-}
-
-/*people card end*/
-/*image gallery*/
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 2;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 2;
-  }
-}
-/*image gallery end*/
 
 /*carousel*/
 #carouselHome h3 {

@@ -3,13 +3,20 @@
 People Cards
 */
 ?>
+<section class="row contentblocks">
+    <div class="col">
+        <h2 class="maintitle"><?php the_sub_field('title'); ?></h2>
+        <div class="details">
+            <p><?php the_sub_field('intro'); ?></p>
+        </div>
+    </div>
+</section>
+
 <?php if (have_rows('person')):
     $count = 0;
     ?>
     <section class="row threelist padfix">
-        <?php
-        // loop through the rows of data
-        while (have_rows('person')) : the_row();
+        <?php while (have_rows('person')) : the_row();
             $count++;
             $name = get_sub_field('name');
             $title = get_sub_field('title');
