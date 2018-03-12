@@ -3,28 +3,33 @@
 Director Cards
 */
 ?>
-<?php if (have_rows('single_card')):
-    $count = 0;
-    ?>
-    <section id="boardavatar" class="row padfix">
-        <?php
-        // loop through the rows of data
-        while (have_rows('single_card')) : the_row();
-            $count++;
+<section class="row contentblocks">
+    <div class="col">
+        <h2 class="maintitle"><?php the_sub_field('title'); ?></h2>
+        <div class="details">
+            <p><?php the_sub_field('intro'); ?></p>
+        </div>
+    </div>
+</section>
+
+<?php if (have_rows('single_card')): ?>
+    <section class="row threelist">
+        <?php while (have_rows('single_card')) : the_row();
             $image = get_sub_field('image');
-            $details = get_sub_field('director_details');
+            $name = get_sub_field('name');
+            $title = get_sub_field('title');
+            $detail = get_sub_field('detail');
             ?>
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img src="<?= $image; ?>">
-                    </div>
-                    <div class="col-sm-8"><?= $details; ?></div>
+            <div class="col-sm-6 peoplecard">
+                <div class="media">
+                  <img class="mr-3" src="<?= $image; ?>">
+                  <div class="media-body">
+                    <span><?= $name; ?></span>
+                    <span><?= $title; ?></span>
+                    <span><?= $detail; ?></span>
+                  </div>
                 </div>
             </div>
-            <?php
-            if ($count % 2 == 0) { ?>
-                <div class="w-100"></div>
-            <?php } endwhile; ?>
+        <?php endwhile; ?>
     </section>
 <?php endif; ?>

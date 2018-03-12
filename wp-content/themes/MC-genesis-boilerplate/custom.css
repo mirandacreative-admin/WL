@@ -543,19 +543,20 @@ a.pdflink:hover{
   margin-left:24px;
 }
 
-/* People Cards*/
+/* People & Director Cards */
 .peoplecard{
   margin-bottom: 32px;
   font-size: 18px;
   line-height: 1.39;
   color: rgba(0, 0, 0, 0.87);
-
 }
 .peoplecard span {
   min-height: 20px;
   display:block;
 }
-
+.peoplecard .media img{
+  width:25%;
+}
 
 /* Gallery Module */
 .card-columns {
@@ -597,7 +598,6 @@ a.pdflink:hover{
 }
 
 .resource div p{ 
-
   line-height: 1.63;
   text-align: left;
   color: rgba(0, 0, 0, 0.87);
