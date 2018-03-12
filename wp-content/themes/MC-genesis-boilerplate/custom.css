@@ -12,28 +12,6 @@ section{
 }
 /* Headers */
 
-/*Drop down menu also see drop down menu jquery in assets/js/mccoder.js*/
-.menu-test {
-  position: relative;
-}
-.sub-menu {
-  position: absolute;
-  min-width:187px;
-  background: white;
-  z-index: 999999;
-}
-.sub-menu {
-  display: none;
-}
-.reveal {
-  display: block;
-}
-ul.shift { 
-  position:absolute;
-  top: 0%;
-  left: 100%;
-}
-/*Drop down menu end */
 /* Color text */
 .text-greyblue{
   color: rgb(136, 175, 193);
@@ -175,6 +153,28 @@ h1.tk-museo{
   top:0;
 }
 
+/* Drop down menu also see drop down menu jquery in assets/js/mccoder.js */
+.menu-test {
+  position: relative;
+}
+.sub-menu {
+  position: absolute;
+  min-width:187px;
+  background: white;
+  z-index: 999999;
+}
+.sub-menu {
+  display: none;
+}
+.reveal {
+  display: block;
+}
+ul.shift { 
+  position:absolute;
+  top: 0%;
+  left: 100%;
+}
+
 /* Left Sidebar */
 #left-sticky{
 	float: right;
@@ -302,7 +302,6 @@ h1.tk-museo{
 
 /* Search Bars */
 .searchbars {
-/*  border: 2px solid blue;*/
 }
 .searchwrapper {
   position:relative;
@@ -337,7 +336,6 @@ body input.imgsubmit {
   line-height: 1.54;
   color: rgba(0, 0, 0, 0.38);
 }
-
 .squaregrid a.link:hover {
   color:#ffffff;
   background: #88afc1;
@@ -568,6 +566,10 @@ a.pdflink:hover{
   width:100%;
 }
 
+/* Accordion Module */
+.accordian-hold{
+  margin-bottom: 24px;
+}
 
 
 
