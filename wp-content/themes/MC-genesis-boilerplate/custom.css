@@ -350,6 +350,10 @@ body input.imgsubmit {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
 }
+.title .excerpt a{
+  font-weight: bold;
+  color: rgb(136, 175, 193);
+}
 .content{
   color: rgba(0, 0, 0, 0.38);
   font-family: 'Noto Sans', sans-serif;
@@ -508,8 +512,7 @@ a.pdflink:hover{
 .threelist .col{
   color: rgba(0, 0, 0, 0.8);
 }
-.threelist .col ul li
-{
+.threelist .col ul li{
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: normal;
@@ -518,6 +521,20 @@ a.pdflink:hover{
   list-style: disc;
   margin-left:24px;
 }
+
+/* People Cards*/
+.peoplecard{
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.39;
+  color: rgba(0, 0, 0, 0.87);
+
+}
+.peoplecard span {
+  min-height: 20px;
+  display:block;
+}
+
 
 
 
@@ -714,11 +731,13 @@ img.margblock {
 }
 
 
+
+
+
+
+
+
 /*childrens page styles*/
-/*people card*/
-.peoplecard span {
-	display:block;
-}
 
 /*people card end*/
 /*image gallery*/
