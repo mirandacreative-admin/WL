@@ -55,10 +55,12 @@ section{
 .btn.btn-primary{
 	border-radius: none;
 }
-.btn-greyblue, .gform_button.button{
+.btn-greyblue, 
+.gform_button.button{
 	background-color: rgb(136, 175, 193);
 }
-.btn-greyblue:hover, .gform_button.button:hover{
+.btn-greyblue:hover, 
+.gform_button.button:hover{
   background-color: rgb(136, 175, 193);
   opacity: 0.9;
 }
@@ -79,6 +81,11 @@ section{
 }
 .btn-long{
   min-width: 100%
+}
+
+.btn-short{
+  width: 120px;
+  margin: 10px 0;
 }
 
 
@@ -484,7 +491,7 @@ body input.imgsubmit {
 .eventblocks .block{
   margin-bottom: 8px;
 }
-.eventblocks .date {
+.eventblocks .date, .program .date {
   background: rgba(136, 175, 193, 0.1);
   box-shadow: 0 -1px 0 0 rgba(136, 175, 193, 0.6), 0 1px 0 0 rgba(136, 175, 193, 0.6);
   text-align: center;
@@ -610,6 +617,103 @@ a.pdflink:hover{
   color: rgba(0, 0, 0, 0.5);
 }
 
+/* Programs Module */
+.program .date{
+  font-family: "museo",serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2b2767;
+}
+.program h2, 
+.program .agerange{
+  font-family: "museo",serif;
+  font-size: 24px;
+  line-height: 1.33;
+  text-align: left;
+  color: #2b2767;
+}
+.program .agerange{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  }
+.program .descr{
+  font-family: "museo-sans",sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 16px;
+}
+.program .descr .time,
+.program .descr .dates{ 
+  margin-top: 8px;
+  font-family: "museo",serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  color: #2b2767;
+}
+
+
+/*.dates span {
+  display: inline-block;
+  padding: 7px 22px 12px 0px;
+}
+.time span {
+      display: inline-block;
+    padding: 7px 22px 12px 0px;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.agerange {
+  position: absolute;
+  top:0px;
+  right :0px;
+}
+.dotw {
+  text-align: center;
+  padding: 44px 15px;
+  background-color: #eee;
+}
+.regbtn {
+  text-transform: uppercase;
+  background: #88afc1;
+}
+a.regbtn  {
+  color: white;
+  padding: 5px 32px;
+  font-family: NotoSans;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center; 
+}
+#todaysmsg p {
+  position: absolute;
+    top: 100px;
+    left: 59px;
+    right: 43px;
+}
+#todaysmsg .hidden {
+  display: none;
+}
+#todaysmsg .active {
+  display: block;
+  }
+*/
+
 /* Form & Inputs */
 .contact-form{
   position: relative;
@@ -645,57 +749,7 @@ a.pdflink:hover{
   font-style: italic;
 }
 
-/* Childrens Programs */
-.dates span {
-	    display: inline-block;
-    padding: 7px 22px 12px 0px;
-}
-.time span {
-	    display: inline-block;
-    padding: 7px 22px 12px 0px;
-}
-.rel {
-	position: relative;
-}
-.abs {
-	position: absolute;
-}
-.agerange {
-	position: absolute;
-	top:0px;
-	right :0px;
-}
-.wd {
-	text-align: center;
-	padding: 44px 15px;
-	background-color: #eee;
-}
-.regbtn {
-	text-transform: uppercase;
-	background: #88afc1;
-}
-a.regbtn  {
-	color: white;
-	padding: 5px 32px;
-	font-family: NotoSans;
-	font-size: 15px;
-	font-weight: bold;
-	letter-spacing: 0.5px;
-	text-align: center;	
-}
-#todaysmsg p {
-	position: absolute;
-    top: 100px;
-    left: 59px;
-    right: 43px;
-}
-#todaysmsg .hidden {
-	display: none;
-}
-#todaysmsg .active {
-	display: block;
-	}
-/*childrens program end*/
+
 /*childrens page styles*/
 #genesis-content > h1 {
 display: none;
