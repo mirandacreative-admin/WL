@@ -1,12 +1,12 @@
 <?php
 /*
-Child Programs 
+Child Programs
 */
 ?>
 <?php if (have_rows('program')):
     $count = 0;
     ?>
-    <section class="row padfix">
+    <section class="row">
         <?php
         // loop through the rows of data
         while (have_rows('program')) : the_row();

@@ -9,7 +9,7 @@ Title and Blurb
             $maintitle = get_sub_field('maintitle');
             $blurb = get_sub_field('blurb');
             ?>
-            <div class="col">
+            <div class="col-sm-12">
                 <h1 class="titleheader"><?php echo $maintitle; ?></h1>
                 <div class="excerpt"> <?php echo $blurb; ?> </div>
             </div>

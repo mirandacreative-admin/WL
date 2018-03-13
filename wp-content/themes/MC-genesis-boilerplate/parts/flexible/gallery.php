@@ -3,18 +3,16 @@
 Gallery
 */
 ?>
-
 <section class="row contentblocks">
-    <div class="col">
+    <div class="col-sm-12">
         <h2 class="maintitle"><?php the_sub_field('title'); ?></h2>
         <div class="details">
             <p><?php the_sub_field('intro'); ?></p>
         </div>
     </div>
 </section>
-
 <?php if (have_rows('image')): ?>
-    <section class="row padfix">
+    <section class="row">
         <div class="card-columns">
             <?php while (have_rows('image')) : the_row();
                 $count++;
