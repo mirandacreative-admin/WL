@@ -179,6 +179,7 @@ function mc_enqueue_mccode() {
     wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');
     wp_enqueue_script( 'google-trans', 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
     wp_enqueue_script( 'userway', 'https://cdn.userway.org/widget.js');
+     wp_enqueue_script( 'ekko-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js');   
 
 }
 add_action('wp_enqueue_scripts', 'mc_enqueue_mccode');
@@ -202,6 +203,7 @@ function mc_enqueue_my_styles() {
     wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/custom.css' );    
 
     wp_enqueue_style( 'animate-css', get_stylesheet_directory_uri() . '/assets/css/animate.css' );       
+    wp_enqueue_style( 'ekkolightbox-css', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' ); 
 }
 // webslide menu code
 

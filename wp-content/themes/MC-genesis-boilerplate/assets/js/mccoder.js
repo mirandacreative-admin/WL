@@ -57,7 +57,11 @@ jQuery(document).ready(function( $ ) {
 			$(this).find(".sub-menu ul").removeClass("shift");
 			console.log('reveal class removed');
 		});		
-		};				
+		};		
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		                event.preventDefault();
+		                $(this).ekkoLightbox();
+		            });				
 });
 
 function classTog(x) {
