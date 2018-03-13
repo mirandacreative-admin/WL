@@ -22,7 +22,7 @@ Gallery
                 $alt_tag = get_sub_field('alt_tag');
                 ?>
                <div class="card">
-                    <a href="<?= $img; ?>" data-toggle="lightbox">
+                    <a href="<?= $img; ?>" data-toggle="lightbox" data-gallery="gallery" data-width="9">
                         <img class="img-fluid" src="<?= $img; ?>" alt="<?= $alt_tag; ?>">
                     </a>
                 </div>
