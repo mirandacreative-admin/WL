@@ -451,6 +451,14 @@ body input.imgsubmit {
   font-style: italic;
   color: rgba(0, 0, 0, 0.87);
 }
+.blurb-hold .highlight em{
+  color:#2b2767;
+  font-family: "museo",serif;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1.45;
+  text-align: left;
+}
 .blurb-hold .blurb p, 
 .eventblocks .details p, 
 .buttonblocks .details p,
@@ -462,6 +470,7 @@ body input.imgsubmit {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
 }
+
 
 /* Event Block Section */
 .eventblocks{

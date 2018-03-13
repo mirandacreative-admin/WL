@@ -18,7 +18,7 @@ Blurb Section - Two Columns
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
             ?>
-         <div class="col-6 blurb">
+         <div class="col-lg-6 col-md-4 col-xs-12 blurb">
                 <h2><?= $title; ?></h2>
                 <h3><?= $header; ?></h3>
                 <h4 class="subheader"><?= $subheader; ?></h4>
