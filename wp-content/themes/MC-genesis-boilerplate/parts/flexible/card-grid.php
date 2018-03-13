@@ -12,7 +12,7 @@ Card Content Grid
                 $link_url = get_sub_field('link_url');
                 $hover_color = get_sub_field('hover_color');
             ?>
-            <div class="hold col-6 col-sm-4">
+            <div class="hold col-lg-4 col-sm-6">
             <a class="link" onmouseover="this.style.background='<?php echo $hover_color; ?>'"onmouseout="this.style.background='white'" href="<?php echo $link_url; ?>">
                 <div>
                     <h2 class="header"><?php echo $title; ?></h2>

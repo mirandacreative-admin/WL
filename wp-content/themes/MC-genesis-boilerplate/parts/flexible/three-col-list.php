@@ -12,13 +12,13 @@ Three Column List
         $coltwo = get_sub_field('col_two');
         $colthree = get_sub_field('col_three');
         ?>
-        <div class="col">
+        <div class="col col-lg-4 col-sm-12">
             <?php echo $colone; ?>
         </div>
-        <div class="col">
+        <div class="col col-lg-4 col-sm-12">
             <?php echo $coltwo; ?>
         </div>
-        <div class="col">
+        <div class="col col-lg-4 col-sm-12">
             <?php echo $colthree; ?>
         </div>
 

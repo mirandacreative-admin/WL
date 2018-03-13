@@ -4,7 +4,7 @@ Blurb Section - Two Columns
  */
 ?>
  <div class="row">
-    <div class="col">
+    <div class="col-sm-12">
     <?php if ( $maintitle = get_sub_field( 'maintitle' ) ): ?>
         <h2 class="maintitle"><?php echo $maintitle; ?></h2>
     <?php endif; ?>
@@ -31,6 +31,14 @@ Blurb Section - Two Columns
                         $link = get_sub_field('link');
                         ?>
                     <a href="<?= $link; ?>"><?= $linktext; ?></a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('buttons')):?>
+                    <?php while (have_rows('buttons')) : the_row();
+                        $linktext = get_sub_field('linktext');
+                        $link = get_sub_field('link');
+                        ?>
+                     <a class="button" href="<?= $link; ?>"><?= $linktext; ?></a>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
