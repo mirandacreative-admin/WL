@@ -22,7 +22,7 @@ People Cards
             $title = get_sub_field('title');
             $detail = get_sub_field('detail');
             ?>
-            <div class="col-sm-6 peoplecard">
+            <div class="col-sm-6 col-lg-6 peoplecard">
                 <span><?= $name; ?></span>
                 <span><?= $title; ?></span>
                 <span><?= $detail; ?></span>

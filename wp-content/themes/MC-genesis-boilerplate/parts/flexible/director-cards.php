@@ -20,7 +20,7 @@ Director Cards
             $title = get_sub_field('title');
             $detail = get_sub_field('detail');
             ?>
-            <div class="col-sm-6 peoplecard">
+            <div class="col-sm-6 col-lg-6 peoplecard">
                 <div class="media">
                   <img class="mr-3" src="<?= $image; ?>">
                   <div class="media-body">
