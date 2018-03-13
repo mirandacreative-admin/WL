@@ -38,8 +38,8 @@ if (have_rows('main')):
         elseif (get_row_layout() == 'director_cards'):
             get_template_part('parts/flexible/director-cards');
 
-        elseif (get_row_layout() == 'child_programs'):
-            get_template_part('parts/flexible/child-programs');
+        elseif (get_row_layout() == 'programs'):
+            get_template_part('parts/flexible/programs');
 
         elseif (get_row_layout() == 'three_col_list'):
             get_template_part('parts/flexible/three-col-list');
