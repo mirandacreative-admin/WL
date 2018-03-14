@@ -3,16 +3,21 @@
 Carousel Module 
 */
 ?>
-<section id="carouselHome" class="carousel slide" data-ride="carousel">
+<section id="carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <?php
         $alert = get_field('slider_alert', 'option');
         if ($alert) {
             ?>
-            <div class="alert"><?= $alert; ?><span id="hide-alert" class="close">x</span></div>
+            <div class="alert">
+                <i class="material-icons">warning</i> 
+                <span class="message"><?= $alert; ?></spanI >
+                <span id="hide-alert" class="close">
+                    <i class="material-icons">close</i>
+                </span>
+            </div>
             <?php
         }
-        // do something with $variable
         ?>
         <?php if (have_rows('slider')):
             $count = 0;
@@ -34,12 +39,13 @@ Carousel Module
             <?php endwhile; ?>
         <?php endif; ?>
     </div>
-        <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
+            <i class="material-icons">close</i>
         </a>
 </section>

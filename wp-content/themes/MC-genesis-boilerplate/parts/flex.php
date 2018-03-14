@@ -51,7 +51,10 @@ if (have_rows('main')):
             get_template_part('parts/flexible/gallery');   
 
         elseif (get_row_layout() == 'resource'):
-            get_template_part('parts/flexible/resource');                                 
+            get_template_part('parts/flexible/resource');
+
+        elseif (get_row_layout() == 'lists'):
+            get_template_part('parts/flexible/lists');                              
 
         endif;
 
@@ -63,3 +66,4 @@ else :
      <h1><?php the_title() ?></h1>
     <?php
 endif;
+?>

@@ -10,7 +10,7 @@ Blurb Section - Two Columns
     <?php endif; ?>
     </div>
 </div>
-<section class="row blurb-hold">
+<section class=" blurb-hold card-columns">
     <?php if (have_rows('blurb_col')):?>
         <?php while (have_rows('blurb_col')) : the_row();
             $title = get_sub_field('title');
@@ -18,7 +18,7 @@ Blurb Section - Two Columns
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
             ?>
-         <div class="col-lg-6 col-md-4 col-xs-12 blurb">
+         <div class="blurb card ">
                 <h2><?= $title; ?></h2>
                 <h3><?= $header; ?></h3>
                 <h4 class="subheader"><?= $subheader; ?></h4>

@@ -39,10 +39,10 @@ Child Programs
                <div class="col-sm-12 descr">
                 <?= $description; ?>
                 <div class="time">
-                    <span>Time</span> <?= $time; ?>
+                    <span>Time</span>   <?= $time; ?>
                 </div>
                 <div class="dates">
-                    <span>Dates</span> <?= $dates; ?>
+                    <span>Dates</span>   <?= $dates; ?>
                 </div>
                 <a class="button btn-greyblue btn-short" href="<?= $registration_url; ?>">Registration</a>
 

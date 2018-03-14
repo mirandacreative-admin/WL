@@ -51,7 +51,6 @@ section{
 .button:hover{
   opacity: 0.9;
 }
-
 .btn.btn-primary{
 	border-radius: none;
 }
@@ -82,7 +81,6 @@ section{
 .btn-long{
   min-width: 100%
 }
-
 .btn-short{
   width: 120px;
   margin: 10px 0;
@@ -308,19 +306,69 @@ ul.shift {
 }
 
 /* Search Bars */
-.searchbars {
-}
 .searchwrapper {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
   position:relative;
+  margin-bottom:8px;
 }
 .imgsubmit {
   position: absolute;
   top:0px;
   right: 0px;
 }
-body input.imgsubmit {
-  padding: 12px;
+.searchwrapper input.imgsubmit {
+  padding: 11px;
+  border: none;
+  margin: 1px;
 } 
+
+/* Carousel Module*/
+.carousel-item .img-fluid {
+  width:100%;
+  height:100%;
+}
+#carousel .carousel-caption {
+  position: absolute;
+  left:2%;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 32px;
+  font-family: 'museo', sans-serif;
+  line-height: 1.14;
+  font-weight: 700;
+}
+#carousel h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+  /* alerts section */
+  #carousel .alert{
+    position: absolute;
+    width:100%;
+    margin:0px;
+    z-index: 8;
+    bottom: 0px;
+    background: #ff5959;
+    color: white;
+  }
+  #carousel .alert{
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  #carousel .alert .message{
+    position: relative;
+    top: -6px;
+    padding-left: 20px;
+  }
+  #carousel .alert i{
+    color:#ffffff;
+  }
+
 /* Card Content Grids */
 .squaregrid .hold{
   padding: 2px;
@@ -337,7 +385,7 @@ body input.imgsubmit {
   font-weight: 600;
 }
 .squaregrid a.link .blurb{
-  font-family: NotoSans;
+  font-family: 'Noto Sans', sans-serif;;
   font-weight: 100;
   font-size: 13px;
   line-height: 1.54;
@@ -351,12 +399,11 @@ body input.imgsubmit {
   color:#ffffff;
 }
 .squaregrid{
-  font-family: NotoSans;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 100;
   font-size: 13px;
   line-height: 1.54;
 }
-
 
 /* Title & Blurb */
 .title{
@@ -399,6 +446,9 @@ body input.imgsubmit {
 .blurb{
   margin-bottom:32px;
 }
+.blurb.card{
+  border:none;
+}
 .blurb-hold a{
   color: #88afc1;
   font-family: "museo-sans",sans-serif;
@@ -411,7 +461,6 @@ body input.imgsubmit {
   background-color: rgb(43, 39, 103);
   opacity: 0.9;
 }
-
 .blurb-hold h1 {
   font-family: "museo-sans",sans-serif;
   font-size: 2.8em;
@@ -541,7 +590,6 @@ a.pdflink:hover{
   color: rgb(169, 46, 137);
 }
 
-
 /* Three Column List */
 .threecol{
   font-size: 14px;
@@ -662,57 +710,43 @@ a.pdflink:hover{
   color: #2b2767;
 }
 
-
-/*.dates span {
-  display: inline-block;
-  padding: 7px 22px 12px 0px;
+/* List Modules */
+.listsection h3,
+.listsection h4 {
+  font-family: "museo",serif;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1.45;
+  text-align: left;
+  color: #2b2767;
 }
-.time span {
-      display: inline-block;
-    padding: 7px 22px 12px 0px;
+.listsection h4{
+  font-weight: 700;
+  font-size: 16px;
 }
-.rel {
-  position: relative;
-}
-.abs {
-  position: absolute;
-}
-.agerange {
-  position: absolute;
-  top:0px;
-  right :0px;
-}
-.dotw {
-  text-align: center;
-  padding: 44px 15px;
-  background-color: #eee;
-}
-.regbtn {
-  text-transform: uppercase;
-  background: #88afc1;
-}
-a.regbtn  {
-  color: white;
-  padding: 5px 32px;
+.listsection .descr{
   font-family: NotoSans;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  text-align: center; 
-}
-#todaysmsg p {
-  position: absolute;
-    top: 100px;
-    left: 59px;
-    right: 43px;
-}
-#todaysmsg .hidden {
-  display: none;
-}
-#todaysmsg .active {
+  font-size: 14px;
+  line-height: 2.29;
+  text-align: left;
+  color: #000000;
+  padding-left: 40px;
   display: block;
-  }
-*/
+}
+/* Resource Button & Description */
+.resource div{ 
+  display: flex;
+  align-items: center;
+}
+.resource div p{ 
+  line-height: 1.63;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'museo', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
 
 /* Form & Inputs */
 .contact-form{
@@ -732,25 +766,7 @@ a.regbtn  {
 
 /*-------------------------------------- Where Mika Ended ---------------------------------------*/
 
-
-/* Resource Button & Description */
-.resource div{ 
-  display: flex;
-  align-items: center;
-}
-
-.resource div p{ 
-  line-height: 1.63;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.87);
-  font-family: 'museo', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  font-style: italic;
-}
-
-
-/*childrens page styles*/
+/* Childrens Page Styles */
 #genesis-content > h1 {
 display: none;
 }
@@ -836,49 +852,6 @@ img.margblock {
     display: block;
 }
 
-/*carousel*/
-#carouselHome h3 {
-	text-align: left;
-	font-size: 33px;
-}
-#carouselHome p {
-	text-align: left;
-	display: block;
-	width: 100%;
-	/*background:; this has been like this since the repo was created, not sure what was supposed to be here   */
-}
-#carouselHome .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 53px;
-    left: 3%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-}
-#carouselHome .alert {
-	position: absolute;
-    z-index: 8;
-    bottom: 0px;
-    background: #ff000080;
-    color: white;
-    left: 0px;
-    right: 0pc;
-}
-
-/* MCcoder */
-
-/*makes the carousel responsive*/
-.carousel-item .img-fluid {
-  width:100%;
-  height:100%;
-}
-
-
-
-
 
 
 .wcag {
@@ -887,17 +860,6 @@ img.margblock {
     right: 15px;
     z-index: 99999999;
 }
-
-/*nice colorful buttons in the theme options panel*/
-/*body .wgdebtn {
-	color: white;
-	padding: 7px;
-	width: 100%;
-	display:block;
-	margin: 0 auto;
-	text-align: center;
-	text-transform: uppercase;
-}*/
 #overlapblackbg {
     left: 0;
     z-index: 999999999;
@@ -926,11 +888,10 @@ span.subtag {
 	padding-top: 12px;
 
 }
-
 .mediumlogo {
 	display: none;
 }
-/*slide menu*/
+/* Slide Menu */
 .contmenu {
     transform: scale(0.65);
     display: inline-block;
@@ -943,13 +904,12 @@ span.subtag {
     margin: 6px 0;
     transition: 0.4s;
 }
-
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
-
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;}
 
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -1069,58 +1029,50 @@ span.subtag {
 }
 
 
-/*library board page*/
-#boardavatar .col-sm-4 {
-    background: #eee;
-    padding: 0px 0px 0px 0px;
-    text-align: center;
-    margin: 0px 0px 20px 0px;
-}
-
 /* mobile widget for hours & language */
 #hours_language_mobile {
-    display: none;
-	font-family: "Museo", Serif;
-	width: auto;
-	height: auto;
-	opacity: 0.60;
-    color: #333;
-	background-color: rgba(136, 175, 193, 0.2);
-	box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
+  display: none;
+  font-family: "Museo", Serif;
+  width: auto;
+  height: auto;
+  opacity: 0.60;
+  color: #333;
+  background-color: rgba(136, 175, 193, 0.2);
+  box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
 }
 .library-hours{
-    font-family: "Museo", Serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.45;
-    text-align: left;
-    color: #2b2767;
+  font-family: "Museo", Serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: left;
+  color: #2b2767;
 }
 .library-hours-arrows{
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 .library-hours-right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 .library-hours-left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .library-hours-up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 .library-hours-down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 /* only show on mobile */
 @media screen and (max-width: 640px){
