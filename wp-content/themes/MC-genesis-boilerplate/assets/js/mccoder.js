@@ -5,7 +5,8 @@
 
 
 jQuery(document).ready(function( $ ) {
-
+	// adding the carrot to the list items whom have children and are not top level
+	$('.sub-menu li.menu-item-has-children').append('<i class="material-icons">keyboard_arrow_right</i>');
 	// this checks to see if there is any text in the library cat search
      $('#libcatsearch').attr('disabled','disabled');
      $('input[type="text"]').keyup(function() {
@@ -43,9 +44,9 @@ jQuery(document).ready(function( $ ) {
 			$(this).removeClass("jello");
 		});	
 		if ($(window).width() < 1090) {
-   			$("#menu-test").appendTo("#menuslot");
+   			$(".main-menu").appendTo("#menuslot");
 		}
-		if ($(window).width() > 1090) {
+
 		// drop down menu jquery
 		$("#menu-test li").mouseenter(function() {
 			$(this).children("ul.sub-menu").addClass("reveal");
@@ -57,7 +58,7 @@ jQuery(document).ready(function( $ ) {
 			$(this).find(".sub-menu ul").removeClass("shift");
 			console.log('reveal class removed');
 		});		
-		};		
+		
 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 		                event.preventDefault();
 		                $(this).ekkoLightbox();
