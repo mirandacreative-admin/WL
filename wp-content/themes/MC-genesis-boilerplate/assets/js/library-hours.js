@@ -21,10 +21,10 @@ jQuery(document).ready(function($){
     $('.off-canvas-menu-hours').each(function(elem){
         // check the current day against each of the elements, and... add the class for purple text
         if($(this).data('day') === day_dict[today]){
-            $(this).addClass('current-day-hours-warm-purple');
+            $(this).addClass('current-hours');
         } else {
             // there's no need to remove a class that isn't there in the first place, but... just in case...
-            $(this).removeClass('current-day-hours-warm-purple');
+            $(this).removeClass('current-hours');
         }
     });
 
@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
     $('.hours-widget-item').each(function(elem){
         // check the current day against each of the elements, and... add the class for purple text
         if($(this).data('day') === day_dict[today]){
-            $(this).addClass('current-day-hours-warm-purple');
+            $(this).addClass('current-hours');
         } else {
             // there's no need to remove a class that isn't there in the first place, but... just in case...
             $(this).hide();
@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 
     $('#library-hours-dropdown-button').click(function(){
         // change the arrow to direction
-        $('#library-hours-dropdown-button').toggleClass('library-hours-left library-hours-down');
+        $('#library-hours-dropdown-button').toggleClass('library-hours-down library-hours-up');
 
         $('.hours-widget-item').each(function(elem){
             // check the current day against each of the elements, and... add the class for purple text

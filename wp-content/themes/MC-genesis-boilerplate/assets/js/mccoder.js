@@ -50,7 +50,8 @@ jQuery(document).ready(function( $ ) {
 		// drop down menu jquery
 		$("#menu-test li").mouseenter(function() {
 			$(this).children("ul.sub-menu").addClass("reveal");
-			$(this).find(".sub-menu ul").addClass("shift");			
+			$(this).find(".sub-menu ul").addClass("shift");
+			//$(this).children("ul.sub-menu").appendTo("<i class="material-icons">keyboard_arrow_right</i>");			
 			console.log('reveal class added');
 		});		
 		$("#menu-test li").mouseleave(function() {

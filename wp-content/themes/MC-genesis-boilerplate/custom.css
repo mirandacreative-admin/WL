@@ -137,11 +137,11 @@ h1.tk-museo{
 }
 .main-menu li{
 	min-width: 16%;
+  border-right: 0.5px solid rgba(136, 175, 193, 0.8);
 }
 .main-menu li a{
 	display: block;
 	padding: 15px 15px;
-	border-right: 0.5px solid rgba(136, 175, 193, 0.8);
 	color:#2b2767;
 	font-size: 0.7em;
 	text-align: center;
@@ -207,6 +207,15 @@ ul.shift {
 .hourblock {
   background-color: rgba(136, 175, 193, 0.1);
 }
+.hourblock h2{
+  padding: 8%;
+  border-top: 0.5px solid rgba(136, 175, 193, 0.8);
+  margin: 0;
+  color: #2b2767;
+  font-family: "museo",serif;
+  font-size: 22px;
+  font-weight: 100;
+}
 .hour-inner{
 	padding: 0 15%;
 	color: #2b2767;
@@ -219,10 +228,40 @@ ul.shift {
 .dow, .hours{
 	padding:0;
 }
-/* Header off-canvas Menu > Library Hours  */
-.current-day-hours-warm-purple{
+.current-hours{
 	color: #a92e89;
 }
+/* mobile widget for hours & language */
+#hours_language_mobile {
+    display: none;
+}
+.library-hours-arrows{
+  border: solid #a92e89;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.library-hours-up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.library-hours-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* only show on mobile */
+@media screen and (max-width: 640px){
+    #hours_language_mobile {
+      display: block;
+    }
+    #google_translate_mobile{
+      padding-top: 10px;
+    }
+}
+
+
+
+
 
 /* Connect Links */
 .connect  {
@@ -325,8 +364,14 @@ ul.shift {
   border: none;
   margin: 1px;
 } 
+.catalogframe{
+  height:1px;
+}
 
 /* Carousel Module*/
+.carousel {
+
+}
 .carousel-item .img-fluid {
   width:100%;
   height:100%;
@@ -1025,55 +1070,3 @@ span.subtag {
 
 }
 
-
-/* mobile widget for hours & language */
-#hours_language_mobile {
-  display: none;
-  font-family: "Museo", Serif;
-  width: auto;
-  height: auto;
-  opacity: 0.60;
-  color: #333;
-  background-color: rgba(136, 175, 193, 0.2);
-  box-shadow: 0 -1px 0 0 #88afc1, 0 1px 0 0 #88afc1;
-}
-.library-hours{
-  font-family: "Museo", Serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.45;
-  text-align: left;
-  color: #2b2767;
-}
-.library-hours-arrows{
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.library-hours-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.library-hours-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.library-hours-up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.library-hours-down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-/* only show on mobile */
-@media screen and (max-width: 640px){
-    #hours_language_mobile {
-        display: block;
-    }
-}
