@@ -12,7 +12,7 @@ Resource Button Links
     </div>
 </section>
 <?php if (have_rows('single_resource')): ?>
-    <section class="row resource padfix">
+    <section class="row resource">
         <?php while (have_rows('single_resource')): the_row();
             $count++;
             $btntext = get_sub_field('button_text');
