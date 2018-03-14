@@ -1,7 +1,7 @@
 
 <?php
-/**
- * Right Sidebar Color Links?
+/*
+Right Sidebar
  */
 ?>  
 
