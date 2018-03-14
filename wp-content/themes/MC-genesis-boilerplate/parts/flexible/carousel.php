@@ -46,6 +46,5 @@ Carousel Module
         <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-            <i class="material-icons">close</i>
         </a>
 </section>
