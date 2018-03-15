@@ -3,7 +3,7 @@
 Card Content Grid
 */
 ?>
-<section class="container squaregrid">
+<section id="homecards" class="container squaregrid">
     <div class="row equal">
         <?php if (have_rows('cards')): ?>
             <?php while (have_rows('cards')): the_row();

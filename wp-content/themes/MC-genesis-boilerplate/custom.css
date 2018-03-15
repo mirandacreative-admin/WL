@@ -371,9 +371,18 @@ ul.shift {
   border: none;
   margin: 1px;
 } 
-.catalogframe{
-  height:1px;
+
+/*library catalog results frame*/
+#homecards {
+margin-top:-33px
 }
+.catalogframe {
+  margin-bottom:33px;
+}
+/*this broke the expandable iframe*/
+/*.catalogframe{
+  height:1px;
+}*/
 
 /* Carousel Module*/
 .carousel {
@@ -977,6 +986,9 @@ span.subtag {
 .copyright {
   font-size: .7em;
 }
+#menuslot {
+  display: none;
+}
 /*silde menu*/
 @media (max-width: 1600px) {
 	.homelink {
@@ -1019,7 +1031,13 @@ span.subtag {
 
 
 @media (max-width: 1090px) { 
+.main-menu {
+  display: none;
 
+}
+#menuslot {
+  display:block;
+}
 	.contmenu {
     display: inline-block;
     }	

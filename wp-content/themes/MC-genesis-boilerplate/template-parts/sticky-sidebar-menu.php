@@ -7,7 +7,9 @@ Left Sidebar
     <a href="<?php echo get_option( "siteurl" ); ?>"><img class="logo"
     src="<?php the_field( 'logo', 'option' ); ?>"></a>
     <a href="<?php echo get_option( "siteurl" ); ?>/about"><h2>About The Library</h2></a>
-    <div id="menuslot"></div>
+    <div id="menuslot">
+        <?php include_once( get_stylesheet_directory() . '/template-parts/mobile-menu.php' ); ?>
+    </div>
     <div class="hourblock">
         <h2>Library Hours</h2>
         <div class="row hour-inner">
