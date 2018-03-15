@@ -254,7 +254,7 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 
-add_action('genesis_footer','lib_foot');
+add_action('genesis_after_entry','lib_foot');
 function lib_foot(){
     get_template_part('template-parts/footer-area');  
 }

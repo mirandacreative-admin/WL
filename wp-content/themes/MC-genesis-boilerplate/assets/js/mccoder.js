@@ -6,7 +6,7 @@
 
 jQuery(document).ready(function( $ ) {
 	// adding the carrot to the list items whom have children and are not top level
-	$('.sub-menu li.menu-item-has-children').append('<i class="material-icons">keyboard_arrow_right</i>');
+	$('.sub-menu li.menu-item-has-children').append('<i id="submenuarrow" class="material-icons">keyboard_arrow_right</i>');
 	// this checks to see if there is any text in the library cat search
      $('#libcatsearch').attr('disabled','disabled');
      $('input[type="text"]').keyup(function() {
