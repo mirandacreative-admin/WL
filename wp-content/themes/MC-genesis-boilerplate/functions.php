@@ -436,7 +436,6 @@ function hours_language_mobile(){
 add_action('genesis_before_loop', 'hours_language_mobile');
 
 // mobile menu
-require_once(get_stylesheet_directory() . '/includes/wp_bootstrap_navwalker.php');
 
 class CSS_Menu_Maker_Walker extends Walker {
 

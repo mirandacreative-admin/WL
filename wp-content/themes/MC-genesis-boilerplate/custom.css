@@ -1030,14 +1030,16 @@ span.subtag {
 }
 
 
-@media (max-width: 1090px) { 
+@media (max-width: 1270px) { 
+/*main menu dissapears*/
 .main-menu {
   display: none;
-
 }
+/*accordion menu appears*/
 #menuslot {
   display:block;
 }
+/*hamburg button appears*/
 	.contmenu {
     display: inline-block;
     }	
