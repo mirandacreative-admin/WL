@@ -43,9 +43,9 @@ jQuery(document).ready(function( $ ) {
 		$(".block").mouseleave(function() {
 			$(this).removeClass("jello");
 		});	
-		if ($(window).width() < 1090) {
-   			$(".main-menu").appendTo("#menuslot");
-		}
+		// if ($(window).width() < 1090) {
+  //  			$(".main-menu").appendTo("#menuslot");
+		// }
 
 		// drop down menu jquery
 		$("#menu-test li").mouseenter(function() {

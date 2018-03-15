@@ -177,6 +177,7 @@ function mc_enqueue_mccode() {
     wp_enqueue_script( 'mccoder-js', get_stylesheet_directory_uri() . '/assets/js/mccoder.js'); // all the bootstrap javascript goodness
     wp_enqueue_script( 'library-hours', get_stylesheet_directory_uri() . '/assets/js/library-hours.js');
     wp_enqueue_script( 'sticky-js', get_stylesheet_directory_uri() . '/assets/js/sticky-kit.js');
+        wp_enqueue_script( 'mobile-menu', get_stylesheet_directory_uri() . '/assets/js/mobilemenu-script.js');
     wp_enqueue_script( 'google-trans', 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
     wp_enqueue_script( 'userway', 'https://cdn.userway.org/widget.js');
      wp_enqueue_script( 'ekko-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js');   
@@ -201,6 +202,7 @@ function mc_enqueue_my_styles() {
     wp_enqueue_style( 'google-material', 'https://fonts.googleapis.com/icon?family=Material+Icons' );   
 
     wp_enqueue_style( 'custom-css', get_stylesheet_directory_uri() . '/custom.css' );    
+    wp_enqueue_style( 'mobile-menucss', get_stylesheet_directory_uri() . '/assets/css/mobilemenu-styles.css' );      
 
     wp_enqueue_style( 'animate-css', get_stylesheet_directory_uri() . '/assets/css/animate.css' );       
     wp_enqueue_style( 'ekkolightbox-css', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' ); 
@@ -433,3 +435,65 @@ function hours_language_mobile(){
 
 add_action('genesis_before_loop', 'hours_language_mobile');
 
+// mobile menu
+require_once(get_stylesheet_directory() . '/includes/wp_bootstrap_navwalker.php');
+
+class CSS_Menu_Maker_Walker extends Walker {
+
+  var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
+
+  function start_lvl( &$output, $depth = 0, $args = array() ) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "\n$indent<ul>\n";
+  }
+
+  function end_lvl( &$output, $depth = 0, $args = array() ) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "$indent</ul>\n";
+  }
+
+  function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+
+    global $wp_query;
+    $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+    $class_names = $value = '';        
+    $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+    /* Add active class */
+    if(in_array('current-menu-item', $classes)) {
+      $classes[] = 'active';
+      unset($classes['current-menu-item']);
+    }
+
+    /* Check for children */
+    $children = get_posts(array('post_type' => 'nav_menu_item', 'nopaging' => true, 'numberposts' => 1, 'meta_key' => '_menu_item_menu_item_parent', 'meta_value' => $item->ID));
+    if (!empty($children)) {
+      $classes[] = 'has-sub';
+    }
+
+    $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+    $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
+
+    $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+    $id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
+
+    $output .= $indent . '<li' . $id . $value . $class_names .'>';
+
+    $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+    $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+    $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+    $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+    $item_output = $args->before;
+    $item_output .= '<a'. $attributes .'><span>';
+    $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+    $item_output .= '</span></a>';
+    $item_output .= $args->after;
+
+    $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+  }
+
+  function end_el( &$output, $item, $depth = 0, $args = array() ) {
+    $output .= "</li>\n";
+  }
+}
