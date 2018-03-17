@@ -3,15 +3,6 @@
 Blurb Section - Two Columns
  */
 ?>
-    <?php $i = '' ;?>
-
-    <?php if (have_rows('blurb_col')):?>
-        <?php while (have_rows('blurb_col')) : the_row(); ?>
-                <?php $i++;?>
-    <?php endwhile; ?>
-    <?php endif; ?>
-    <?php $colcount = 0; ?>
-    <?php if($i >= 3){ $colcount = 'column-count: 3';} ;?>
  <div class="row">
     <div class="col-sm-12">
     <?php if ( $maintitle = get_sub_field( 'maintitle' ) ): ?>
@@ -19,12 +10,12 @@ Blurb Section - Two Columns
     <?php endif; ?>
     </div>
 </div>
-<section style="<?= $colcount; ?>;" class="blurb-hold card-columns">
+<section class="blurb-hold card-columns">
     <div clas="row">
-        <?php $r = 0; ?>
+        <?php $i = 0; ?>
     <?php if (have_rows('blurb_col')):?>
         <?php while (have_rows('blurb_col')) : the_row();
-            $r++;
+            $i++;
             $title = get_sub_field('title');
             $header = get_sub_field('header');
             $subheader = get_sub_field('subheader');
@@ -54,11 +45,8 @@ Blurb Section - Two Columns
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
-            <?php if($r % 3 == 0): ?>
-                <div class="w-100"></div>
-            <?php endif; ?>
         <?php endwhile; ?>
-        <?php if($i == 2): ?>
+        <?php if($i % 2 == 0): ?>
             <div class="w-100"></div>
         <?php endif;?>
     </div>
