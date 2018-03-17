@@ -13,7 +13,7 @@ Gallery
 </section>
 <?php if (have_rows('image')): ?>
     <section class="row">
-        <div class="card-columns">
+        <div class="gallery card-columns">
             <?php while (have_rows('image')) : the_row();
                 $count++;
                 $img = get_sub_field('img');

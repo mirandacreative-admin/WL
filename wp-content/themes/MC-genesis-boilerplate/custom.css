@@ -690,12 +690,12 @@ a.pdflink:hover{
 }
 
 /* Gallery Module */
-.card-columns {
+.gallery.card-columns {
   -webkit-column-count:2;
   -moz-column-count:2;
   column-count:2;
 }
-.card-columns .img-fluid{
+.gallery.card-columns .img-fluid{
   width:100%;
 }
 
