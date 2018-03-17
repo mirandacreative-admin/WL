@@ -15,7 +15,7 @@ Card Content Grid
                     $linkurl = get_sub_field('link_url');
                 }
                 if ($ext == 'no') {
-                    $linkurl = get_sub_field('post_link');;
+                    $linkurl = get_sub_field('post_link');
                 }                
 
                 $hover_color = get_sub_field('hover_color');
