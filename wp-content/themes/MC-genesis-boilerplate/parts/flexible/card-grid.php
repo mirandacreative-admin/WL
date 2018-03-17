@@ -9,7 +9,15 @@ Card Content Grid
             <?php while (have_rows('cards')): the_row();
                 $title = get_sub_field('title');
                 $blurb = get_sub_field('blurb');
-                $link_url = get_sub_field('link_url');
+                $ext = get_sub_field('ext');
+                $linkurl = '';
+                if ($ext == 'yes') {
+                    $linkurl = get_sub_field('link_url');
+                }
+                if ($ext == 'no') {
+                    $linkurl = get_sub_field('post_link');;
+                }                
+
                 $hover_color = get_sub_field('hover_color');
             ?>
             <div class="hold col-lg-4 col-sm-6">
