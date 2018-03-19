@@ -828,6 +828,12 @@ a.pdflink:hover{
 /*-------------------------------------- Where Mika Ended ---------------------------------------*/
 
 /* Childrens Page Styles */
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
 #genesis-content > h1 {
 display: none;
 }
@@ -847,12 +853,12 @@ img.margblock {
 	font-size: 26px;	
 }
 .rug {
-	margin-top: 60%;
+  padding-top: 32%;
 }
 .twokids {
-	top:33%;
-	left:22%;
-	width:58%;
+  top: 7%;
+  left: 22%;
+  width: 58%;
 }
 .tabletboy {
 	top: 25%;
@@ -860,9 +866,9 @@ img.margblock {
 	width: 25%;
 }
 .girlone {
-	top:50%;
-	left:2%;
-	width:25%;
+  top: 31%;
+  left: 2%;
+  width: 25%;
 }
 .kidstablet {
 	top: 45%;
@@ -906,6 +912,10 @@ img.margblock {
 	top:30%;
 	left:11%;
 	max-width:85%;
+}
+#todaysmsg {
+      top: 31%;
+    padding: 0 13%;
 }
 .easle {
 	max-width: 100%;
