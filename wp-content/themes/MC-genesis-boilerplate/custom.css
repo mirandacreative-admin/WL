@@ -1074,10 +1074,7 @@ span.subtag {
         transition: all 0.5s ease-in-out;				
 	}
 
-	
-	#genesis-content {
-	    padding-top: 50px;
-	}	
+
 	.mediumlogo {
 	    display: inline-block;
 	    float: left;
@@ -1104,15 +1101,13 @@ span.subtag {
 @media (max-width: 844px) {
 
 }
-@media (max-width: 633px) { 
-	#genesis-content {
-	    padding-top: 176px;
-	}	
+@media (max-width: 633px) {
 
 }
 
 /*breadcrumbs*/
 .breadcrumb {
+  padding-top: 8%;
   background: none;
   font-family: "museo", serif;
   color: #a92e89;
@@ -1128,10 +1123,9 @@ span.breadcrumb-list-wrap {
 }
 
 .breadcrumb-link-wrap > a > span{
-  font-family: Museo;
+  font-family: "museo", serif;
   font-size: 16px;
   font-weight: 100;
   text-align: center;
-  /*color: #a92e89;*/
   color: #88afc1; !important;
 }
