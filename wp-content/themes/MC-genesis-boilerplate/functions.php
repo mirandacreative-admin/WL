@@ -167,6 +167,15 @@ function maybe_site_description() {
 
 }
 
+// genesis breadcrumbs - remove the 'you are here' prefix
+
+function b3m_prefix_breadcrumb( $args ) {
+	$args['labels']['prefix'] = '';
+	$args['sep'] = ' - ';
+	return $args;
+}
+add_filter( 'genesis_breadcrumb_args', 'b3m_prefix_breadcrumb' );
+
 
 // enqueu MCcoder's js
 
