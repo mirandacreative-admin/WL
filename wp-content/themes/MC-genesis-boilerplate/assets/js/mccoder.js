@@ -63,7 +63,11 @@ jQuery(document).ready(function( $ ) {
 		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 		                event.preventDefault();
 		                $(this).ekkoLightbox();
-		            });				
+		            });
+
+    $('#reveal-archived-minutes').click(function(){
+        $('#archived-minutes').toggle('slide');
+    });
 });
 
 function classTog(x) {
