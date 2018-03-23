@@ -3,13 +3,16 @@
 Blurb Section - Two Columns
  */
 ?>
- <div class="row">
-    <div class="col-sm-12">
-    <?php if ( $maintitle = get_sub_field( 'maintitle' ) ): ?>
-        <h2 class="maintitle"><?php echo $maintitle; ?></h2>
-    <?php endif; ?>
+<section>
+     <div class="row">
+        <div class="col-sm-12">
+        <?php if ( $maintitle = get_sub_field( 'maintitle' ) ): ?>
+            <h2 class="maintitle"><?php echo $maintitle; ?></h2>
+        <?php endif; ?>
+        </div>
     </div>
-</div>
+</section>
+<div class="clear"></div>
 <section class="blurb-hold card-columns">
     <div clas="row">
         <?php $i = 0; ?>
