@@ -39,7 +39,7 @@ section{
 /* Button color */
 .button {
   display: block;
-  min-width: 200px;
+  min-width: 150px;
   margin: 16px;
   padding: 8px 8px;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.22);
@@ -130,7 +130,8 @@ h1.tk-museo{
 }
 
 /* Menu */
-.main-menu ul{
+.main-menu ul {
+  max-width: 934px;
 	border-top: 0.5px solid rgba(136, 175, 193, 0.8);
 	border-bottom: 0.5px solid rgba(136, 175, 193, 0.8);
 	border-left: 0.5px solid rgba(136, 175, 193, 0.8);
@@ -351,7 +352,15 @@ ul.shift {
 .content-sidebar-wrap{
   padding-top: 110px;
 }
-
+.content ul li, .content ol li{
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0,0, 0, 0.9);
+  list-style: disc !important;
+  margin-left:24px;
+}
 /* Search Bars */
 .searchwrapper {
   font-family: 'Noto Sans', sans-serif;
@@ -475,7 +484,6 @@ margin-top:-33px
   font-family: Museo;
   font-size: 2.8em;
   font-weight: bold;
-  line-height: 2.0;
   letter-spacing: normal;
   color: #2b2767;
 }
@@ -995,7 +1003,11 @@ span.subtag {
 }
 /*copyright*/
 .copyright {
-  font-size: .7em;
+color: rgba(0, 0, 0, 0.38);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
 }
 #menuslot {
   display: none;
@@ -1025,6 +1037,11 @@ span.subtag {
 	}
 	.logogroup {
     margin-left: 249px;
+}
+body .logo {
+      
+    margin-bottom: 4px;
+    padding-bottom: 0px;
 }
 }
 @media (max-width: 1320px) {
@@ -1122,7 +1139,9 @@ span.breadcrumb-list-wrap {
 
   /*color: #88afc1;*/
 }
-
+html {
+    margin-top: 0px !important;
+}
 .breadcrumb-link-wrap > a > span{
   font-family: "museo", serif;
   font-size: 16px;

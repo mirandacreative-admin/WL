@@ -505,3 +505,12 @@ class CSS_Menu_Maker_Walker extends Walker {
     $output .= "</li>\n";
   }
 }
+
+/**
+ * Hides the admin bar on a template page.
+ */
+function hide_admin_bar() {
+    wp_add_inline_style('admin-bar', '<style> html { margin-top: 0 !important; } </style>');
+    return false;
+}
+add_filter( 'show_admin_bar', 'hide_admin_bar' );
