@@ -76,13 +76,13 @@ Left Sidebar
             <?php endwhile; ?>
         <?php endif; ?>
         <li class="connect-link">
-            <a href="#">
+            <a href="https://www.facebook.com/wethersfieldlibrary/">
                 <i><img class="social" src="/wp-content/themes/MC-genesis-boilerplate/images/fa-facebook-copy.png"></i>
                 <span>Facebook</span>
             </a>
         </li>
        <li class="connect-link">
-            <a href="#">
+            <a href="https://twitter.com/WethLibrary">
                 <i><img class="social" src="/wp-content/themes/MC-genesis-boilerplate/images/fa-twitter-copy.png"></i>
                 <span>Twitter</span>
             </a>
