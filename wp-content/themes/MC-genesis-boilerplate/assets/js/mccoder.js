@@ -85,8 +85,10 @@ function googleTranslateElementInit() {
 
     new google.translate.TranslateElement({pageLanguage: 'en',
 		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-		includedLanguages: 'es,fr,pt,zh-CN,it,ja,ko,nl,el'
+		includedLanguages: 'es,fr,pt,zh-CN,it,ja,ko,nl,el,sq,bs,ur'
 	}, google_element);
+
+    $('.goog-te-gadget').css('z-index', '999999999999999999');
 }
 
 // off canvas menu hours
