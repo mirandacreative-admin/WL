@@ -97,7 +97,7 @@ Left Sidebar
         <span class="address">
             515 Silas Deane Highway  Wethersfield, CT 06109
         </span>
-        <a href="+18605292665">(860) 529-2665</a>
+        <a href="tel:18605292665">(860) 529-2665</a>
     </address>
     <div class="copyright">
      <?php the_field('copyright', 'options'); ?>
