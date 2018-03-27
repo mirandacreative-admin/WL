@@ -131,6 +131,10 @@ h1.tk-museo{
   display: none;
 }
 
+#text-2{
+  margin-top: 100px;
+}
+
 /* Menu */
 .main-menu ul {
   max-width: 934px;
@@ -160,6 +164,7 @@ h1.tk-museo{
   position: fixed;
   width: 100%;
   top:0;
+  overflow: hidden;
 }
 
 /* Drop down menu - jquery in assets/js/mccoder.js */
@@ -333,6 +338,7 @@ ul.shift {
   z-index: 999999;
  }
  #genesis-content .sidebar-primary {
+   margin-
   max-width: 308px;
 }
 #genesis-content .content {
@@ -1037,6 +1043,7 @@ color: rgba(0, 0, 0, 0.38);
 	    position: fixed;
 	    width: 100%;
 	    margin-left: -1%;
+        overflow: hidden;
 	}
 	h1.tk-museo {
 	    font-size: 4rem;
@@ -1119,7 +1126,7 @@ body .logo {
 	}
 }
 
-@media (max-width: 860px) { 
+@media (max-width: 860px) {
 
 }
 @media (max-width: 844px) {
