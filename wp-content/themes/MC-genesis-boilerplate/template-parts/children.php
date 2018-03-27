@@ -15,9 +15,12 @@
             </div>
          </div>
          <div class="block animated">
-            <img class="picinframe" src="<?php the_field('pictureframe'); ?>">          
+           
             <div class="rel">
-               <img class="margblock" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf.svg"></div>
+               <img class="margblock" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf1.png">
+              <img id="imgtog" class="margblock" style="position: absolute; top: 0px;" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf2.png">
+             </div>
+
          </div>
          <div class="block animated">
              <a href="<?php the_field('programlink'); ?>">
@@ -30,7 +33,7 @@
       <div class="col-md-6">
          <div class="block">
             <div class="rel">          
-            <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.svg">          
+            <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.png">          
               <div id="todaysmsg" class="abs">
                     <?php 
                         query_posts(array( 

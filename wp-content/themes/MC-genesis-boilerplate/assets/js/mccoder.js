@@ -15,6 +15,11 @@ jQuery(document).ready(function( $ ) {
         }
      });
 
+	// children gallery animation
+	setInterval(function(){
+		$('#imgtog').toggle();
+	},5000);
+
     	
  
  	$('.carousel').carousel();	
