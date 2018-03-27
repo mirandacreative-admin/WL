@@ -1141,6 +1141,11 @@ body .logo {
     right: 0;
   }
 }
+@media (max-width: 374px){
+  h1.tk-museo{
+    font-size: 2rem;
+  }
+}
 
 /*breadcrumbs*/
 .breadcrumb {
