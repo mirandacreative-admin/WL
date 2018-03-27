@@ -338,7 +338,6 @@ ul.shift {
   z-index: 999999;
  }
  #genesis-content .sidebar-primary {
-   margin-
   max-width: 308px;
 }
 #genesis-content .content {
@@ -391,9 +390,12 @@ ul.shift {
 } 
 
 /*library catalog results frame*/
-#homecards {
-margin-top:-33px
-}
+
+/*this broke about-portal page */
+/*#homecards {*/
+/*margin-top:-33px;*/
+/*}*/
+
 .catalogframe {
   margin-bottom:33px;
 }
