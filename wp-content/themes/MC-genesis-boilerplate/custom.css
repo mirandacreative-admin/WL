@@ -442,6 +442,10 @@ margin-top:-33px
     color:#ffffff;
   }
 
+  div.alert > i, #hide-alert > i {
+    margin: 10px;
+  }
+
 /* Card Content Grids */
 .squaregrid .hold{
   padding: 2px;
@@ -1122,7 +1126,11 @@ body .logo {
 
 }
 @media (max-width: 633px) {
-
+  #carousel .alert{
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
 }
 
 /*breadcrumbs*/
