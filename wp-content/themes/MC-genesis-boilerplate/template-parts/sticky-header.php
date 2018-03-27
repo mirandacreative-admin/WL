@@ -7,7 +7,7 @@
 <div id="stickem" class="float-header container">
 
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2" style="cursor: pointer;" onclick="location.href = '<?php echo site_url(); ?>'; ">
             <a href="<?php echo get_option( "siteurl" ); ?>">
                 <img class="homelink"
                      src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/spacer.png">
