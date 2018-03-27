@@ -1069,9 +1069,10 @@ body .logo {
 	}	
 
 }
+
 img.homelink{
   height: 154px;
-  width: 154px;
+  width: 100%;
   z-index: 99999;
 }
 
