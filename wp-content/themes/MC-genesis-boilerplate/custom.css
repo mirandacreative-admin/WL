@@ -126,6 +126,10 @@ h1.tk-museo{
     margin: 0 auto;
 	z-index: 1;
 }
+/*hides title of google translate widget */
+#text-2 > div > h3.widget-title {
+  display: none;
+}
 
 /* Menu */
 .main-menu ul {
