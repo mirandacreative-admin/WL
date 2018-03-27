@@ -190,7 +190,7 @@ a {
 a:focus,
 a:hover {
 	color: #88afc1; 
-	text-decoration: !important;
+	/*text-decoration: !important;*/
 }
 
 p {
@@ -595,7 +595,7 @@ th:first-child {
 
 .site-inner {
 	clear: both;
-	padding-top: 40px;*/
+	padding-top: 40px;
 	word-wrap: break-word;
 }
 
