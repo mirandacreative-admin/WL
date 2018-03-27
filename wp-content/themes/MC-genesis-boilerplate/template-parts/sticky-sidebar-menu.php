@@ -6,7 +6,7 @@ Left Sidebar
 <div id="left-sticky" class="slidemenu">
     <a href="<?php echo get_option( "siteurl" ); ?>"><img class="logo"
     src="<?php the_field( 'logo', 'option' ); ?>"></a>
-    <a href="<?php echo get_site_url(); ?>/about-the-library/"><h2>About The Library</h2></a>
+    <a href="<?php echo get_site_url(); ?>/about-portal"><h2>About The Library</h2></a>
     <div id="menuslot">
         <?php include_once( get_stylesheet_directory() . '/template-parts/mobile-menu.php' ); ?>
     </div>
@@ -89,7 +89,7 @@ Left Sidebar
         </li>
     </ul>
     <button type="button" class="button btn-dark-slate-blue">
-        <a class="btn-dark-slate-blue" href="<?php echo get_site_url(); ?>/http://mcstagewl.wpengine.com/support-the-library/">
+        <a class="btn-dark-slate-blue" href="<?php echo get_site_url(); ?>/support-the-library/">
         SUPPORT<br/>THE LIBRARY
         </a>
     </button>
