@@ -5,7 +5,7 @@
 ?>
 
 <div id="stickem" class="float-header container">
-    <div id="google_translate_desktop"><!--populates by javascript--></div>
+
 	<div class="row">
 		<div class="col-md-2">
 			<a href="<?php echo get_option("siteurl"); ?>"><img class="homelink" style="width: 100%; height: 100%;" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/spacer.png"></a>

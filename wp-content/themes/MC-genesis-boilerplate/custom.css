@@ -123,9 +123,7 @@ h1.tk-museo{
 	margin-left: 15px;
 }
 #google_translate_desktop{
-	position: absolute;
-	right: 10px;
-	top: 10px;
+    margin: 0 auto;
 	z-index: 1;
 }
 
