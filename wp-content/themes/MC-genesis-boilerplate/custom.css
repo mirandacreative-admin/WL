@@ -164,7 +164,6 @@ h1.tk-museo{
   position: fixed;
   width: 100%;
   top:0;
-  overflow: hidden;
 }
 
 /* Drop down menu - jquery in assets/js/mccoder.js */
@@ -357,7 +356,7 @@ ul.shift {
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
-  padding-top: 110px;
+  padding-top: 70px;
 }
 .content ul li, .content ol li{
   font-size: 14px;
@@ -1054,7 +1053,6 @@ color: rgba(0, 0, 0, 0.38);
     margin-left: 249px;
 }
 body .logo {
-      
     margin-bottom: 4px;
     padding-bottom: 0px;
 }
@@ -1071,7 +1069,11 @@ body .logo {
 	}	
 
 }
-
+img.homelink{
+  height: 154px;
+  width: 154px;
+  z-index: 99999;
+}
 
 @media (max-width: 1270px) { 
 /*main menu dissapears*/
