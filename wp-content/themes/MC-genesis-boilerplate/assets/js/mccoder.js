@@ -68,6 +68,12 @@ jQuery(document).ready(function( $ ) {
     $('#reveal-archived-minutes').click(function(){
         $('#archived-minutes').toggle('slide');
     });
+
+
+    setTimeout(function(){
+        $('.goog-te-gadget').css('z-index', '999999999999999');
+	}, 300);
+
 });
 
 function classTog(x) {
@@ -88,7 +94,6 @@ function googleTranslateElementInit() {
 		includedLanguages: 'es,fr,pt,zh-CN,it,ja,ko,nl,el,sq,bs,ur,pl'
 	}, google_element);
 
-    $('.goog-te-gadget').css('z-index', '999999999999999999');
 }
 
 // off canvas menu hours
