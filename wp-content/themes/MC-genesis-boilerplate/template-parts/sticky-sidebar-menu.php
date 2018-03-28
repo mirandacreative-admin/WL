@@ -89,7 +89,7 @@ Left Sidebar
         </li>
     </ul>
     <button type="button" class="button btn-dark-slate-blue">
-        <a class="btn-dark-slate-blue" href="<?php echo get_site_url(); ?>/http://mcstagewl.wpengine.com/support-the-library/">
+        <a class="btn-dark-slate-blue" href="<?php echo get_site_url(); ?>/support-the-library/">
         SUPPORT<br/>THE LIBRARY
         </a>
     </button>
