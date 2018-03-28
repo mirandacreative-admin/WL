@@ -17,7 +17,7 @@
          <div class="block animated">
            
             <div class="rel">
-              <a href="http://mcstagewl.wpengine.com/childrens-gallery/">
+              <a href="<?php echo get_home_url(); ?>/childrens-gallery/">
                  <img class="margblock" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf1.png">
                 <img id="imgtog" class="margblock" style="position: absolute; top: 0px;" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf2.png">
               </a>
