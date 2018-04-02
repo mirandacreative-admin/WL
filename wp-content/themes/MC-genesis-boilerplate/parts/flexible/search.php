@@ -23,6 +23,6 @@ Search Bars
     </form>
   </div>
 </section>
-<div class="catalogframe">
-   <iframe id="searchresults" src="" name="hidden_iframe" style="width:100%; height: 1px; border: none;"></iframe>
-</div>
+<!--<div class="catalogframe">-->
+<!--   <iframe id="searchresults" src="" name="hidden_iframe" style="width:100%; height: 1px; border: none;"></iframe>-->
+<!--</div>-->
