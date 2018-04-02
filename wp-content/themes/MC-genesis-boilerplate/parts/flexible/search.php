@@ -5,7 +5,7 @@ Search Bars
 ?>
 <section>
   <div class="searchwrapper">
-    <form method="get" action="http://lci-mt.iii.com/iii/encore/Home,$Search.form.sdirect" name="form" id="catform" target="hidden_iframe">
+    <form method="get" action="http://lci-mt.iii.com/iii/encore/Home,$Search.form.sdirect" name="form" id="catform" target="_blank">
       <input class="" name="target" placeholder="Search Library Catalog" id="libcat" size="" type="text">
       <input type="image" value="" onclick="enlargeiframe()" class="submit imgsubmit" id="libcatsearch" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/ic_search_black_24px.svg">
     </form>
