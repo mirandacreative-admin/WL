@@ -378,7 +378,7 @@ function register_my_menus() {
  }
  add_action( 'init', 'register_my_menus' );
 
- add_action('genesis_after_sidebar_widget_area','nice_buttons');
+ add_action('genesis_before_sidebar_widget_area','nice_buttons');
  function nice_buttons(){
  		get_template_part('template-parts/sticky-sidebar');
 	
@@ -514,3 +514,10 @@ function hide_admin_bar() {
     return false;
 }
 add_filter( 'show_admin_bar', 'hide_admin_bar' );
+
+
+// this filter adds a dashboard button near the edit btn for easy dash access
+add_filter( 'genesis_edit_post_link', function(){ 
+edit_post_link( __( 'EDIT', 'textdomain' ), '', ' | <a href="/wp-admin/">Dashboard</a>' );
+ });
+

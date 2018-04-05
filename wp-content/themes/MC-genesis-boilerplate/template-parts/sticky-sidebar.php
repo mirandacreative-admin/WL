@@ -24,7 +24,7 @@ Right Sidebar
   		  $target = ($pdffile) ? 'download' : '';  
 
   	?>
-    <a class="button" style="background-color: <?php the_sub_field('button_color'); ?>;" href="<?php echo $finalink; ?>" target="_blank" <?= $target; ?> >
+    <a class="button" style="background-color: <?php the_sub_field('button_color'); ?>;" href="<?php echo $finalink; ?>" target="_blank">
     <?php the_sub_field('button_text'); ?>
     </a>
   <?php endwhile; ?>
