@@ -26,7 +26,7 @@
          </div>
          <div class="block animated">
              <a href="<?php the_field('programlink'); ?>">
-                <img id="programs" class="easle" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/programs.svg">
+                <img id="programs" class="easle" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/programs.png">
              </a>          
             <div class="rel">
             </div>
