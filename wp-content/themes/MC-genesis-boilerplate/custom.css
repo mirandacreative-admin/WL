@@ -267,7 +267,6 @@ ul.shift {
 #mobile-hours > li, #mobile-hours-days > li{
   list-style: none !important;
 }
-
 /* only show on mobile */
 @media screen and (max-width: 640px){
     #hours_language_mobile {
@@ -1155,7 +1154,7 @@ img.homelink{
 
 /*breadcrumbs*/
 .breadcrumb {
-  padding-top: 30px;
+  padding-top: 8%;
   background: none;
   font-family: "museo", serif;
   color: #a92e89;
