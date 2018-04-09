@@ -2,7 +2,7 @@
     <h2>Library Hours</h2>
     <div class="row hour-inner">
         <div class="col dow">
-            <ul>
+            <ul id="mobile-hours">
                 <li class="hours-widget-item" data-day="monday">Mon</li>
                 <li class="hours-widget-item" data-day="tuesday">Tue</li>
                 <li class="hours-widget-item" data-day="wednesday">Wed</li>
@@ -13,7 +13,7 @@
             </ul>
         </div>
         <div class="col-8 hours">
-            <ul>
+            <ul id="mobile-hours-days">
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="monday" name="Mon">
 					<?php the_field( 'monday_hours', 'option' ); ?>
                 </li>

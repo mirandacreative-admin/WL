@@ -264,6 +264,10 @@ ul.shift {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+#mobile-hours > li, #mobile-hours-days > li{
+  list-style: none !important;
+}
+
 /* only show on mobile */
 @media screen and (max-width: 640px){
     #hours_language_mobile {
