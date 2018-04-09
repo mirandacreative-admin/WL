@@ -15,29 +15,29 @@
         <div class="col-8 hours">
             <ul>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="monday" name="Mon">
-                    <?php the_field( 'monday_hours', 'option' ); ?>
+					<?php the_field( 'monday_hours', 'option' ); ?>
                 </li>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="tuesday" name="Tue">
-                    <?php the_field( 'tuesday_hours', 'option' ); ?>
+					<?php the_field( 'tuesday_hours', 'option' ); ?>
                 </li>
-                <li class="hours-widget-item off-canvas-menu-hours" data-day="wednesday"
-                    name="Wed"><?php the_field( 'wednesday_hours', 'option' ); ?>
+                <li class="hours-widget-item off-canvas-menu-hours" data-day="wednesday">
+					<?php the_field( 'wednesday_hours', 'option' ); ?>
                 </li>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="thursday" name="Thu">
-                    <?php the_field( 'thursday_hours', 'option' ); ?>
+					<?php the_field( 'thursday_hours', 'option' ); ?>
                 </li>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="friday" name="Fri">
-                    <?php the_field( 'friday_hours', 'option' ); ?>
+					<?php the_field( 'friday_hours', 'option' ); ?>
                 </li>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="saturday" name="Sat">
-                    <?php the_field( 'saturday_hours', 'option' ); ?>
+					<?php the_field( 'saturday_hours', 'option' ); ?>
                 </li>
                 <li class="hours-widget-item off-canvas-menu-hours" data-day="sunday" name="Sun">
-                    <?php the_field( 'sunday_hours', 'option' ); ?>
+					<?php the_field( 'sunday_hours', 'option' ); ?>
                 </li>
             </ul>
         </div>
-         <div class="col-2">
+        <div class="col-2">
             <p>
                 <i id="library-hours-dropdown-button" class="library-hours-arrows arrow library-hours-down"></i>
             </p>
@@ -45,6 +45,6 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12" id="google_translate_mobile" style="display: block; margin: 0 auto;"> 
+    <div class="col-xs-12" id="google_translate_mobile" style="display: block; margin: 0 auto;">
     </div>
 </div>
