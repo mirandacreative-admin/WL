@@ -11,7 +11,7 @@ Carousel Module
             ?>
             <div class="alert">
                 <i class="material-icons">warning</i> 
-                <span class="message"><?= $alert; ?></spanI >
+                <span class="message"><?= $alert; ?></span>
                 <span id="hide-alert" class="close">
                     <i class="material-icons">close</i>
                 </span>
@@ -48,3 +48,4 @@ Carousel Module
             <span class="sr-only">Next</span>
         </a>
 </section>
+<?php if(is_front_page() ){get_template_part('template-parts/hours_language_mobile'); } ?>
