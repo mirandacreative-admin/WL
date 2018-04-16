@@ -98,7 +98,7 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-        includedLanguages: 'es,fr,pt,zh-CN,it,ja,ko,nl,el,sq,bs,ur,pl'
+        includedLanguages: 'en,es,fr,pt,zh-CN,it,ja,ko,nl,el,sq,bs,ur,pl'
     }, google_element);
 
 }
@@ -115,7 +115,7 @@ jQuery(document).ready(function ($) {
 // configures the userway javascript plugin location
 var _userway_config = {
 // uncomment the following line to override default position
-    position: 1,
+    position: 3,
 // uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)
 // language: null,
 // uncomment the following line to override color set via widget
