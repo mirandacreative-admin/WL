@@ -1,6 +1,6 @@
 <?php
 /*
-Carousel Module 
+Carousel Module  & Alert
 */
 ?>
 <section id="carousel" class="carousel slide" data-ride="carousel">
@@ -23,6 +23,7 @@ Carousel Module
             $count = 0;
             while (have_rows('slider')) : the_row();
                 $count++;
+                $url = get_sub_field('url');
                 $image = get_sub_field('image');
                 $headline = get_sub_field('image_headline');
                 $status = '';
@@ -31,10 +32,12 @@ Carousel Module
                 };
                 ?>
                 <div class="carousel-item <?= $status; ?>">
+                    <a class="carulink" href="<?= $url; ?>">
                     <img class="d-block img-fluid" src="<?= $image; ?>" alt="first slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h3><?= $headline; ?></h3>
                     </div>
+                    </a>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>
