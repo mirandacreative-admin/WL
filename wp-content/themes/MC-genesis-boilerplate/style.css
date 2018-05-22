@@ -400,8 +400,7 @@ input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid #ddd;
-	color: #333;
+	border: 1px solid #26235C;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: 400;
@@ -542,6 +541,11 @@ td:first-child,
 th:first-child {
 	padding-left: 0;
 }
+@media (max-width: 800px) { 
+	table {
+		font-size: 14px;
+	}
+ }
 
 /* ## Screen Reader Text
 --------------------------------------------- */

@@ -1,6 +1,6 @@
 <?php
 /*
-Blurb Section - Two Columns
+Blurb Section - Two Columns Mika
  */
 ?>
 <section>
@@ -14,17 +14,14 @@ Blurb Section - Two Columns
 </section>
 <div class="clear"></div>
 <section class="blurb-hold card-columns">
-    <div clas="row">
-        <?php $i = 0; ?>
     <?php if (have_rows('blurb_col')):?>
         <?php while (have_rows('blurb_col')) : the_row();
-            $i++;
             $title = get_sub_field('title');
             $header = get_sub_field('header');
             $subheader = get_sub_field('subheader');
             $column = get_sub_field('column');
             ?>
-         <div class="blurb col">
+         <div class="blurb card ">
                 <h2><?= $title; ?></h2>
                 <h3><?= $header; ?></h3>
                 <h4 class="subheader"><?= $subheader; ?></h4>
@@ -49,9 +46,5 @@ Blurb Section - Two Columns
                 <?php endif; ?>
             </div>
         <?php endwhile; ?>
-        <?php if($i % 2 == 0): ?>
-            <div class="w-100"></div>
-        <?php endif;?>
-    </div>
     </section>
 <?php endif; ?>

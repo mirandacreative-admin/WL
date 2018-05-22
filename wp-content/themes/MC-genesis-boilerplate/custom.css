@@ -366,20 +366,37 @@ ul.shift {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(0,0, 0, 0.9);
   list-style: disc !important;
   margin-left:24px;
 }
 /* Search Bars */
 .searchwrapper {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
   line-height: 1.4;
   text-align: left;
-  color: rgba(0, 0, 0, 0.6);
   position:relative;
   margin-bottom:8px;
+  letter-spacing: 1;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    font-weight:bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-weight:bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-weight:bold;
+}
+
 .imgsubmit {
   position: absolute;
   top:0px;
@@ -391,20 +408,11 @@ ul.shift {
   margin: 1px;
 } 
 
-/*library catalog results frame*/
 
-/*this broke about-portal page */
-/*#homecards {*/
-/*margin-top:-33px;*/
-/*}*/
 
 .catalogframe {
   margin-bottom:33px;
 }
-/*this broke the expandable iframe*/
-/*.catalogframe{
-  height:1px;
-}*/
 
 /* Carousel Module*/
 .carousel {
@@ -476,7 +484,7 @@ ul.shift {
   font-weight: 100;
   font-size: 13px;
   line-height: 1.54;
-  color: rgba(0, 0, 0, 0.38);
+  color: rgba(0, 0, 0, 0.7);
 }
 .squaregrid a.link:hover {
   color:#ffffff;
@@ -514,11 +522,11 @@ ul.shift {
   color: rgb(136, 175, 193);
 }
 .content{
-  color: rgba(0, 0, 0, 0.38);
+  color: rgba(0, 0, 0, 0.7);
   font-family: 'Noto Sans', sans-serif;
   line-height: 1.5;
   text-align: left;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 /* Blurb Sections */
@@ -536,7 +544,7 @@ ul.shift {
   border:none;
 }
 .blurb-hold a{
-  color: #88afc1;
+  color: #26235c;
   font-family: "museo-sans",sans-serif;
   font-size:18px;
 }
@@ -1177,4 +1185,71 @@ html {
   font-weight: 100;
   text-align: center;
   color: #88afc1; !important;
+}
+
+
+/* Kahlil's customizer code */
+#menu-item-143 {
+  border-right: none;
+}
+#menu-test {
+  border-right: 0.5px solid rgba(136, 175, 193, 0.8);
+}
+body .main-menu li {
+    border: none;
+}
+body .main-menu ul {
+    border: none;
+}
+
+body #menu-test {
+    border: none;
+}
+body .main-menu li {
+  border: none;
+}
+body .children-box {
+  background: url('http://wl.dev.cc/wp-content/themes/MC-genesis-boilerplate/images/children_bg.png') repeat-x bottom;
+  background-size: contain;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    top: -50px;
+    position: relative;
+    right: -18px;
+}
+body #carousel .alert {
+  height: 65px;
+}
+body #carousel .alert .message {
+    top: -20px;
+}
+body #carousel i {
+  position: relative;
+    top: -11px;
+}
+body #text-2 {
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding-bottom: 0px
+}
+body .goog-te-gadget-simple {
+  display:block;
+  margin: 0 auto;
+  max-width:154px;
+}
+#genesis-content {
+  margin-top: 54px;
+}
+#genesis-content .breadcrumb {
+    padding-top: 5%;
+}
+.error404 #genesis-content {
+  padding-top:54px;
 }

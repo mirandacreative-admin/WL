@@ -2,6 +2,8 @@
 # Wordpress #
 *.log
 .htaccess
+.ftpconfig
+.gitignore
 
 sitemap.xml
 sitemap.xml.gz
