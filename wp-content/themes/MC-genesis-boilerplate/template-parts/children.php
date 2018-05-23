@@ -10,12 +10,12 @@
          <div id="rumble" class="block animated">
              <a href="<?php the_field('grownlink'); ?>">
                 <img id="grown" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/grown-ups.svg">
-             </a>          
+             </a>
              <div class="rel">
             </div>
          </div>
          <div class="block animated">
-           
+
             <div class="rel">
               <a href="<?php echo get_home_url(); ?>/childrens-gallery/">
                  <img class="margblock" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/picture-shelf1.png">
@@ -27,24 +27,28 @@
          <div class="block animated">
              <a href="<?php the_field('programlink'); ?>" target="_blank">
                 <img id="programs" class="easle" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/programs.png">
-             </a>          
+             </a>
             <div class="rel">
             </div>
          </div>
       </div>
       <div class="col-md-6">
+           <!-- This is the link that wraps around the quote panel ends line 75 -->
+        <?php if (get_field('quotelink')):?>
+        <a class="quotelink" href="<?php the_field('quotelink'); ?>">
+        <?php endif; ?>
          <div class="block">
-            <div class="rel">          
-            <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.png">          
+            <div class="rel">
+              <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.png">
               <div id="todaysmsg" class="abs">
-                    <?php 
-                        query_posts(array( 
+                    <?php
+                        query_posts(array(
                             'post_type' => 'todays_msg',
-                            'showposts' => 3 
-                        ) );  
-                    ?> 
+                            'showposts' => 3
+                        ) );
+                    ?>
                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                         <div class="carousel-inner" style="height: 222px;" role="listbox">                
+                         <div class="carousel-inner" style="height: 222px;" role="listbox">
                           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                           <?php $i++; ?>
                              <?php if($i == 1){$class = "active";}else{ $class = "";};?>
@@ -52,8 +56,8 @@
                                 <div class="carousel-item <?=$class ?>">
                                       <?php the_content();?>
                                 </div>
-              	            
-                             <?php endwhile; endif; ?>  
+
+                             <?php endwhile; endif; ?>
                              <?php wp_reset_query(); ?>
                          </div>
                          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -64,52 +68,54 @@
                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                            <span class="sr-only">Next</span>
                          </a>
-                       </div>                      
+                       </div>
               </div>
             </div>
          </div>
+         <?php if (get_field('quotelink')):?></a><?php endif; ?>
+         <!-- This is the link that wraps around the quote panel -->
          <div class="block">
-            <div class="rel">          
-              <img class="rug" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/carpetwl.svg">          
+            <div class="rel">
+              <img class="rug" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/carpetwl.svg">
 
             	<img class="abs girlone" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/girl1wl.svg">
-               <a href="<?php the_field('appmonthlink'); ?>"> 
+               <a href="<?php the_field('appmonthlink'); ?>">
             	  <img id="appmonth" class="abs twokids" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/kids.svg">
-               </a>           	            	           	
+               </a>
             </div>
          </div>
       </div>
       <div class="col-md-3">
          <div class="block animated">
              <a href="<?php the_field('gamelink'); ?>">
-              <img id="games" class="games" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/games.svg">  
-             </a>          
+              <img id="games" class="games" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/games.svg">
+             </a>
             <div class="rel">
             </div>
          </div>
          <div class="block animated">
                <a href="<?php the_field('booksbeforeklink'); ?>">
-                <img id="thoubooks" class="thoubooks" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/books-before-kinder.svg">  
-               </a>          
-            <div class="rel">
-            </div>
-         </div>
-         <div class="block">  
-            <div class="rel">          
-              <img class="teddyshelf" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/shelfwl.svg">            
-
-           		<img class="abs teddy block animated" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/bearwl.svg">           		
-            </div>
-         </div>
-         <div class="block animated">
-             <a href="<?php the_field('greatreadslink'); ?>">
-              <img id="greatreads" class="greatread" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/great-reads.svg">  
-             </a>          
+                <img id="thoubooks" class="thoubooks" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/books-before-kinder.svg">
+               </a>
             <div class="rel">
             </div>
          </div>
          <div class="block">
-              <img class="toys" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/toyswl.svg">            
+            <div class="rel">
+              <img class="teddyshelf" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/shelfwl.svg">
+
+           		<img class="abs teddy block animated" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/bearwl.svg">
+            </div>
+         </div>
+         <div class="block animated">
+             <a href="<?php the_field('greatreadslink'); ?>">
+              <img id="greatreads" class="greatread" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/great-reads.svg">
+             </a>
+            <div class="rel">
+            </div>
+         </div>
+         <div class="block">
+              <img class="toys" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/toyswl.svg">
             <div class="rel">
             </div>
          </div>
