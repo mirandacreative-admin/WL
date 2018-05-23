@@ -33,9 +33,13 @@
          </div>
       </div>
       <div class="col-md-6">
+           <!-- This is the link that wraps around the quote panel ends line 75 -->
+        <?php if (get_field('quotelink')):?>
+        <a class="quotelink" href="<?php the_field('quotelink'); ?>">
+        <?php endif; ?>
          <div class="block">
             <div class="rel">
-            <a href="#"><img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.png"></a>
+              <img src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/todays-message.png">
               <div id="todaysmsg" class="abs">
                     <?php
                         query_posts(array(
@@ -68,6 +72,8 @@
               </div>
             </div>
          </div>
+         <?php if (get_field('quotelink')):?></a><?php endif; ?>
+         <!-- This is the link that wraps around the quote panel -->
          <div class="block">
             <div class="rel">
               <img class="rug" src="<?php echo get_home_url(); ?>/wp-content/themes/MC-genesis-boilerplate/images/carpetwl.svg">
