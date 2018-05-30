@@ -15,7 +15,7 @@ Search Bars
       <label style="width: 100%;">
         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
         <input id="wpsearch" type="search" class="search-field"
-        placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>"
+        placeholder="<?php echo esc_attr_x( 'Search The Website', 'placeholder' ) ?>"
         value="<?php echo get_search_query() ?>" name="s"
         title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
       </label>
