@@ -1,7 +1,7 @@
 /* ## Global
 --------------------------------------------- */
 a{
-	color: #2b2767; 
+	color: #2b2767;
 }
 a:focus,
 a:hover{
@@ -55,11 +55,11 @@ section{
 .btn.btn-primary{
 	border-radius: none;
 }
-.btn-greyblue, 
+.btn-greyblue,
 .gform_button.button{
 	background-color: rgb(136, 175, 193);
 }
-.btn-greyblue:hover, 
+.btn-greyblue:hover,
 .gform_button.button:hover{
   background-color: rgb(136, 175, 193);
   opacity: 0.9;
@@ -93,7 +93,7 @@ section{
 
 .site-inner {
   padding-top: 0px;
-} 
+}
 .container {
   max-width: 1440px;!important
   max-width: 100%;
@@ -182,7 +182,7 @@ h1.tk-museo{
 .reveal {
   display: block;
 }
-ul.shift { 
+ul.shift {
   position:absolute;
   top: 0%;
   left: 100%;
@@ -206,7 +206,7 @@ ul.shift {
 	display: block;
 	margin: 0 auto;
 	padding: 5% 5%;
-	margin-bottom: 33px;	
+	margin-bottom: 33px;
 }
  #left-sticky h2 {
 	padding: 8%;
@@ -290,7 +290,7 @@ ul.shift {
 .connect a {
   color:#2b2767;
   display: block;
-  height: 30%; 
+  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +323,7 @@ ul.shift {
 	max-width: 212px;
 	padding: 8px 16px;
 	margin: 12px 0 30px;
-  color: #2b2767;	
+  color: #2b2767;
 	font-size: 0.8em;
 	text-align: left;
 }
@@ -332,7 +332,7 @@ ul.shift {
 	margin-bottom: 10px;
 }
 
-/* Sidebar Fixed Positiions */   
+/* Sidebar Fixed Positiions */
 #genesis-sidebar-secondary {
   z-index: 99999;
 }
@@ -351,7 +351,7 @@ ul.shift {
 .sidebar-sidebar-content .content-sidebar-wrap {
   max-width: 1139px;
 }
-#genesis-sidebar-secondary > section { 
+#genesis-sidebar-secondary > section {
   display: none;
 }
 
@@ -359,7 +359,7 @@ ul.shift {
 /* ## Content CSS
 --------------------------------------------- */
 .content-sidebar-wrap{
-  padding-top: 70px;
+  padding-top: 95px;
 }
 .content ul li, .content ol li{
   font-size: 14px;
@@ -406,7 +406,7 @@ ul.shift {
   padding: 11px;
   border: none;
   margin: 1px;
-} 
+}
 
 
 
@@ -567,7 +567,7 @@ ul.shift {
   font-weight: 700;
   color: #88afc1;
 }
-.blurb-hold h3, 
+.blurb-hold h3,
 .contentblocks h3{
   font-family: "museo",serif;;
   font-size: 1.4em;
@@ -609,8 +609,8 @@ ul.shift {
   line-height: 1.45;
   text-align: left;
 }
-.blurb-hold .blurb p, 
-.eventblocks .details p, 
+.blurb-hold .blurb p,
+.eventblocks .details p,
 .buttonblocks .details p,
 .contentblocks .details p
 {
@@ -750,7 +750,7 @@ a.pdflink:hover{
   text-align: center;
   text-transform: uppercase;
   min-height: 32px;
-} 
+}
 .accordionhold .card-block{
   font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
@@ -770,7 +770,7 @@ a.pdflink:hover{
   text-align: center;
   color: #2b2767;
 }
-.program h2, 
+.program h2,
 .program .agerange{
   font-family: "museo",serif;
   font-size: 24px;
@@ -794,7 +794,7 @@ a.pdflink:hover{
   margin-bottom: 16px;
 }
 .program .descr .time,
-.program .descr .dates{ 
+.program .descr .dates{
   margin-top: 8px;
   font-family: "museo",serif;
   font-size: 16px;
@@ -828,11 +828,11 @@ a.pdflink:hover{
   display: block;
 }
 /* Resource Button & Description */
-.resource div{ 
+.resource div{
   display: flex;
   align-items: center;
 }
-.resource div p{ 
+.resource div p{
   line-height: 1.63;
   text-align: left;
   color: rgba(0, 0, 0, 0.87);
@@ -877,13 +877,13 @@ display: none;
 	font-size: 26px;
 }
 img.margblock {
-	margin: 0 auto; 
+	margin: 0 auto;
 	display: block;
 }
 .prgms {
 	top: 20%;
 	left: 28%;
-	font-size: 26px;	
+	font-size: 26px;
 }
 .rug {
   padding-top: 32%;
@@ -916,7 +916,7 @@ img.margblock {
 	padding: 11px 0px;
 }
 .thoubooks {
-	padding: 11px 0px;	
+	padding: 11px 0px;
 	max-width: 100%;
 	margin: 0 auto;
 }
@@ -977,7 +977,7 @@ img.margblock {
     background: white;
 }
 .sublogo {
-	display:block; 
+	display:block;
 	margin: 0 auto;
 	padding-top:63px;
 }
@@ -1076,7 +1076,7 @@ body .logo {
 	}
 	#stickem {
 	    margin-left: -10%;
-	}	
+	}
 
 }
 
@@ -1086,7 +1086,7 @@ img.homelink{
   z-index: 99999;
 }
 
-@media (max-width: 1270px) { 
+@media (max-width: 1270px) {
 /*main menu dissapears*/
 .main-menu {
   display: none;
@@ -1098,7 +1098,7 @@ img.homelink{
 /*hamburg button appears*/
 	.contmenu {
     display: inline-block;
-    }	
+    }
 	#left-sticky {
 		z-index: 99999999;
 		background: white;
@@ -1112,12 +1112,12 @@ img.homelink{
 		top:0px;
 		left: -240px;
     	-moz-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;		
+        transition: all 0.5s ease-in-out;
 	}
 	.open {
 		left: 0px;!important
     	-moz-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;				
+        transition: all 0.5s ease-in-out;
 	}
 
 
@@ -1135,7 +1135,7 @@ img.homelink{
 	    font-weight: 700;
 	    padding: 0.3em 1px;
 	    text-align: left;
-		}	
+		}
 		.content-sidebar-wrap {
 	    padding-top: 20px;
 	}
